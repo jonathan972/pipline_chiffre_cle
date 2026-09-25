@@ -1,0 +1,50 @@
+﻿indicator_id;territoire;perimeter_id;value;unit;source_file;coverage_status;quality_status;record_role;definition;note
+ANC_005;Martinique;Martinique;76;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Privé' en service dans l'export du portail.;
+ANC_006;Martinique;Martinique;23070.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU de nature 'Privé'.;
+ANC_008;Martinique;Martinique;84.210526;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part des STEU privées dont la capacité nominale est strictement inférieure à 500 EH.;
+ANC_007;Martinique;Martinique;6.280696;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Capacité privée / capacité nominale cumulée des STEU urbaines > 200 EH.;Définition alignée sur le rapport 2022.
+ANC_009_CANDIDATE;Martinique;Martinique;85.526316;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_CONFIRM;DIAGNOSTIC;Part des STEU privées disposant d'un statut de conformité globale réglementaire de performance Oui/Non.;Ne pas publier comme ANC_009 avant validation que ce statut équivaut à 'données de conformité transmises'.
+AC_003;Martinique;Martinique;124;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Urbain' en service.;
+AC_004;Martinique;Martinique;81;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU urbaines de capacité nominale strictement supérieure à 200 EH.;
+AC_005;Martinique;Martinique;367316.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU urbaines > 200 EH.;
+AC_006;Martinique;Martinique;40.836773;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 4 plus grosses STEU urbaines >200 EH.;
+AC_007;Martinique;Martinique;5.133182;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 42 plus petites STEU urbaines >200 EH.;
+AC_008;Martinique;Martinique;9.52858;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part de capacité des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_009;Martinique;Martinique;1.234568;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_012_PORTAL;Martinique;Martinique;1732.71;tMS/an;export-assainissement_2024(2).csv;COMPLETE;PORTAL_CONTROL;VALIDATION;Somme de 'Prod boues sans réactif (tMS/an)' des STEU urbaines.;Contrôle secondaire : le reporting privilégie les RAD/RPQS locaux pour AC_012.
+ANC_005;CACEM;CACEM;33;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Privé' en service dans l'export du portail.;
+ANC_006;CACEM;CACEM;9888.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU de nature 'Privé'.;
+ANC_008;CACEM;CACEM;84.848485;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part des STEU privées dont la capacité nominale est strictement inférieure à 500 EH.;
+ANC_009_CANDIDATE;CACEM;CACEM;75.757576;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_CONFIRM;DIAGNOSTIC;Part des STEU privées disposant d'un statut de conformité globale réglementaire de performance Oui/Non.;Ne pas publier comme ANC_009 avant validation que ce statut équivaut à 'données de conformité transmises'.
+AC_003;CACEM;CACEM;40;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Urbain' en service.;
+AC_004;CACEM;CACEM;22;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU urbaines de capacité nominale strictement supérieure à 200 EH.;
+AC_005;CACEM;CACEM;179000.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU urbaines > 200 EH.;
+AC_006;CACEM;CACEM;83.798883;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 4 plus grosses STEU urbaines >200 EH.;
+AC_007;CACEM;CACEM;100.0;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 42 plus petites STEU urbaines >200 EH.;
+AC_008;CACEM;CACEM;19.553073;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part de capacité des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_009;CACEM;CACEM;4.545455;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_012_PORTAL;CACEM;CACEM;988.03;tMS/an;export-assainissement_2024(2).csv;COMPLETE;PORTAL_CONTROL;VALIDATION;Somme de 'Prod boues sans réactif (tMS/an)' des STEU urbaines.;Contrôle secondaire : le reporting privilégie les RAD/RPQS locaux pour AC_012.
+ANC_005;CAESM;CAESM;20;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Privé' en service dans l'export du portail.;
+ANC_006;CAESM;CAESM;6943.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU de nature 'Privé'.;
+ANC_008;CAESM;CAESM;80.0;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part des STEU privées dont la capacité nominale est strictement inférieure à 500 EH.;
+ANC_009_CANDIDATE;CAESM;CAESM;90.0;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_CONFIRM;DIAGNOSTIC;Part des STEU privées disposant d'un statut de conformité globale réglementaire de performance Oui/Non.;Ne pas publier comme ANC_009 avant validation que ce statut équivaut à 'données de conformité transmises'.
+AC_003;CAESM;CAESM;31;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Urbain' en service.;
+AC_004;CAESM;CAESM;27;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU urbaines de capacité nominale strictement supérieure à 200 EH.;
+AC_005;CAESM;CAESM;104501.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU urbaines > 200 EH.;
+AC_006;CAESM;CAESM;50.48277;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 4 plus grosses STEU urbaines >200 EH.;
+AC_007;CAESM;CAESM;100.0;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 42 plus petites STEU urbaines >200 EH.;
+AC_008;CAESM;CAESM;0.0;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part de capacité des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_009;CAESM;CAESM;0.0;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_012_PORTAL;CAESM;CAESM;239.38;tMS/an;export-assainissement_2024(2).csv;COMPLETE;PORTAL_CONTROL;VALIDATION;Somme de 'Prod boues sans réactif (tMS/an)' des STEU urbaines.;Contrôle secondaire : le reporting privilégie les RAD/RPQS locaux pour AC_012.
+ANC_005;CAP_NORD;CAP_NORD;23;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Privé' en service dans l'export du portail.;
+ANC_006;CAP_NORD;CAP_NORD;6239.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU de nature 'Privé'.;
+ANC_008;CAP_NORD;CAP_NORD;86.956522;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part des STEU privées dont la capacité nominale est strictement inférieure à 500 EH.;
+ANC_009_CANDIDATE;CAP_NORD;CAP_NORD;95.652174;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_CONFIRM;DIAGNOSTIC;Part des STEU privées disposant d'un statut de conformité globale réglementaire de performance Oui/Non.;Ne pas publier comme ANC_009 avant validation que ce statut équivaut à 'données de conformité transmises'.
+AC_003;CAP_NORD;CAP_NORD;53;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU de nature 'Urbain' en service.;
+AC_004;CAP_NORD;CAP_NORD;32;nb;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Nombre de STEU urbaines de capacité nominale strictement supérieure à 200 EH.;
+AC_005;CAP_NORD;CAP_NORD;83815.0;EH;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Somme des capacités nominales des STEU urbaines > 200 EH.;
+AC_006;CAP_NORD;CAP_NORD;51.291535;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 4 plus grosses STEU urbaines >200 EH.;
+AC_007;CAP_NORD;CAP_NORD;100.0;%;export-assainissement_2024(2).csv;COMPLETE;OK;PRODUCTION;Part de capacité nominale portée par les 42 plus petites STEU urbaines >200 EH.;
+AC_008;CAP_NORD;CAP_NORD;0.0;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part de capacité des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_009;CAP_NORD;CAP_NORD;0.0;%;export-assainissement_2024(2).csv;COMPLETE;DEFINITION_TO_VALIDATE;DIAGNOSTIC;Part des STEU urbaines >200 EH associées à une agglomération globalement conforme.;Valider la définition de conformité éditoriale du millésime avant publication.
+AC_012_PORTAL;CAP_NORD;CAP_NORD;505.3;tMS/an;export-assainissement_2024(2).csv;COMPLETE;PORTAL_CONTROL;VALIDATION;Somme de 'Prod boues sans réactif (tMS/an)' des STEU urbaines.;Contrôle secondaire : le reporting privilégie les RAD/RPQS locaux pour AC_012.

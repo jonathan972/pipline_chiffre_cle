@@ -41,6 +41,7 @@ def _load_script(rel_path: str, module_name: str):
     if spec is None or spec.loader is None:
         raise RuntimeError(f"Impossible de charger {path}")
     mod = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = mod  # requis par dataclasses et les imports internes
     spec.loader.exec_module(mod)
     return mod
 
@@ -208,9 +209,14 @@ def rebuild_local_reports(log=None) -> Path:
         else: missing.append(name)
     if missing: _log(log, f"RAD/RPQS : {len(missing)} source(s) absente(s) du corpus ; extraction partielle possible.")
     out = ROOT / 'modules/local_reports/outputs'
-    cmd=[sys.executable,str(ROOT/'modules/local_reports/rad_rpqs_etl.py'),'--input-dir',str(work),'--config',str(config),'--out',str(out)]
-    proc=subprocess.run(cmd,capture_output=True,text=True)
-    if proc.returncode!=0: raise RuntimeError(proc.stderr or proc.stdout or 'Échec extraction RAD/RPQS')
+    # Exécution dans le processus : dans l'EXE, sys.executable relancerait l'application.
+    etl=_load_script('modules/local_reports/rad_rpqs_etl.py','rad_rpqs_etl')
+    argv=sys.argv
+    sys.argv=['rad_rpqs_etl.py','--input-dir',str(work),'--config',str(config),'--out',str(out)]
+    try: etl.main()
+    except SystemExit as exc:
+        if exc.code not in (None,0): raise RuntimeError(f'Échec extraction RAD/RPQS (code {exc.code})') from exc
+    finally: sys.argv=argv
     _log(log,'RAD/RPQS : extraction locale reconstruite.')
     return out
 
@@ -261,29 +267,77 @@ def copy_manual_documents(year: int, files: Iterable[Path], log=None) -> list[Pa
     return copied
 
 
+SAISIE_FIELDS = ["indicator_id", "perimeter_id", "value", "unit", "record_role", "quality_status",
+                 "source_file", "source_page", "commentaire", "validated"]
+
+
+def saisie_path(year: int) -> Path:
+    """Fichier lu par l'adaptateur `saisie` du pipeline canonique."""
+    return ROOT / "saisie" / f"saisie_locale_{year}.csv"
+
+
 def import_manual_overrides(year: int, source: Path, log=None) -> Path:
-    rows=read_scsv(source)
-    required={'indicator_id','territoire','value'}
-    fields=set(rows[0].keys()) if rows else set()
-    if not required <= fields: raise ValueError(f"CSV valeurs complémentaires : colonnes requises {sorted(required)}")
-    dest=ROOT/'data/manual_overrides'/f'{year}.csv'; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(source,dest)
-    _log(log,f"Valeurs complémentaires importées : {len(rows)} ligne(s).")
+    """Fusionne un CSV de valeurs complémentaires dans saisie/saisie_locale_YYYY.csv.
+
+    Colonnes requises : indicator_id, value et perimeter_id (ou territoire).
+    Seules les lignes validated=oui entrent en PRODUCTION ; les autres restent
+    en VALIDATION, visibles dans les contrôles mais jamais publiées.
+    """
+    rows = read_scsv(source)
+    fields = set(rows[0].keys()) if rows else set()
+    if not {"indicator_id", "value"} <= fields or not ({"perimeter_id", "territoire"} & fields):
+        raise ValueError("CSV valeurs complémentaires : colonnes requises indicator_id, value, perimeter_id (ou territoire).")
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from pipeline.referentiel import Referentiel
+    ref = Referentiel.load(ROOT)
+    dest = saisie_path(year)
+    merged = {(r["indicator_id"], r["perimeter_id"]): r for r in read_scsv(dest)}
+    imported, errors = 0, []
+    for n, r in enumerate(rows, start=2):
+        if not (r.get("value") or "").strip():
+            continue
+        iid = r["indicator_id"].strip()
+        pid = ref.perimetre((r.get("perimeter_id") or "").strip(), (r.get("territoire") or "").strip())
+        if iid not in ref.indicateurs or not pid:
+            errors.append(f"ligne {n} : indicateur ou périmètre inconnu ({iid} / {r.get('perimeter_id') or r.get('territoire')})")
+            continue
+        validated = (r.get("validated") or "").strip().lower() in ("oui", "yes", "true", "1")
+        merged[(iid, pid)] = {
+            "indicator_id": iid, "perimeter_id": pid, "value": r["value"].strip().replace("\u00a0", "").replace(" ", "").replace(",", "."),
+            "unit": r.get("unit") or ref.indicateurs[iid]["unite"],
+            "record_role": "PRODUCTION" if validated else "VALIDATION",
+            "quality_status": "OK" if validated else "SAISIE_NON_VALIDEE",
+            "source_file": r.get("source_file") or r.get("source") or source.name,
+            "source_page": r.get("source_page", ""),
+            "commentaire": r.get("commentaire") or r.get("note", ""),
+            "validated": "oui" if validated else "non",
+        }
+        imported += 1
+    if errors:
+        raise ValueError("Import refusé :\n" + "\n".join(errors[:20]))
+    write_scsv(dest, list(merged.values()), SAISIE_FIELDS)
+    _log(log, f"Valeurs complémentaires : {imported} ligne(s) fusionnée(s) dans {dest.relative_to(ROOT)}.")
     return dest
 
 
 def export_missing_values_template(year: int) -> Path:
-    pf=year_out(year)/f'preflight_report_{year}.csv'
-    if not pf.exists(): build_report(year,final=False)
-    rows=[r for r in read_scsv(pf) if r.get('status') in ('MISSING_VALUE','OPTIONAL_MISSING')]
-    out=year_out(year)/f'gabarit_valeurs_complementaires_{year}.csv'
-    fields=['indicator_id','territoire','perimeter_id','value','unit','source','definition','note','validated']
-    seen=set(); result=[]
-    for r in rows:
-        key=(r.get('indicator_id',''),r.get('territory',''))
-        if not key[0] or key in seen: continue
+    """Gabarit de saisie des valeurs manquantes ou à valider, au format de saisie/."""
+    pf = year_out(year) / f"preflight_report_{year}.csv"
+    if not pf.exists():
+        build_report(year, final=False)
+    wanted = ("MISSING_VALUE", "NOT_PUBLISHABLE", "OPTIONAL_MISSING")
+    out = year_out(year) / f"gabarit_valeurs_complementaires_{year}.csv"
+    seen, result = set(), []
+    for r in read_scsv(pf):
+        key = (r.get("indicator_id", ""), r.get("perimeter_id", ""))
+        if r.get("status") not in wanted or not all(key) or key in seen:
+            continue
         seen.add(key)
-        result.append({'indicator_id':key[0],'territoire':key[1],'perimeter_id':'','value':'','unit':'','source':'','definition':'','note':f"Placeholder {r.get('token','')} page {r.get('page','')}",'validated':'non'})
-    write_scsv(out,result,fields)
+        result.append({"indicator_id": key[0], "perimeter_id": key[1], "value": "", "unit": "",
+                       "record_role": "", "quality_status": "", "source_file": "", "source_page": "",
+                       "commentaire": f"{r.get('libelle', '')} — {r.get('status')}", "validated": "non"})
+    write_scsv(out, result, SAISIE_FIELDS)
     return out
 
 
@@ -307,16 +361,23 @@ def _try_pdf(docx_path: Path, outdir: Path, log=None) -> Path | None:
 
 def build_report(year: int, final: bool = False, log=None) -> BuildResult:
     prepare_existing_sources(year, log=log)
-    out=year_out(year); out.mkdir(parents=True,exist_ok=True)
-    reporting=_load_script("modules/reporting/report_builder.py",f"reporting_{year}")
-    mode="final" if final else "draft"; _log(log,f"Génération du rapport {year} ({mode})…")
-    docx,summary=reporting.build_docx(ROOT,year,out,mode=mode)
-    if final and summary.get("blocking_count"): raise RuntimeError(f"Rapport final bloqué: {summary['blocking_count']} élément(s) requis non résolu(s). Consultez le préflight.")
-    pdf=_try_pdf(Path(docx),out,log=log)
-    run={"generated_at":datetime.now(timezone.utc).isoformat(),"year":year,"mode":mode,"summary":summary,"sources":[asdict(x) for x in source_status(year)],"docx":str(docx),"pdf":str(pdf) if pdf else None}
-    (out/f"application_run_{year}.json").write_text(json.dumps(run,ensure_ascii=False,indent=2),encoding="utf-8")
-    _log(log,f"Rapport terminé: {Path(docx).name}")
-    return BuildResult(year,str(out),str(docx),str(pdf) if pdf else None,str(out/f"preflight_report_{year}.csv"),summary)
+    out = year_out(year); out.mkdir(parents=True, exist_ok=True)
+    reporting = _load_script("modules/reporting/report_builder.py", f"reporting_{year}")
+    mode = "final" if final else "draft"
+    _log(log, f"Génération du rapport {year} ({mode}) : master, certification, graphiques, document…")
+    docx, summary = reporting.build_docx(ROOT, year, out, mode=mode)
+    preflight = out / f"preflight_report_{year}.csv"
+    _log(log, f"Certification : {summary.get('certification')} — {summary.get('taux_production_pct')} % de valeurs publiables.")
+    if final and summary.get("blocking_count"):
+        raise RuntimeError(f"Rapport final bloqué : {summary['blocking_count']} élément(s) requis non résolu(s). "
+                           f"Consultez le préflight : {preflight}")
+    pdf = _try_pdf(Path(docx), out, log=log) if docx else None
+    run = {"generated_at": datetime.now(timezone.utc).isoformat(), "year": year, "mode": mode, "summary": summary,
+           "sources": [asdict(x) for x in source_status(year)], "docx": str(docx) if docx else None,
+           "pdf": str(pdf) if pdf else None}
+    (out / f"application_run_{year}.json").write_text(json.dumps(run, ensure_ascii=False, indent=2), encoding="utf-8")
+    _log(log, f"Rapport terminé : {Path(docx).name}" if docx else "Aucun document produit.")
+    return BuildResult(year, str(out), str(docx) if docx else None, str(pdf) if pdf else None, str(preflight), summary)
 
 
 def open_path(path: Path) -> None:

@@ -101,10 +101,8 @@ Le total Martinique ne change pas. Les effectifs par EPCI changent fortement (ex
 
 ## Ce qui n'est pas encore fait
 
-- gabarit de saisie RAD/RPQS généré par le pipeline (l'adaptateur `saisie` lit déjà `saisie/saisie_locale_YYYY.csv`) ;
 - exécution de SISPEA, ERU et BNPE pour 2023–2024 ;
-- test des placeholders du template Word (le moteur `modules/reporting/` n'est pas dans le dépôt) ;
-- génération Word : l'application reconnaît maintenant uniquement le master canonique,
-  mais reste bloquée tant que le moteur et le template ne sont pas versionnés ;
+- template Word historique : le moteur `modules/reporting/` fonctionne avec ou sans template,
+  mais le template de mise en page ODE reste à déposer dans `resources/templates/` ;
 - orchestration des collecteurs : le point d'entrée consolide leurs sorties existantes ;
   hormis ARS avec `--refresh-ars`, il ne relance pas encore les collectes amont.

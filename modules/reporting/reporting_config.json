@@ -1,0 +1,73 @@
+{
+  "version": "2.0.0",
+  "title": "Les chiffres clés de l'eau potable et de l'assainissement en Martinique",
+  "publisher": "Office de l'Eau Martinique",
+  "template_path": "resources/templates/template_chiffres_cles.docx",
+  "output_name": "Chiffres_cles_{year}",
+  "table_perimeters": ["MARTINIQUE", "CACEM_EPCI", "CAESM_EPCI", "CAP_NORD_EPCI"],
+  "sections": [
+    {"domain": "RESSOURCE", "title": "La ressource en eau", "maps": ["MAP_CAPTAGES_AEP"]},
+    {"domain": "EAU_POTABLE", "title": "L'eau potable", "maps": []},
+    {"domain": "ASSAINISSEMENT_COLLECTIF", "title": "L'assainissement collectif", "maps": ["MAP_STEU_PUBLIQUES", "MAP_OU_CHART_AC_COMMUNE"], "dynamic_texts": ["TXT_BOUES_TREND"]},
+    {"domain": "ANC", "title": "L'assainissement non collectif", "maps": ["MAP_AC_ANC_COMMUNES"]},
+    {"domain": "TARIFS", "title": "Le prix de l'eau", "maps": []}
+  ],
+  "maps": {
+    "MAP_CAPTAGES_AEP": {"label": "Carte des captages AEP", "required": true},
+    "MAP_STEU_PUBLIQUES": {"label": "Carte des STEU publiques", "required": true},
+    "MAP_OU_CHART_AC_COMMUNE": {"label": "Part de l'assainissement collectif par commune", "required": true},
+    "MAP_AC_ANC_COMMUNES": {"label": "Répartition AC / ANC par commune", "required": true}
+  },
+  "asset_filename_by_token": {
+    "{{MAP_CAPTAGES_AEP}}": "map_captages_aep_{year}.png",
+    "{{MAP_STEU_PUBLIQUES}}": "map_steu_publiques_{year}.png",
+    "{{MAP_OU_CHART_AC_COMMUNE}}": "map_part_ac_communes_{year}.png",
+    "{{MAP_AC_ANC_COMMUNES}}": "map_ac_anc_communes_{year}.png"
+  },
+  "charts": [
+    {"id": "CHART_EP_ABONNES", "indicator_id": "EP_005", "title": "Abonnés au service d'eau potable par EPCI"},
+    {"id": "CHART_RENDEMENT", "indicator_id": "EP_019", "title": "Rendement hydraulique des réseaux (%)", "with_martinique": true},
+    {"id": "CHART_ILP", "indicator_id": "EP_020", "title": "Indice linéaire de pertes (m³/km/j)", "with_martinique": true},
+    {"id": "CHART_CONFORMITE_MICRO", "indicator_id": "EP_003", "title": "Conformité microbiologique de l'eau distribuée (%)", "with_martinique": true},
+    {"id": "CHART_AC_ABONNES", "indicator_id": "AC_014", "title": "Abonnés à l'assainissement collectif par EPCI"},
+    {"id": "CHART_BOUES", "indicator_id": "AC_012", "title": "Boues évacuées (tonnes de matière sèche)"},
+    {"id": "CHART_ANC_CONFORMITE", "indicator_id": "ANC_013", "title": "Conformité des dispositifs ANC (%)", "with_martinique": true}
+  ],
+  "formats_by_unit": {
+    "%": "pct1",
+    "% et m³": "pct1",
+    "% / EH": "pct1",
+    "m³/an": "int_space",
+    "m³": "int_space",
+    "km": "km0",
+    "L/j/hab": "int_space",
+    "L/s": "int_space",
+    "m³/km/j": "decimal2",
+    "€/m³": "euro2",
+    "€/an": "euro2",
+    "€/mois": "euro2",
+    "€": "euro2",
+    "kg MS/abonné/an": "decimal1",
+    "TMS/an": "int_space",
+    "tMS/an": "int_space"
+  },
+  "default_format": "int_space",
+  "cell_texts": {
+    "LACUNE_DECLAREE": "non produit",
+    "NON_APPLICABLE": "sans objet",
+    "A_VALIDER": "à valider",
+    "MANQUANT": "non disponible",
+    "NOT_EXPECTED": "—"
+  },
+  "dynamic_texts": {
+    "TXT_BOUES_TREND": {
+      "indicator_id": "AC_012",
+      "perimeter_id": "MARTINIQUE",
+      "stable_threshold_pct": 5,
+      "up": "La production de boues augmente de {pct} % par rapport à {prev_year}.",
+      "down": "La production de boues diminue de {pct} % par rapport à {prev_year}.",
+      "stable": "La production de boues est globalement stable par rapport à {prev_year} ({signed_pct} %).",
+      "unavailable": "L'évolution de la production de boues ne peut pas être calculée faute de valeurs publiables pour {year} et {prev_year}."
+    }
+  }
+}

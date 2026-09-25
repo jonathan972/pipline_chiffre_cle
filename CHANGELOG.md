@@ -9,6 +9,9 @@
 - réagrégation hors ligne des résultats ARS 2022–2024 avec le rattachement communes → EPCI de `epci_communes.csv` (`--from-samples`) ;
 - `update_observatoire.py` appelle désormais le nouveau pipeline ;
 - tests `tests/test_pipeline.py` (année vide, exhaustivité des 80 indicateurs, nomenclature, conflits, régénération de valeurs 2022, absence de codes communes en dur).
+- frontière de publication `pipeline/publication.py` : seules les lignes `PRODUCTION` sont exposées au reporting ;
+- application desktop alignée sur le chemin du master canonique, sans repli sur v1/v2/v3 ;
+- validation au chargement du référentiel (attentes, identifiants, périmètres, doublons et périodes).
 
 ## 1.0.0 — 2026-09-25
 

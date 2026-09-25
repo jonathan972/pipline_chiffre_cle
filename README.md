@@ -11,7 +11,7 @@ py -m unittest tests.test_pipeline -v
 
 Un seul master, des identifiants canoniques (ceux du dictionnaire des 80 indicateurs), une certification qui compare ce qui existe à ce qui est attendu. Voir [docs/SOCLE_DONNEES.md](docs/SOCLE_DONNEES.md).
 
-`modules/master/master_pipeline*.py` et `modules/orchestrator/update_observatoire.py` sont conservés pour l'historique mais ne sont plus utilisés. L'application desktop ci-dessous lit encore l'ancien master : elle est gelée jusqu'à son branchement sur ce socle.
+`modules/master/master_pipeline*.py` et `modules/orchestrator/update_observatoire.py` sont conservés pour l'historique mais ne sont plus utilisés. L'application desktop vérifie désormais uniquement le master canonique `outputs/YYYY/fact_indicateur_master_YYYY.csv`. La génération Word reste indisponible tant que `modules/reporting/` et le template ne sont pas versionnés.
 
 ## Version 1.0.0 — application de production 2023/2024
 

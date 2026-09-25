@@ -64,7 +64,9 @@ Chaque cellule attendue reçoit un statut : `PRODUCTION`, `LACUNE_DECLAREE`, `NO
 - `CERTIFIED_WITH_GAPS` : tout est PRODUCTION ou explicitement déclaré ;
 - `CERTIFIED` : tout est PRODUCTION.
 
-Le moteur de publication ne doit lire que `couverture_YYYY.csv` / les lignes PRODUCTION.
+Le moteur de publication doit utiliser `pipeline.publication`, qui filtre strictement
+les lignes `PRODUCTION` et refuse plusieurs valeurs publiables pour une même cellule.
+Les rôles `VALIDATION`, `DIAGNOSTIC` et `AUDIT` ne constituent jamais un repli.
 
 ## Résultat au 25 septembre 2026
 
@@ -102,4 +104,7 @@ Le total Martinique ne change pas. Les effectifs par EPCI changent fortement (ex
 - gabarit de saisie RAD/RPQS généré par le pipeline (l'adaptateur `saisie` lit déjà `saisie/saisie_locale_YYYY.csv`) ;
 - exécution de SISPEA, ERU et BNPE pour 2023–2024 ;
 - test des placeholders du template Word (le moteur `modules/reporting/` n'est pas dans le dépôt) ;
-- branchement de l'application desktop sur ce socle : elle lit encore `outputs_v3/v2/v1` et doit être gelée d'ici là.
+- génération Word : l'application reconnaît maintenant uniquement le master canonique,
+  mais reste bloquée tant que le moteur et le template ne sont pas versionnés ;
+- orchestration des collecteurs : le point d'entrée consolide leurs sorties existantes ;
+  hormis ARS avec `--refresh-ars`, il ne relance pas encore les collectes amont.

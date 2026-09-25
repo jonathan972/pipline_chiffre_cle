@@ -69,7 +69,38 @@ class Referentiel:
         r.lacunes = read_csv(ref / "lacunes_declarees.csv")
         r.absences = read_csv(root / "modules" / "perimeters" / "known_absences.csv")
         r.parametres = json.loads((ref / "parametres.json").read_text(encoding="utf-8"))
+        r.validate()
         return r
+
+    def validate(self) -> None:
+        """Refuse un référentiel ambigu ou incomplet avant toute collecte."""
+        allowed_expectations = {"EXPECTED", "REFERENCE_ONLY", "REFERENCE_EXTERNE"}
+        seen: set[tuple[str, str, str, str]] = set()
+        publication_with_expectation: set[str] = set()
+        errors: list[str] = []
+        for row in self.attentes:
+            iid, pid = row["indicator_id"], row["perimeter_id"]
+            key = (iid, pid, row["annee_debut"], row["annee_fin"])
+            if iid not in self.indicateurs:
+                errors.append(f"attente sur indicateur inconnu : {iid}")
+            if pid not in self.perimetres:
+                errors.append(f"attente sur périmètre inconnu : {pid}")
+            if row["statut_attente"] not in allowed_expectations:
+                errors.append(f"statut d'attente inconnu : {row['statut_attente']}")
+            if key in seen:
+                errors.append(f"attente dupliquée : {iid} × {pid} ({row['annee_debut']}-{row['annee_fin']})")
+            seen.add(key)
+            publication_with_expectation.add(iid)
+            if row["annee_debut"] and row["annee_fin"] and int(row["annee_debut"]) > int(row["annee_fin"]):
+                errors.append(f"période inversée : {iid} × {pid}")
+        missing = sorted(set(self.publication_ids()) - publication_with_expectation)
+        if missing:
+            errors.append("indicateurs de publication sans attente : " + ", ".join(missing))
+        for (source, code), mapping in self.correspondances.items():
+            if mapping["record_role_force"] != "IGNORE" and mapping["indicator_id"] not in self.indicateurs:
+                errors.append(f"correspondance {source}:{code} vers indicateur inconnu : {mapping['indicator_id']}")
+        if errors:
+            raise ValueError("Référentiel invalide :\n- " + "\n- ".join(errors))
 
     # --- Résolution -------------------------------------------------------
     def perimetre(self, perimeter_id: str, territoire: str = "") -> str | None:

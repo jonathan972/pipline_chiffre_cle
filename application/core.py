@@ -110,13 +110,11 @@ def year_out(year: int) -> Path:
 
 def source_status(year: int) -> list[SourceCheck]:
     checks: list[SourceCheck] = []
-    master = next((p for p in [
-        ROOT / "modules/master/outputs_v3" / f"fact_indicateur_master_{year}.csv",
-        ROOT / "modules/master/outputs_v2" / f"fact_indicateur_master_{year}.csv",
-        ROOT / "modules/master/outputs" / f"fact_indicateur_master_{year}.csv",
-    ] if p.exists()), None)
+    master_path = ROOT / "outputs" / str(year) / f"fact_indicateur_master_{year}.csv"
+    master = master_path if master_path.exists() else None
     checks.append(SourceCheck("master", "Référentiel maître", "OK" if master else "MANQUANT",
-                              str(master) if master else "Le master du millésime n'existe pas."))
+                              str(master) if master else
+                              f"Exécuter update_observatoire.py --year {year} pour construire le master canonique."))
 
     ars_dir = ROOT / "modules/ars_quality/outputs" / str(year)
     ars = ars_dir / f"fact_ars_quality_{year}.csv"

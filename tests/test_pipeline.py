@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT))
 
 from pipeline.certification import STATUTS_CELLULE, STATUTS_INDICATEUR, certify  # noqa: E402
 from pipeline.master import Master  # noqa: E402
+from pipeline.publication import production_index, production_rows  # noqa: E402
 from pipeline.referentiel import Referentiel  # noqa: E402
 from pipeline.run import run  # noqa: E402
 
@@ -38,6 +39,15 @@ class TestNomenclature(unittest.TestCase):
         for a in REF.attentes:
             self.assertIn(a["indicator_id"], REF.indicateurs)
             self.assertIn(a["perimeter_id"], REF.perimetres)
+
+    def test_tous_les_indicateurs_de_publication_ont_une_attente(self):
+        expected_ids = {a["indicator_id"] for a in REF.attentes}
+        self.assertEqual(set(), set(REF.publication_ids()) - expected_ids)
+
+    def test_attentes_sans_doublon_exact(self):
+        keys = [(a["indicator_id"], a["perimeter_id"], a["annee_debut"], a["annee_fin"])
+                for a in REF.attentes]
+        self.assertEqual(len(keys), len(set(keys)))
 
     def test_master_uniquement_en_ids_canoniques(self):
         for year in (2022, 2023, 2024):
@@ -98,6 +108,24 @@ class TestCertification(unittest.TestCase):
                 rows = [f for f in m.facts if f["indicator_id"] == c["indicator_id"]
                         and f["perimeter_id"] == c["perimeter_id"] and f["record_role"] == "PRODUCTION"]
                 self.assertTrue(rows)
+
+    def test_frontiere_publication_exclut_tous_les_roles_non_production(self):
+        rows = [
+            {"indicator_id": "EP_003", "perimeter_id": "MARTINIQUE", "record_role": "DIAGNOSTIC", "value": "99"},
+            {"indicator_id": "EP_004", "perimeter_id": "MARTINIQUE", "record_role": "VALIDATION", "value": "98"},
+            {"indicator_id": "EP_005", "perimeter_id": "MARTINIQUE", "record_role": "AUDIT", "value": "1"},
+            {"indicator_id": "EP_006", "perimeter_id": "MARTINIQUE", "record_role": "PRODUCTION", "value": "2"},
+        ]
+        self.assertEqual([rows[-1]], production_rows(rows))
+        self.assertEqual({("EP_006", "MARTINIQUE")}, set(production_index(rows)))
+
+    def test_frontiere_publication_refuse_deux_valeurs_production(self):
+        rows = [
+            {"indicator_id": "EP_006", "perimeter_id": "MARTINIQUE", "record_role": "PRODUCTION", "value": "1"},
+            {"indicator_id": "EP_006", "perimeter_id": "MARTINIQUE", "record_role": "PRODUCTION", "value": "2"},
+        ]
+        with self.assertRaisesRegex(ValueError, "Plusieurs lignes PRODUCTION"):
+            production_rows(rows)
 
 
 class TestRegeneration2022(unittest.TestCase):

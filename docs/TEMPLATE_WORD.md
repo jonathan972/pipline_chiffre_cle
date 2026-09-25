@@ -57,9 +57,13 @@ périmètre si nécessaire
 record_role
 ```
 
-Priorité des rôles : `PRODUCTION > VALIDATION > DIAGNOSTIC > AUDIT`.
+Le rapport public lit exclusivement les lignes `PRODUCTION`, via
+`pipeline.publication`. Il n'existe aucun mécanisme de repli vers
+`VALIDATION`, `DIAGNOSTIC` ou `AUDIT`.
 
-Une valeur `AUDIT` ne doit jamais remplacer une valeur de production dans le rapport. Une valeur `DIAGNOSTIC` ne doit être injectée que si le template/règle de publication l'autorise explicitement.
+Lorsqu'aucune ligne `PRODUCTION` n'existe, le placeholder reçoit l'état
+« donnée non disponible / à valider ». Les autres rôles restent visibles dans
+les écrans et fichiers de contrôle, jamais dans le document public.
 
 ## Formats
 

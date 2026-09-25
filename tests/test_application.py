@@ -12,6 +12,17 @@ class ApplicationTests(unittest.TestCase):
         keys={s.key for s in core.source_status(2023)}
         self.assertTrue({'master','ars','portal','local_reports','population','bnpe','maps'} <= keys)
 
+    def test_master_status_ne_retombe_pas_sur_les_anciens_masters(self):
+        status=next(s for s in core.source_status(2023) if s.key=='master')
+        canonical=ROOT/'outputs'/'2023'/'fact_indicateur_master_2023.csv'
+        if canonical.exists():
+            self.assertEqual('OK',status.status)
+            self.assertEqual(str(canonical),status.detail)
+        else:
+            self.assertEqual('MANQUANT',status.status)
+            self.assertIn('update_observatoire.py',status.detail)
+        self.assertNotIn('outputs_v',status.detail)
+
     def test_portal_outputs_exist(self):
         for y in (2023,2024):
             p=ROOT/'modules/assainissement_portal/outputs'/str(y)/f'fact_assainissement_portal_{y}.csv'

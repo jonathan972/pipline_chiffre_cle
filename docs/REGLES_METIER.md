@@ -8,8 +8,9 @@
 - prélèvements et volumes par ouvrage : BNPE ;
 - inventaire des captages et PPC : futur référentiel patrimonial ODE/ARS ;
 - qualité de l'eau distribuée : **contrôle sanitaire ARS / SISE-Eaux via le module Hub'Eau du projet** ;
-- ANC : **CSV métier ODE du millésime en source prioritaire**, RPQS/RAD pour contrôle et compléments, SISPEA uniquement en contrôle ou secours ;
-- STEU et conformité ERU : portail national, avec prudence sous 2 000 EH ;
+- stations privées rattachées au chapitre ANC : **exports annuels du portail assainissement DEAL/national**, complétés par les RPQS/RAD et inventaires locaux ;
+- autres indicateurs ANC (population, dispositifs, contrôles SPANC, P301.3) : RPQS/RAD SPANC puis SISPEA après contrôle de couverture ;
+- STEU publiques et conformité ERU : portail national, avec contrôle des définitions par millésime ;
 - population : population municipale INSEE avec millésime explicite.
 
 ## Qualité AEP — règle de publication
@@ -25,21 +26,22 @@ Les identifiants canoniques produits sont :
 - `QUAL_MICROBIO_CONFORMITE` ;
 - `QUAL_PC_CONFORMITE`.
 
-La valeur du rapport est sélectionnée au bon territoire (`Martinique`, `CACEM`, `CAESM`, `CAP_NORD`). Les valeurs issues des RAD/RPQS ou de SISPEA sont des contrôles secondaires et ne doivent pas remplacer silencieusement la sortie ARS/Hub'Eau lorsqu'elle existe.
+La valeur du rapport est sélectionnée au bon territoire (`Martinique`, `CACEM`, `CAESM`, `CAP_NORD`). Le rattachement commune → EPCI est lu dans `modules/perimeters/epci_communes.csv` et ne doit jamais être codé en dur. Les valeurs issues des RAD/RPQS ou de SISPEA sont des contrôles secondaires et ne doivent pas remplacer silencieusement la sortie ARS/Hub'Eau lorsqu'elle existe.
 
 ## ANC — règle de publication
 
-Les indicateurs ANC du rapport doivent être construits à partir des **CSV métier ODE indiqués pour le millésime concerné**. La couche de normalisation ANC devra conserver le fichier source, le territoire, le périmètre, le numérateur/dénominateur éventuel et la règle de calcul.
+Les exports `export-portail_assainissement_YYYY.csv` contiennent à la fois des STEU de nature `Urbain` et `Privé`. Ils ne couvrent donc **pas tout l'ANC**, mais constituent la source de référence pour le sous-bloc « stations en gestion privée » du rapport :
 
-Hiérarchie ANC :
+- `ANC_005` : nombre de stations privées ;
+- `ANC_006` : capacité cumulée des stations privées ;
+- `ANC_007` : capacité privée rapportée à la capacité des STEU publiques > 200 EH ;
+- `ANC_008` : part des stations privées de moins de 500 EH.
 
-1. CSV métier ANC ODE ;
-2. RPQS/RAD SPANC pour validation, commentaires et compléments ;
-3. SISPEA uniquement comme contrôle ou solution de secours lorsque la couverture est démontrée.
+Le module `modules/assainissement_portal/assainissement_portal_etl.py` normalise ces exports.
 
-Aucun champ des CSV ANC ne doit être deviné : le mapping est figé après analyse de leur schéma réel.
+`ANC_009` (« propriétaires ayant transmis leurs données de conformité ») n'est pas considéré comme directement disponible : l'export ne contient pas un champ portant explicitement cette définition. Le module produit seulement `ANC_009_CANDIDATE` en `DIAGNOSTIC` jusqu'à validation métier.
 
-`P301.3` n'est pas calculé lorsque `D302.0 < 100`. La ligne doit alors porter une valeur nulle, `NOT_CALCULABLE` et `NOT_APPLICABLE`.
+Pour `ANC_001` à `ANC_004` et `ANC_010` à `ANC_013`, utiliser les RPQS/RAD SPANC comme source principale, puis SISPEA comme contrôle ou secours lorsque la couverture est démontrée. `P301.3` n'est pas calculé lorsque `D302.0 < 100`. La ligne doit alors porter une valeur nulle, `NOT_CALCULABLE` et `NOT_APPLICABLE`.
 
 ## Périmètres et agrégations
 

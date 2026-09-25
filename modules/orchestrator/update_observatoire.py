@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""Ancien orchestrateur conservé pour reproduire les prototypes historiques.
+
+La chaîne de production courante est `pipeline/` via le point d'entrée racine
+`update_observatoire.py`. Ce script n'utilise plus la v2 supprimée.
+"""
 from __future__ import annotations
 import argparse,csv,json,hashlib,uuid,subprocess,sys
 from datetime import datetime,timezone
@@ -38,7 +43,6 @@ def main():
     root=Path(a.root).resolve();out=Path(a.out).resolve();out.mkdir(parents=True,exist_ok=True)
     start=datetime.now(timezone.utc);events=[];rows=[]
     candidates=[root/"modules/master/outputs_v3"/f"fact_indicateur_master_{a.year}.csv",
-                root/"modules/master/outputs_v2"/f"fact_indicateur_master_{a.year}.csv",
                 root/"modules/master/outputs"/f"fact_indicateur_master_{a.year}.csv"]
     base=next((p for p in candidates if p.exists()),None)
     if base:

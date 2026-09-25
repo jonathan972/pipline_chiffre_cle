@@ -1,28 +1,32 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "date": "2026-09-25",
   "objective": "Produire avec l'application les rapports Chiffres clés 2023 et 2024, puis automatiser les cartes après audit des MXD.",
   "application": {
-    "status": "V1_READY_FOR_WINDOWS_BUILD",
+    "status": "V1_1_REPORTING_READY",
     "gui": "Tkinter",
-    "reporting": "DOCX + PDF si LibreOffice est installé",
+    "reporting": "modules/reporting : DOCX avec ou sans template + PDF si LibreOffice est installé",
     "final_mode": "bloqué si un élément obligatoire est manquant ou diagnostique",
     "sig": "cartes manuelles, automatisation différée"
   },
   "tests": {
-    "local": "6 tests unittest passés le 2026-09-25",
-    "years": [2023, 2024]
+    "local": "40/40 tests passés le 2026-09-25",
+    "years": [
+      2023,
+      2024
+    ]
   },
   "known_gaps": [
     "pas de RAD/bilan CACEM 2024",
     "pas de RPQS ANC CAESM 2024",
     "BNPE 2024 à collecter/valider",
     "tarifs et certains patrimoines à compléter",
-    "cartes SIG à fournir manuellement avant automatisation"
+    "cartes SIG à fournir manuellement avant automatisation",
+    "template Word ODE à déposer dans resources/templates/"
   ],
   "ars": {
     "source": "Hub'Eau / SISE-Eaux / ARS",
     "warning": "les anciens agrégats EPCI générés avant la correction du mapping commune→EPCI sont obsolètes ; réagréger depuis fact_ars_samples_YYYY.csv avec le script courant"
   },
-  "resources": "resources/MANIFEST.json contient les noms, tailles et SHA-256 des ressources reçues/utilisées. Les PDF volumineux sont à gérer via Git LFS ou le paquet complet hors dépôt si l'objet LFS n'est pas présent."
+  "resources": "Les données des 12 PDF RAD/RPQS sont extraites et versionnées dans modules/local_reports/outputs/ ; source_manifest.csv garde l'empreinte SHA-256 de chaque PDF. Les PDF ne sont nécessaires que pour réextraire."
 }

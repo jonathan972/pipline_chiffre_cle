@@ -109,10 +109,6 @@ Chaque texte dynamique doit être testable et documenter les seuils utilisés.
 
 Le moteur V1 a déjà été testé sur le master 2022 et remplace les valeurs disponibles sans casser la pagination cible de 36 pages. La prochaine étape est de compléter graphiques/assets et d'établir une comparaison systématique page par page avec le rapport publié.
 
-## Fichiers attendus dans `modules/reporting/`
+## Implémentation
 
-- `README.md` ;
-- `fill_report_template.py` ;
-- `template_placeholders_v1.csv` ;
-- `template_manifest_v1.json` ;
-- template DOCX binaire, à versionner séparément lorsque le flux Git permet l'ajout binaire.
+Le moteur est `modules/reporting/report_builder.py`, configuré par `modules/reporting/reporting_config.json` (formats par unité, graphiques, cartes, textes dynamiques, chemin du template). Le template DOCX est attendu dans `resources/templates/template_chiffres_cles.docx` ; en son absence, le moteur génère un document complet. Détail des tokens et des statuts du préflight : `modules/reporting/README.md`.

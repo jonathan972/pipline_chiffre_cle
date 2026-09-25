@@ -12,3 +12,6 @@ modules/ars_quality/outputs/**/raw_hubeau_ars_*.json
 
 # Sorties temporaires locales ; les sorties de référence déjà suivies restent versionnées.
 modules/orchestrator/outputs/annual_*/
+
+# Sorties du pipeline (régénérables)
+outputs/

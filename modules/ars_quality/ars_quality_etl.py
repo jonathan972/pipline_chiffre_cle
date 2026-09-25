@@ -98,7 +98,17 @@ def write_scsv(path,rows):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--year",type=int,required=True);ap.add_argument("--out",required=True);ap.add_argument("--fixture")
+    ap.add_argument("--from-samples",help="Réagrège un fichier fact_ars_samples_YYYY.csv existant (hors ligne).")
     a=ap.parse_args();out=Path(a.out)
+    if a.from_samples:
+        with open(a.from_samples,encoding="utf-8-sig",newline="") as f:
+            samples=list(csv.DictReader(f,delimiter=";"))
+        facts=aggregate(samples,a.year);out.mkdir(parents=True,exist_ok=True)
+        write_scsv(out/f"fact_ars_quality_{a.year}.csv",facts)
+        summary={"year":a.year,"source":f"réagrégation de {Path(a.from_samples).name}","unique_samples":len(samples),"facts":len(facts),
+                 "epci_mapping":"modules/perimeters/epci_communes.csv"}
+        (out/f"summary_ars_{a.year}.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding="utf-8")
+        print(json.dumps(summary,ensure_ascii=False));return
     if a.fixture:
         payload=json.loads(Path(a.fixture).read_text(encoding="utf-8"))
         rows=payload["data"] if isinstance(payload,dict) and "data" in payload else payload; source="fixture"

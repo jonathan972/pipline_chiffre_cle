@@ -1,5 +1,18 @@
 # Chiffres clés Eau & Assainissement — ODE Martinique
 
+## Socle de données (branche `refonte-socle-donnees`)
+
+Le master et la certification sont désormais construits par `pipeline/` à partir du référentiel canonique `referentiel/` :
+
+```powershell
+py update_observatoire.py --year 2024
+py -m unittest tests.test_pipeline -v
+```
+
+Un seul master, des identifiants canoniques (ceux du dictionnaire des 80 indicateurs), une certification qui compare ce qui existe à ce qui est attendu. Voir [docs/SOCLE_DONNEES.md](docs/SOCLE_DONNEES.md).
+
+`modules/master/master_pipeline*.py` et `modules/orchestrator/update_observatoire.py` sont conservés pour l'historique mais ne sont plus utilisés. L'application desktop ci-dessous lit encore l'ancien master : elle est gelée jusqu'à son branchement sur ce socle.
+
 ## Version 1.0.0 — application de production 2023/2024
 
 Cette V1 assemble le référentiel d'indicateurs, les règles métier, les sources automatiques et manuelles et le moteur Word afin de produire les rapports annuels **Les chiffres clés de l'eau potable et de l'assainissement en Martinique**.

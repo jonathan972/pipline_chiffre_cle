@@ -1,0 +1,6 @@
+{
+  "sispea_services_anc_attendus": 3,
+  "role_population_non_millesimee": "DIAGNOSTIC",
+  "tolerance_somme_epci_pct": 0.5,
+  "note": "Paramètres métier du pipeline. role_population_non_millesimee : rôle donné à une population INSEE qui n'est pas celle du millésime N (DIAGNOSTIC = les ratios par habitant ne sont pas publiables tant que ce choix n'est pas validé)."
+}

@@ -1,0 +1,89 @@
+source;code_source;indicator_id;record_role_force;quality_status_force;note
+LOCAL;EP_ABONNES;EP_005;;;RAD/RPQS : nombre d'abonnés eau potable.
+LOCAL;EP_VOLUME_FACTURE;EP_006;;;RAD/RPQS : volume facturé.
+LOCAL;EP_VOLUME_PRODUIT;EP_007;;;RAD/RPQS : volume produit.
+LOCAL;EP_RESEAU_KM;EP_017;;;RAD/RPQS : linéaire hors branchements.
+LOCAL;EP_VOLUME_PRELEVE_LOCAL;VAR_EP_VOL_PRELEVE_LOCAL;;;La BNPE reste la source primaire des prélèvements.
+LOCAL;EP_VOLUME_MIS_DISTRIBUTION;VAR_EP_VOL_MIS_DISTRIBUTION;;;
+LOCAL;EP_VOLUME_COMPTABILISE;VAR_EP_VOL_COMPTABILISE;;;
+LOCAL;EP_VOLUME_FACTURE_CLIENTELE;VAR_EP_VOL_FACTURE_CLIENTELE;;;
+LOCAL;EP_VOLUME_FACTURE_HYDRAULIQUE;VAR_EP_VOL_FACTURE_HYDRAULIQUE;;;
+LOCAL;EP_VOLUME_VENDU_RPQS;VAR_EP_VOL_VENDU_RPQS;;;
+LOCAL;P101.1_LOCAL;EP_003;;;Conformité microbiologique déclarée dans le RAD/RPQS.
+LOCAL;P102.1_LOCAL;EP_004;;;Conformité physico-chimique déclarée dans le RAD/RPQS.
+LOCAL;P104.3;EP_019;;;Rendement du réseau.
+LOCAL;P104.3_CONTRACT;EP_019;;;Rendement calculé à l'échelle du contrat (non ventilable).
+LOCAL;P104.3_REVISED;EP_019;;;Valeur révisée par une source ultérieure, la valeur initiale reste en AUDIT.
+LOCAL;P104.3_REPORTED_RT;EP_019;;;Valeur déclarée pour Robert-Trinité, conservée en diagnostic/audit.
+LOCAL;P104.3_REPORTED_RT_CORRECTED;EP_019;;;Correction ultérieure de la valeur Robert-Trinité.
+LOCAL;P106.3;EP_020;;;Indice linéaire de pertes.
+LOCAL;P106.3_CONTRACT;EP_020;;;ILP calculé à l'échelle du contrat (non ventilable).
+LOCAL;AC_ABONNES;AC_014;;;
+LOCAL;AC_BOUES_TMS;AC_012;;;
+LOCAL;AC_RESEAU_KM;AC_001;;;
+LOCAL;AC_POSTES_REFOULEMENT;AC_002;;;
+LOCAL;AC_VOLUME_FACTURE;AC_015;;;Volume assainissement facturé.
+LOCAL;AC_VOLUME_TRAITE;VAR_AC_VOL_TRAITE;;;
+LOCAL;AC_VOLUME_ASSUJETTI;VAR_AC_VOL_ASSUJETTI;;;Ne pas confondre avec le volume traité ni le volume facturé.
+LOCAL;AC_POPULATION_DESSERVIE;VAR_AC_POP_DESSERVIE;;;
+LOCAL;AC_STEU_NB;VAR_AC_NB_STEU_EXPLOITANT;;;Définition exploitant, différente de AC_003 (portail).
+LOCAL;ANC_CONTROLES_TOTAL;ANC_012;;;Contrôles ANC par SPANC/EPCI.
+LOCAL;ANC_CONTROLE_CONCEPTION;VAR_ANC_CTRL_CONCEPTION;;;
+LOCAL;ANC_CONTROLE_EXECUTION;VAR_ANC_CTRL_EXECUTION;;;
+LOCAL;ANC_CONTROLE_EXISTANT;ANC_011;;;
+LOCAL;ANC_DIAGNOSTIC_VENTE;VAR_ANC_DIAG_VENTE;;;
+LOCAL;ANC_INSTALLATIONS_ESTIMEES;ANC_003;;;
+LOCAL;D301.0_LOCAL;ANC_002;;;Population relevant de l'ANC, estimation locale.
+LOCAL;P301.3;ANC_013;;;
+LOCAL;P301.3_PUBLISHED;ANC_013;;;Valeur publiée puis corrigée : conservée en AUDIT.
+LOCAL;SOURCE_COVERAGE;;IGNORE;;Ligne de méta-couverture : l'information est lue dans known_absences.csv.
+ARS;QUAL_MICROBIO_CONFORMITE;EP_003;;;Hub'Eau / SISE-Eaux, à confronter au RPQS avant PRODUCTION.
+ARS;QUAL_PC_CONFORMITE;EP_004;;;Hub'Eau / SISE-Eaux, à confronter au RPQS avant PRODUCTION.
+INSEE;POP_MUNICIPALE;POP_001;;;
+BNPE;RES_001;RES_001;;;
+BNPE;RES_002;RES_002;;;
+BNPE;RES_003;RES_003;;;
+BNPE;RES_004;RES_004;;;
+BNPE;RES_005;RES_005;;;
+BNPE;RES_006;RES_006;;;
+BNPE;RES_007;RES_007;DIAGNOSTIC;INCOMPLETE_INVENTORY;BNPE non exhaustive pour compter les captages.
+BNPE;RES_008;RES_008;DIAGNOSTIC;INCOMPLETE_INVENTORY;BNPE non exhaustive pour compter les captages.
+BNPE;RES_009;RES_009;DIAGNOSTIC;INCOMPLETE_INVENTORY;BNPE non exhaustive pour compter les captages.
+BNPE;RES_014;RES_014;;;
+BNPE;RES_015;RES_015;;;
+BNPE;RES_016;RES_016;;;
+BNPE;RES_017;RES_017;;;
+SISPEA;EP:VP.056;EP_005;;;Valeur consolidée Martinique.
+SISPEA;EP:VP.077;EP_017;;;Valeur consolidée Martinique.
+SISPEA;AC:VP.056;AC_014;;REVISED_SNAPSHOT;Snapshot SISPEA actuel, historique susceptible d'avoir été révisé.
+SISPEA;AC:VP.077;AC_001;;;Valeur consolidée Martinique.
+SISPEA;AC:VP.208;AC_012;;;Valeur consolidée Martinique.
+SISPEA;ANC:D301.0;ANC_002;DIAGNOSTIC;REVISED_SNAPSHOT;Population ANC du snapshot courant, à confronter aux SPANC/ODE.
+SISPEA;ANC:P301.3;ANC_013;;;Rôle fixé par la couverture des services.
+SISPEA;SERVICE:P104.3;EP_019;;;Valeur par service, rattachée au périmètre via services_sispea.csv.
+SISPEA;SERVICE:P106.3;EP_020;;;Valeur par service, rattachée au périmètre via services_sispea.csv.
+SISPEA;SERVICE:P107.2;EP_021;;;Valeur par service, rattachée au périmètre via services_sispea.csv.
+SISPEA;ANC:DC.306;ANC_003;DIAGNOSTIC;REVISED_SNAPSHOT;Somme des services renseignés, contrôle SPANC requis.
+SISPEA;ANC:DC.332;VAR_ANC_CTRL_CONCEPTION;;;Somme des services.
+SISPEA;ANC:DC.333;VAR_ANC_CTRL_EXECUTION;;;Somme des services.
+SISPEA;ANC:VP.334;ANC_011;;;Rôle fixé par la couverture des services.
+STEU;public_stations_positive_capacity;AC_003;;;Portail ERU : Nature=Urbain et capacité>0.
+STEU;public_stations_gt_200;AC_004;;REVISED_SNAPSHOT;Portail ERU : Nature=Urbain et capacité>200 EH.
+STEU;public_stations_gt_200_cacem;AC_004;;REVISED_SNAPSHOT;
+STEU;public_stations_gt_200_caesm;AC_004;;REVISED_SNAPSHOT;
+STEU;public_stations_gt_200_cap_nord;AC_004;;REVISED_SNAPSHOT;
+STEU;public_capacity_gt_200_eh;AC_005;;REVISED_SNAPSHOT;Somme des capacités nominales >200 EH.
+PORTAIL;AC_003;AC_003;;;
+PORTAIL;AC_004;AC_004;;;
+PORTAIL;AC_005;AC_005;;;
+PORTAIL;AC_006;AC_006;;;
+PORTAIL;AC_007;AC_007;;;
+PORTAIL;AC_008;AC_008;;;
+PORTAIL;AC_009;AC_009;;;
+PORTAIL;AC_012_PORTAL;VAR_AC_BOUES_PORTAIL;;;Contrôle de AC_012.
+PORTAIL;ANC_005;ANC_005;;;
+PORTAIL;ANC_006;ANC_006;;;
+PORTAIL;ANC_007;ANC_007;;;
+PORTAIL;ANC_008;ANC_008;;;
+PORTAIL;ANC_009_CANDIDATE;ANC_009;DIAGNOSTIC;DEFINITION_TO_CONFIRM;Définition à confirmer avant publication.
+MANUEL;EP_006;EP_006;;;Entrée manuelle historique (manual_external_facts).

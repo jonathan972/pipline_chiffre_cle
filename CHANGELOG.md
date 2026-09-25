@@ -1,5 +1,15 @@
 # Changelog
 
+## Socle de données — 2026-09-25 (branche refonte-socle-donnees)
+
+- nomenclature canonique unique : `referentiel/indicateurs.csv` (80 indicateurs + variables support) et table `correspondance_codes.csv` ; un code source non mappé est bloquant ;
+- master unique `pipeline/` paramétré par année, remplaçant `master_pipeline.py`, `_v2`, `_v3` et l'orchestrateur qui choisissait le premier fichier présent ;
+- matrice des attentes `referentiel/attentes.csv` (indicateur × périmètre × période), initialisée depuis la validation 2022 ;
+- nouvelle certification contre les attentes : une année vide est `NOT_CERTIFIED`, chaque indicateur reçoit un statut explicite ;
+- réagrégation hors ligne des résultats ARS 2022–2024 avec le rattachement communes → EPCI de `epci_communes.csv` (`--from-samples`) ;
+- `update_observatoire.py` appelle désormais le nouveau pipeline ;
+- tests `tests/test_pipeline.py` (année vide, exhaustivité des 80 indicateurs, nomenclature, conflits, régénération de valeurs 2022, absence de codes communes en dur).
+
 ## 1.0.0 — 2026-09-25
 
 - ajout de l'application desktop guidée pour les millésimes 2023/2024 ;

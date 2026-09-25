@@ -1,0 +1,96 @@
+﻿indicator_id;type;domaine;libelle;unite;granularite;agregation_martinique;acquisition;source_cible;code_officiel
+RES_001;PUBLICATION;RESSOURCE;Part des prélèvements destinée à l'eau potable;%;Martinique / France;NON_ADDITIF;AUTO + calcul;BNPE / Hub'Eau Prélèvements;
+RES_002;PUBLICATION;RESSOURCE;Part des prélèvements destinée à l'irrigation / agriculture;%;Martinique / France;NON_ADDITIF;AUTO + calcul;BNPE / Hub'Eau Prélèvements;
+RES_003;PUBLICATION;RESSOURCE;Part des prélèvements destinée aux usages industriels / autres;%;Martinique / France;NON_ADDITIF;AUTO + calcul;BNPE / Hub'Eau Prélèvements;
+RES_004;PUBLICATION;RESSOURCE;Part de l'eau AEP provenant des cours d'eau;%;Martinique;NON_ADDITIF;AUTO + calcul;BNPE + référentiel ouvrages / SISPEA contexte;DC.192 (information proche, inverse : part souterraine)
+RES_005;PUBLICATION;RESSOURCE;Part de l'eau AEP provenant du sous-sol;%;Martinique;NON_ADDITIF;AUTO + calcul;BNPE + SISPEA;DC.192
+RES_006;PUBLICATION;RESSOURCE;Part du volume AEP provenant de la Lézarde et affluent Rivière Blanche;%;Cours d'eau / Martinique;NON_ADDITIF;AUTO + calcul;BNPE + référentiel hydrographique SANDRE;
+RES_007;PUBLICATION;RESSOURCE;Nombre total de captages pour l'eau potable;nb;Ouvrage / Martinique;NON_ADDITIF;SEMI-AUTO;BNPE/SANDRE ouvrages + ODE/ARS;
+RES_008;PUBLICATION;RESSOURCE;Nombre de prises d'eau en rivière;nb;Ouvrage / Martinique;NON_ADDITIF;SEMI-AUTO;BNPE/SANDRE ouvrages + ODE;
+RES_009;PUBLICATION;RESSOURCE;Nombre de captages souterrains;nb;Ouvrage / Martinique;NON_ADDITIF;SEMI-AUTO;BNPE/SANDRE ouvrages + ODE;
+RES_010;PUBLICATION;RESSOURCE;Nombre de sources;nb;Ouvrage / Martinique;NON_ADDITIF;SEMI-AUTO;BNPE/SANDRE ouvrages + ODE;
+RES_011;PUBLICATION;RESSOURCE;Nombre de forages;nb;Ouvrage / Martinique;NON_ADDITIF;SEMI-AUTO;BNPE/SANDRE ouvrages + ODE;
+RES_012;PUBLICATION;RESSOURCE;Nombre de captages disposant d'un périmètre de protection;nb;Ouvrage / Martinique;NON_ADDITIF;SEMI-AUTO;ARS / ODE / arrêtés préfectoraux;P108.3 est lié mais non équivalent
+RES_013;PUBLICATION;RESSOURCE;Taux de captages protégés;%;Martinique;NON_ADDITIF;SEMI-AUTO + calcul;ARS / ODE;P108.3 est lié mais non équivalent
+RES_014;PUBLICATION;RESSOURCE;Volume total prélevé pour l'AEP;m³/an;Ouvrage / Martinique;NON_ADDITIF;AUTO;"BNPE / Hub'Eau ; contrôle SISPEA";VP.062 au niveau service
+RES_015;PUBLICATION;RESSOURCE;Volume total prélevé tous usages;m³/an;Ouvrage / Martinique;NON_ADDITIF;AUTO;BNPE / Hub'Eau;
+RES_016;PUBLICATION;RESSOURCE;Volume prélevé pour l'irrigation;m³/an;Ouvrage / Martinique;NON_ADDITIF;AUTO;BNPE / Hub'Eau;
+RES_017;PUBLICATION;RESSOURCE;Volume prélevé pour les autres usages;m³/an;Ouvrage / Martinique;NON_ADDITIF;AUTO;BNPE / Hub'Eau;
+RES_018;PUBLICATION;RESSOURCE;Débit annuel moyen équivalent des prélèvements AEP;L/s;Martinique;NON_ADDITIF;AUTO + calcul;Calcul interne à partir de RES_014;
+RES_019;PUBLICATION;RESSOURCE;Volume prélevé par captage;m³/an;Captage;NON_ADDITIF;AUTO;BNPE / Hub'Eau + référentiel ouvrages;VP.223 possible côté SISPEA
+EP_001;PUBLICATION;EAU_POTABLE;Consommation moyenne par jour et par habitant;L/j/hab;Martinique;NON_ADDITIF;AUTO + calcul;"SISPEA + INSEE ; méthode ODE à verrouiller";
+EP_002;PUBLICATION;EAU_POTABLE;Répartition des usages domestiques (boisson, divers, jardin/auto, lessive, cuisine/vaisselle, sanitaires, bain/douche);%;France / référence;NON_ADDITIF;MANUEL / RÉFÉRENCE;Référence figée ou étude actualisée à choisir;
+EP_003;PUBLICATION;EAU_POTABLE;Conformité microbiologique de l'eau distribuée;%;Service / EPCI / Martinique;NON_ADDITIF;AUTO;"SISPEA ; ARS/DGS en contrôle";"P101.1 ; VP.126/VP.127"
+EP_004;PUBLICATION;EAU_POTABLE;Conformité physico-chimique de l'eau distribuée;%;Service / EPCI / Martinique;NON_ADDITIF;AUTO;"SISPEA ; ARS/DGS en contrôle";"P102.1 ; VP.128/VP.129"
+EP_005;PUBLICATION;EAU_POTABLE;Nombre d'abonnés au service d'eau potable;abonnés;Service / EPCI / Martinique;SOMME_EPCI;AUTO;SISPEA Open Data;VP.056
+EP_006;PUBLICATION;EAU_POTABLE;Volume d'eau potable facturé;m³/an;Service / EPCI / Martinique;SOMME_EPCI;AUTO;SISPEA Open Data;VP.068
+EP_007;PUBLICATION;EAU_POTABLE;Volume produit;m³/an;Service / Martinique;SOMME_EPCI;AUTO;SISPEA;VP.059
+EP_008;PUBLICATION;EAU_POTABLE;Part de l'eau prélevée AEP qui est facturée;%;Martinique;NON_ADDITIF;AUTO + calcul;RES_014 + EP_006;
+EP_009;PUBLICATION;EAU_POTABLE;Pertes entre prélèvement et production;%;Martinique;NON_ADDITIF;AUTO + calcul;RES_014 + EP_007;
+EP_010;PUBLICATION;EAU_POTABLE;Pertes réseau et volumes non comptabilisés / non facturés;%;Martinique;NON_ADDITIF;AUTO + calcul;SISPEA volumes;P104.3 / P105.3 / P106.3 à conserver séparément
+EP_011;PUBLICATION;EAU_POTABLE;Nombre d'unités de production d'eau potable;nb;Usine / Martinique;NON_ADDITIF;SEMI-AUTO;ODE / RPQS / RAD / référentiel local;
+EP_012;PUBLICATION;EAU_POTABLE;Part de production des 5 principales usines;%;Usine / Martinique;NON_ADDITIF;SEMI-AUTO + calcul;SISPEA/RAD + référentiel usines;VP.194 potentiellement utile
+EP_013;PUBLICATION;EAU_POTABLE;Production / part par grande usine (Rivière Blanche, Durand, Directoire, Didier, Vivé);% et m³;Usine;NON_ADDITIF;SEMI-AUTO;RAD / exploitants / SISPEA ouvrage si disponible;VP.194
+EP_014;PUBLICATION;EAU_POTABLE;Nombre de réservoirs;nb;Réservoir / EPCI / Martinique;SOMME_EPCI;SEMI-AUTO;RPQS/RAD + référentiel patrimoine ODE;
+EP_015;PUBLICATION;EAU_POTABLE;Capacité totale de stockage;m³;Réservoir / Martinique;SOMME_EPCI;SEMI-AUTO;RPQS/RAD + référentiel patrimoine ODE;
+EP_016;PUBLICATION;EAU_POTABLE;Autonomie de stockage selon les zones;heures à jours;Zone;NON_ADDITIF;MANUEL / CALCUL;Modèle ODE + stockage + demande;
+EP_017;PUBLICATION;EAU_POTABLE;Linéaire de réseau d'eau potable;km;Service / EPCI / Martinique;SOMME_EPCI;AUTO;SISPEA;VP.077
+EP_018;PUBLICATION;EAU_POTABLE;Composition du réseau par matériau;%;Martinique / tronçon;NON_ADDITIF;SEMI-AUTO;SIG patrimonial / RPQS-RAD;
+EP_019;PUBLICATION;EAU_POTABLE;Rendement hydraulique;%;Service / EPCI / Martinique;NON_ADDITIF;AUTO;SISPEA;P104.3
+EP_020;PUBLICATION;EAU_POTABLE;Indice linéaire de pertes;m³/km/j;Service / EPCI / Martinique;NON_ADDITIF;AUTO;SISPEA;P106.3
+EP_021;PUBLICATION;EAU_POTABLE;Taux moyen de renouvellement des réseaux;%;Service / EPCI / Martinique;NON_ADDITIF;AUTO;SISPEA;P107.2
+AC_001;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Linéaire de réseau d'assainissement collectif;km;Service / EPCI / Martinique;SOMME_EPCI;AUTO;SISPEA;"VP.077 ; VP.199 ; VP.200"
+AC_002;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Nombre de postes de refoulement;nb;Ouvrage / EPCI / Martinique;SOMME_EPCI;SEMI-AUTO;RPQS/RAD + inventaire patrimonial;
+AC_003;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Nombre de STEU publiques;nb;STEU / Martinique;NON_ADDITIF;AUTO/SEMI-AUTO;Portail national assainissement + ODE;
+AC_004;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Nombre de STEU publiques de plus de 200 EH;nb;STEU / EPCI / Martinique;NON_ADDITIF;AUTO/SEMI-AUTO;Portail national assainissement + ODE;
+AC_005;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Capacité nominale cumulée des STEU publiques > 200 EH;EH;STEU / EPCI / Martinique;NON_ADDITIF;AUTO;Portail national assainissement;
+AC_006;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part de capacité des 4 plus grosses STEU;% / EH;STEU / Martinique;NON_ADDITIF;AUTO + calcul;Portail national assainissement;
+AC_007;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part de capacité des 42 plus petites STEU;% / EH;STEU / Martinique;NON_ADDITIF;AUTO + calcul;Portail national assainissement;
+AC_008;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part de capacité EH conforme / non conforme;%;STEU / EPCI / Martinique;NON_ADDITIF;AUTO + calcul;Portail national assainissement;P203.3/P204.3/P205.3 historiques, mais ne reproduisent pas directement ce graphique
+AC_009;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part de stations conformes / non conformes (conformité globale ERU);%;STEU / EPCI / Martinique;NON_ADDITIF;AUTO + calcul;Portail national assainissement;P203.3 + P204.3 + P205.3 historiquement liés
+AC_010;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Évolution du taux de stations conformes;%;Martinique;NON_ADDITIF;AUTO + calcul;Portail national assainissement;
+AC_011;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part des effluents traités par une station conforme;%;STEU / Martinique;NON_ADDITIF;SEMI-AUTO + calcul;Portail national assainissement + volumes traités locaux;
+AC_012;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Quantité totale de boues évacuées / produites en matière sèche;TMS/an;STEU / EPCI / Martinique;SOMME_EPCI;AUTO;SISPEA + portail assainissement;"D203.0 ; VP.208"
+AC_013;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Production de boues par abonné;kg MS/abonné/an;EPCI;NON_ADDITIF;AUTO + calcul;SISPEA D203.0/VP.208 + VP.056;
+AC_014;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Nombre d'abonnés au service d'assainissement collectif;abonnés;Service / EPCI / Martinique;SOMME_EPCI;AUTO;SISPEA;VP.056
+AC_015;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Volume d'eaux usées facturé / traité présenté dans le rapport;m³/an;Service / Martinique;SOMME_EPCI;AUTO/SEMI-AUTO;"SISPEA pour volume facturé ; portail/RAD pour traité";VP.068 pour facturé
+AC_016;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part des abonnés AEP également abonnés à l'assainissement collectif;%;EPCI / Martinique;NON_ADDITIF;AUTO + calcul;SISPEA EP + AC;VP.056 EP et AC
+AC_017;PUBLICATION;ASSAINISSEMENT_COLLECTIF;Part AC par commune;%;Commune;NON_ADDITIF;SEMI-AUTO + calcul;SISPEA + INSEE / données abonnés par commune;
+ANC_001;PUBLICATION;ANC;Part des Martiniquais relevant de l'ANC;%;Martinique;NON_ADDITIF;AUTO/SEMI-AUTO + calcul;SISPEA ANC + INSEE / zonages;"VP.230 ; D301.0"
+ANC_002;PUBLICATION;ANC;Nombre de personnes relevant de l'ANC;habitants;SPANC / Martinique;SOMME_EPCI;AUTO;SISPEA ANC;D301.0
+ANC_003;PUBLICATION;ANC;Nombre estimé de dispositifs individuels ANC;installations;SPANC / Martinique;SOMME_EPCI;AUTO/SEMI-AUTO;SISPEA ANC + données SPANC;DC.306
+ANC_004;PUBLICATION;ANC;Répartition AC / ANC par commune;%;Commune;NON_ADDITIF;SEMI-AUTO + calcul;SISPEA + INSEE + zonages;
+ANC_005;PUBLICATION;ANC;Nombre de stations d'épuration en gestion privée;nb;Station privée / Martinique;NON_ADDITIF;MANUEL/SEMI-AUTO;ODE / DEAL / inventaire local;
+ANC_006;PUBLICATION;ANC;Capacité cumulée des stations privées;EH;Station privée / Martinique;NON_ADDITIF;MANUEL/SEMI-AUTO;ODE / DEAL / inventaire local;
+ANC_007;PUBLICATION;ANC;Part de capacité privée par rapport aux stations publiques;%;Martinique;NON_ADDITIF;AUTO après collecte locale;ANC_006 + capacité publique;
+ANC_008;PUBLICATION;ANC;Part des stations privées de moins de 500 EH;%;Station privée / Martinique;NON_ADDITIF;SEMI-AUTO;Inventaire local;
+ANC_009;PUBLICATION;ANC;Taux de stations privées ayant transmis des données de conformité;%;Station privée / Martinique;NON_ADDITIF;MANUEL/SEMI-AUTO;ODE / DEAL / collecte annuelle;
+ANC_010;PUBLICATION;ANC;Nombre de contrôles sur le neuf;contrôles/an;SPANC / Martinique;SOMME_EPCI;AUTO/SEMI-AUTO;SISPEA ANC;DC.332 + DC.333 à étudier
+ANC_011;PUBLICATION;ANC;Nombre de contrôles sur l'existant;contrôles/an;SPANC / Martinique;SOMME_EPCI;AUTO;SISPEA ANC;VP.334
+ANC_012;PUBLICATION;ANC;Nombre de contrôles par SPANC/EPCI;contrôles/an;SPANC / EPCI;NON_ADDITIF;AUTO/SEMI-AUTO;SISPEA ANC;DC.332/DC.333/VP.334
+ANC_013;PUBLICATION;ANC;Taux de conformité des dispositifs ANC;%;SPANC / EPCI / Martinique;NON_ADDITIF;Annuelle;"P301.3 ; VP.166 ; VP.267 ; VP.167";(VP.166 + VP.267) / VP.167 ×100 selon règle en vigueur
+ANC_014;PUBLICATION;ANC;Coût moyen / fourchette d'une vidange ANC;€;Territoire;NON_ADDITIF;MANUEL / RÉFÉRENCE;Étude ODE à actualiser ponctuellement;
+ANC_015;PUBLICATION;ANC;Nombre d'entreprises de vidange agréées;nb;Entreprise / Martinique;NON_ADDITIF;SEMI-AUTO;DEAL Martinique;
+TAR_001;PUBLICATION;TARIFS;Prix moyen TTC du m³ d'eau potable pour une facture 120 m³;€/m³;Service / EPCI / Martinique;NON_ADDITIF;AUTO;SISPEA tarifs;D102.0
+TAR_002;PUBLICATION;TARIFS;Montant annuel d'une facture type 120 m³ d'eau potable;€/an;Service / Martinique;NON_ADDITIF;AUTO + calcul;SISPEA tarifs;VP.177/178/179 + TVA
+TAR_003;PUBLICATION;TARIFS;Montant mensuel équivalent d'une facture type 120 m³;€/mois;Martinique;NON_ADDITIF;AUTO + calcul;Calcul interne;
+TAR_004;PUBLICATION;TARIFS;Décomposition de la facture EP : abonnement / consommation / redevance ODE / TVA-ODM;%;Martinique;NON_ADDITIF;AUTO + calcul;SISPEA tarifs + règles locales redevances;VP.177, VP.178, VP.190, VP.191, VP.179, VP.213, VP.214-216, VP.219
+TAR_005;PUBLICATION;TARIFS;Prix moyen TTC du m³ EP + AC pour 120 m³;€/m³;Martinique;NON_ADDITIF;AUTO + calcul;SISPEA EP + AC tarifs;D102.0 + D204.0
+TAR_006;PUBLICATION;TARIFS;Montant annuel facture type EP + AC 120 m³;€/an;Martinique;NON_ADDITIF;AUTO + calcul;SISPEA tarifs EP + AC;
+TAR_007;PUBLICATION;TARIFS;Montant mensuel équivalent EP + AC;€/mois;Martinique;NON_ADDITIF;AUTO + calcul;Calcul interne;
+TAR_008;PUBLICATION;TARIFS;Décomposition facture EP+AC : EP / AC / redevance ODE / TVA-ODM;%;Martinique;NON_ADDITIF;AUTO + calcul;SISPEA tarifs + règles locales redevances;Variables tarifaires EP et AC
+POP_001;SUPPORT;DEMOGRAPHIE;Population municipale INSEE;hab;;SOMME_EPCI;;;
+VAR_EP_VOL_PRELEVE_LOCAL;SUPPORT;EAU_POTABLE;Volume prélevé déclaré dans le RAD (contrôle de la BNPE);m³/an;;SOMME_EPCI;;;
+VAR_EP_VOL_MIS_DISTRIBUTION;SUPPORT;EAU_POTABLE;Volume mis en distribution;m³/an;;NON_ADDITIF;;;
+VAR_EP_VOL_COMPTABILISE;SUPPORT;EAU_POTABLE;Volume comptabilisé (hydraulique);m³/an;;NON_ADDITIF;;;
+VAR_EP_VOL_FACTURE_CLIENTELE;SUPPORT;EAU_POTABLE;Volume facturé selon le tableau clientèle du RAD;m³/an;;NON_ADDITIF;;;
+VAR_EP_VOL_FACTURE_HYDRAULIQUE;SUPPORT;EAU_POTABLE;Volume facturé selon le bilan hydraulique du RAD;m³/an;;NON_ADDITIF;;;
+VAR_EP_VOL_VENDU_RPQS;SUPPORT;EAU_POTABLE;Volume vendu déclaré dans le RPQS / SISPEA;m³/an;;NON_ADDITIF;;;
+VAR_AC_POP_DESSERVIE;SUPPORT;ASSAINISSEMENT_COLLECTIF;Population desservie par l'assainissement collectif;hab;;SOMME_EPCI;;;
+VAR_AC_VOL_ASSUJETTI;SUPPORT;ASSAINISSEMENT_COLLECTIF;Volume assujetti à la redevance assainissement;m³/an;;NON_ADDITIF;;;
+VAR_AC_VOL_TRAITE;SUPPORT;ASSAINISSEMENT_COLLECTIF;Volume traité en station;m³/an;;NON_ADDITIF;;;
+VAR_AC_NB_STEU_EXPLOITANT;SUPPORT;ASSAINISSEMENT_COLLECTIF;Nombre de stations déclaré par l'exploitant (RAD);nb;;NON_ADDITIF;;;
+VAR_AC_BOUES_PORTAIL;SUPPORT;ASSAINISSEMENT_COLLECTIF;Boues déclarées au portail assainissement (contrôle de AC_012);tMS/an;;SOMME_EPCI;;;
+VAR_ANC_CTRL_CONCEPTION;SUPPORT;ANC;Contrôles de conception ANC;contrôles/an;;SOMME_EPCI;;;
+VAR_ANC_CTRL_EXECUTION;SUPPORT;ANC;Contrôles de bonne exécution ANC;contrôles/an;;SOMME_EPCI;;;
+VAR_ANC_DIAG_VENTE;SUPPORT;ANC;Diagnostics ANC réalisés lors de ventes;contrôles/an;;SOMME_EPCI;;;

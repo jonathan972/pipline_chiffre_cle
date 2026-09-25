@@ -1,7 +1,7 @@
 {
   "year": 2023,
-  "source": "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis",
-  "raw_rows": 46063,
+  "source": "réagrégation de fact_ars_samples_2023.csv",
   "unique_samples": 911,
-  "facts": 8
+  "facts": 8,
+  "epci_mapping": "modules/perimeters/epci_communes.csv"
 }

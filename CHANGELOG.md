@@ -9,7 +9,8 @@
 - application : résumé lisible après génération ; extraction RAD/RPQS exécutée dans le processus (l'EXE ne se relance plus lui-même) ;
 - build Windows : dépendances des scripts chargés dynamiquement déclarées pour PyInstaller ;
 - `.gitignore` : `outputs/` ne masque plus les sorties des modules (`modules/*/outputs/`) ; `publication/` ignoré ;
-- tests `tests/test_reporting.py` et import des valeurs complémentaires.
+- tests `tests/test_reporting.py` et import des valeurs complémentaires ;
+- les tests n'exigent plus les PDF RAD/RPQS : ils vérifient que chaque source est extraite et tracée par son SHA-256.
 
 ## Socle de données — 2026-09-25 (branche refonte-socle-donnees)
 

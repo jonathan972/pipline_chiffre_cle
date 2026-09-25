@@ -6,11 +6,14 @@ on:
     branches: [ main ]
     paths:
       - 'application/**'
+      - 'pipeline/**'
+      - 'referentiel/**'
       - 'modules/**'
       - 'resources/**'
       - 'tests/**'
       - 'launch_app.py'
       - 'generate_report.py'
+      - 'update_observatoire.py'
       - 'requirements.txt'
       - '.github/workflows/build-windows-exe.yml'
 
@@ -29,13 +32,20 @@ jobs:
       - name: Tests
         run: python -m unittest discover -s tests -v
       - name: Build exe
-        run: pyinstaller --noconfirm --clean --onefile --windowed --name ChiffresClesMartinique launch_app.py
+        run: >-
+          pyinstaller --noconfirm --clean --onefile --windowed
+          --hidden-import fitz
+          --hidden-import docx
+          --collect-all matplotlib
+          --name ChiffresClesMartinique launch_app.py
       - name: Prepare portable package
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path package | Out-Null
           Copy-Item dist/ChiffresClesMartinique.exe package/
           Copy-Item modules package/modules -Recurse
+          Copy-Item pipeline package/pipeline -Recurse
+          Copy-Item referentiel package/referentiel -Recurse
           New-Item -ItemType Directory -Force -Path package/application | Out-Null
           Copy-Item application/source_registry.json package/application/
           if (Test-Path data) { Copy-Item data package/data -Recurse }

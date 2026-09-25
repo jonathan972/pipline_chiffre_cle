@@ -1,6 +1,6 @@
 {
   "project": "Référentiel Eau & Assainissement — ODE Martinique",
-  "release": "V1/v8",
+  "release": "V1/v8 + orientation publication automatisée",
   "snapshot_date": "2026-09-24",
   "indicators_total": 80,
   "automation_classes": {
@@ -18,7 +18,26 @@
     "2023": {"status": "CERTIFIED_WITH_GAPS", "gaps": 3, "blocking": 0},
     "2024": {"status": "CERTIFIED_WITH_GAPS", "gaps": 4, "blocking": 0}
   },
-  "next_priority": "Référentiel patrimonial captages/PPC ODE–ARS",
+  "publication_target": {
+    "goal": "Générer annuellement le rapport Chiffres clés, ses graphiques et ses cartes à partir du référentiel certifié.",
+    "baseline": "Reproduire le rapport 2022 avec le moteur de publication.",
+    "deliverables": [
+      "Rapport + cartes 2023",
+      "Rapport + cartes 2024"
+    ],
+    "application": "Application Windows guidant collecte automatique, dépôts manuels, certification, cartographie et génération DOCX/PDF.",
+    "word_template": "Prototype 36 pages à placeholders créé et moteur de remplacement V1 testé sur 2022.",
+    "gis_status": "Différé jusqu'à audit des MXD historiques ouverts dans ArcGIS ; chemins de couches potentiellement cassés/dispersés.",
+    "gis_target_decision": "Choisir après audit entre ArcGIS Pro/arcpy.mp et QGIS/PyQGIS."
+  },
+  "next_priorities": [
+    "Stabiliser le moteur de publication Word et le contrat de placeholders",
+    "Rendre 2022 reproductible comme jeu étalon",
+    "Produire le rapport 2023 puis 2024",
+    "Auditer les MXD et normaliser la chaîne SIG",
+    "Construire le référentiel patrimonial captages/PPC ODE–ARS",
+    "Certifier le module tarifs"
+  ],
   "entrypoint": "python update_observatoire.py --year YYYY",
   "handoff": "docs/REPRISE_IA.md"
 }

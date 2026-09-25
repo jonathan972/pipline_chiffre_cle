@@ -1,13 +1,29 @@
-# Pipeline maître v6
+# Pipelines maîtres historiques
 
-Utiliser `master_pipeline_v3.py`.
+Le pipeline canonique courant est désormais **`pipeline/`** à la racine du dépôt et s'exécute via :
 
-Il fusionne : population INSEE, faits RAD/RPQS réconciliés par périmètre de service, et BNPE lorsque le millésime est disponible.
-
-Chaque ligne contient désormais `perimeter_id` afin de ne pas confondre EPCI administratif, contrat, ancien syndicat et secteur infra-communal.
-
-```bash
-python master_pipeline_v3.py --root <projet> --year 2024 --out outputs_v3
+```powershell
+py update_observatoire.py --year 2024
 ```
 
-Les absences de documents connues sont enregistrées comme `NON_PRODUIT_DECLARE`, jamais comme valeur zéro et jamais comme simple oubli de collecte.
+Les scripts de ce dossier sont conservés uniquement pour la traçabilité et la reproduction des prototypes historiques.
+
+| Script | Rôle historique | Sorties | Statut |
+|---|---|---|---|
+| `master_pipeline.py` | Millésime 2022 : SISPEA, portail ERU et `manual_inputs/` | `outputs/` | **À conserver** pour reproduire 2022 |
+| `master_pipeline_v3.py` | Prototype 2023–2024 : population INSEE, RAD/RPQS réconciliés, BNPE | `outputs_v3/` | Historique / contrôle, non utilisé par la chaîne canonique |
+| `master_pipeline_v2.py` | Version intermédiaire remplacée par v3 | `outputs_v2/` | **Obsolète — supprimée** |
+
+## Règle actuelle
+
+Aucun consommateur de production ne doit sélectionner automatiquement un fichier dans `outputs/`, `outputs_v2/` ou `outputs_v3/`.
+
+Le seul master de production est :
+
+```text
+outputs/YYYY/fact_indicateur_master_YYYY.csv
+```
+
+Il est construit par `pipeline/master.py` à partir de la nomenclature et des attentes de `referentiel/`.
+
+Les anciens masters restent utiles comme **snapshots de comparaison** et pour documenter la genèse des règles métier, mais ils ne constituent plus une source de publication.

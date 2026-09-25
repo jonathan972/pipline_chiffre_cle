@@ -1,0 +1,28 @@
+{
+  "application_version": "1.0.0",
+  "supported_production_years": [
+    2023,
+    2024
+  ],
+  "automatic_sources": [
+    "ARS / Hub'Eau"
+  ],
+  "preloaded_normalized_sources": [
+    "RAD/RPQS 2023-2024",
+    "INSEE",
+    "BNPE 2023",
+    "périmètres CAP Nord / Ex-SICSM",
+    "portail assainissement 2023-2024"
+  ],
+  "manual_source_types": [
+    "RAD/RPQS complémentaires",
+    "valeurs complémentaires auditées",
+    "cartes SIG"
+  ],
+  "known_absences_2024": [
+    "CACEM : aucun bilan/RAD 2024 produit",
+    "CAESM : aucun RPQS ANC 2024 produit"
+  ],
+  "sig_status": "DEFERRED_PENDING_MXD_AUDIT",
+  "final_report_rule": "Le mode final est bloqué tant qu'un élément requis est manquant ou diagnostique."
+}

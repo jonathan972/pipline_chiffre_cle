@@ -49,6 +49,7 @@ jobs:
           New-Item -ItemType Directory -Force -Path package/application | Out-Null
           Copy-Item application/source_registry.json package/application/
           if (Test-Path data) { Copy-Item data package/data -Recurse }
+          if (Test-Path saisie) { Copy-Item saisie package/saisie -Recurse }
           Copy-Item docs package/docs -Recurse
           Copy-Item resources package/resources -Recurse
           Copy-Item README.md,VERSION,requirements.txt,generate_report.py,update_observatoire.py package/

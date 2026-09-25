@@ -14,4 +14,8 @@ modules/ars_quality/outputs/**/raw_hubeau_ars_*.json
 modules/orchestrator/outputs/annual_*/
 
 # Sorties du pipeline (régénérables)
-outputs/
+/outputs/
+
+# Dossiers générés par l'application (rapports, préflights, graphiques)
+/publication/
+/data/_local_reports_work/

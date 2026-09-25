@@ -1,24 +1,29 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "date": "2026-09-25",
   "objective": "Produire avec l'application les rapports Chiffres clés 2023 et 2024, puis automatiser les cartes après audit des MXD.",
   "application": {
-    "status": "V1_READY_FOR_WINDOWS_BUILD",
+    "status": "V1_1_REPORTING_READY",
     "gui": "Tkinter",
-    "reporting": "DOCX + PDF si LibreOffice est installé",
+    "reporting": "modules/reporting : DOCX avec ou sans template + PDF si LibreOffice est installé",
     "final_mode": "bloqué si un élément obligatoire est manquant ou diagnostique",
     "sig": "cartes manuelles, automatisation différée"
   },
   "tests": {
-    "local": "6 tests unittest passés le 2026-09-25",
-    "years": [2023, 2024]
+    "local": "38/41 tests passés le 2026-09-25 ; 3 échecs = PDF RAD/RPQS et resources/MANIFEST.* non versionnés",
+    "years": [
+      2023,
+      2024
+    ]
   },
   "known_gaps": [
     "pas de RAD/bilan CACEM 2024",
     "pas de RPQS ANC CAESM 2024",
     "BNPE 2024 à collecter/valider",
     "tarifs et certains patrimoines à compléter",
-    "cartes SIG à fournir manuellement avant automatisation"
+    "cartes SIG à fournir manuellement avant automatisation",
+    "template Word ODE à déposer dans resources/templates/",
+    "PDF RAD/RPQS et manifestes resources/ à versionner (Git LFS)"
   ],
   "ars": {
     "source": "Hub'Eau / SISE-Eaux / ARS",

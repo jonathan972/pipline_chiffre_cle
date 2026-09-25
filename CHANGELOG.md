@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0 — 2026-09-25
+
+- moteur de publication `modules/reporting/` : rapport Word depuis le master canonique, avec ou sans template, tableaux par domaine et par EPCI, évolution N-1, graphiques, cartes, textes dynamiques, absences et limites, traçabilité SHA-256 ;
+- préflight détaillé (`preflight_report_YYYY.csv`) ; le mode final ne produit aucun document tant qu'un élément requis manque ou n'est pas validé ;
+- valeurs complémentaires : import fusionné dans `saisie/saisie_locale_YYYY.csv`, lu par le pipeline ; seules les lignes `validated=oui` sont publiées ;
+- gabarit des valeurs manquantes généré au format de saisie, avec les périmètres canoniques ;
+- application : résumé lisible après génération ; extraction RAD/RPQS exécutée dans le processus (l'EXE ne se relance plus lui-même) ;
+- build Windows : dépendances des scripts chargés dynamiquement déclarées pour PyInstaller ;
+- `.gitignore` : `outputs/` ne masque plus les sorties des modules (`modules/*/outputs/`) ; `publication/` ignoré ;
+- tests `tests/test_reporting.py` et import des valeurs complémentaires.
+
 ## Socle de données — 2026-09-25 (branche refonte-socle-donnees)
 
 - nomenclature canonique unique : `referentiel/indicateurs.csv` (80 indicateurs + variables support) et table `correspondance_codes.csv` ; un code source non mappé est bloquant ;

@@ -11,7 +11,7 @@ py -m unittest tests.test_pipeline -v
 
 Un seul master, des identifiants canoniques (ceux du dictionnaire des 80 indicateurs), une certification qui compare ce qui existe à ce qui est attendu. Voir [docs/SOCLE_DONNEES.md](docs/SOCLE_DONNEES.md).
 
-`modules/master/master_pipeline*.py` et `modules/orchestrator/update_observatoire.py` sont conservés pour l'historique mais ne sont plus utilisés. L'application desktop vérifie désormais uniquement le master canonique `outputs/YYYY/fact_indicateur_master_YYYY.csv`. La génération Word reste indisponible tant que `modules/reporting/` et le template ne sont pas versionnés.
+`modules/master/master_pipeline*.py` et `modules/orchestrator/update_observatoire.py` sont conservés pour l'historique mais ne sont plus utilisés. L'application desktop vérifie désormais uniquement le master canonique `outputs/YYYY/fact_indicateur_master_YYYY.csv`. La génération Word est assurée par `modules/reporting/` (voir son README) : elle utilise le template Word s'il est déposé dans `resources/templates/`, sinon elle génère un document complet.
 
 ## Version 1.0.0 — application de production 2023/2024
 
@@ -42,7 +42,7 @@ Le mode **final** est bloqué tant qu'un placeholder obligatoire est réellement
 - RAD/RPQS : données locales de service et SPANC ;
 - périmètres CAP Nord / Robert-Trinité / Ex-SICSM : référentiel contractuel distinct des EPCI ;
 - SISPEA : contrôle/complément lorsque définition et périmètre sont validés ;
-- valeurs complémentaires : CSV audité avec `validated=oui`, prioritaire mais toujours traçable.
+- valeurs complémentaires : CSV importé dans `saisie/saisie_locale_YYYY.csv` ; seules les lignes `validated=oui` sont publiées, et un désaccord avec une autre source est bloquant.
 
 Absences connues 2024 : aucun bilan/RAD CACEM ; aucun RPQS ANC CAESM. Elles restent explicitement manquantes.
 

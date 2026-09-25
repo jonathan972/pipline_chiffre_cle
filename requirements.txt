@@ -1,2 +1,7 @@
 psycopg[binary]>=3.2
 requests>=2.32
+# Extraction du texte des PDF RAD/RPQS (modules/local_reports/rad_rpqs_etl.py : import fitz)
+pymupdf>=1.24
+# Moteur de publication Word et graphiques
+python-docx>=1.1
+matplotlib>=3.9

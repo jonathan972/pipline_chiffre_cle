@@ -1,0 +1,16 @@
+﻿reference_id;pipeline_metric;label;scope;page_rapport;unite;valeur_rapport;valeur_pipeline;ecart_absolu;ecart_relatif_pct;statut
+ODE_P4_STEU_PUBLIC_ALL;public_stations_positive_capacity;Nombre de STEU publiques (toutes tailles);Martinique;4;nb;103;103;0;0.0;OK
+ODE_P19_STEU_GT200;public_stations_gt_200;Nombre de STEU publiques de plus de 200 EH;Martinique;19;nb;68;69;1;1.4705882352941175;ECART_IMPORTANT
+ODE_P19_CAP_GT200;public_capacity_gt_200_eh;Capacité cumulée des STEU publiques de plus de 200 EH;Martinique;19;EH;351866;345361.0;-6505.0;-1.8487151358755889;ECART_IMPORTANT
+ODE_P4_CAP_GT200_ALT;public_capacity_gt_200_eh;Capacité des STEU publiques >200 EH (valeur du résumé);Martinique;4;EH;347911;345361.0;-2550.0;-0.7329460695407733;ECART_FAIBLE
+ODE_P19_CA_ESM_N;public_stations_gt_200_caesm;STEU publiques >200 EH - CAESM;CAESM;19;nb;28;25;-3;-10.714285714285714;ECART_IMPORTANT
+ODE_P19_CACEM_N;public_stations_gt_200_cacem;STEU publiques >200 EH - CACEM;CACEM;19;nb;15;17;2;13.333333333333334;ECART_IMPORTANT
+ODE_P19_CAPN_N;public_stations_gt_200_cap_nord;STEU publiques >200 EH - CAP Nord;CAP Nord;19;nb;25;27;2;8.0;ECART_IMPORTANT
+ODE_P21_CONF_MTQ;public_gt200_station_global_reconstructed_pct;Part de stations conformes;Martinique;21;%;18;14.492753623188406;-3.507246376811594;-19.484702093397743;ECART_IMPORTANT
+ODE_P21_CONF_CA_ESM;public_gt200_station_global_reconstructed_pct_caesm;Part de stations conformes;CAESM;21;%;25;12.0;-13.0;-52.0;ECART_IMPORTANT
+ODE_P21_CONF_CACEM;public_gt200_station_global_reconstructed_pct_cacem;Part de stations conformes;CACEM;21;%;19;23.529411764705884;4.529411764705884;23.839009287925705;ECART_IMPORTANT
+ODE_P21_CONF_CAPN;public_gt200_station_global_reconstructed_pct_cap_nord;Part de stations conformes;CAP Nord;21;%;11;11.11111111111111;0.11111111111111072;1.0101010101010066;ECART_IMPORTANT
+ODE_P23_BOUES_MTQ;public_boues_tms_all;Production de boues;Martinique;23;tMS/an;1622;1255.88;-366.1199999999999;-22.572133168927245;ECART_IMPORTANT
+ODE_P23_BOUES_CA_ESM;public_boues_tms_caesm;Production de boues;CAESM;23;tMS/an;322;174.03;-147.97;-45.953416149068325;ECART_IMPORTANT
+ODE_P23_BOUES_CACEM;public_boues_tms_cacem;Production de boues;CACEM;23;tMS/an;1017;888.54;-128.46000000000004;-12.631268436578175;ECART_IMPORTANT
+ODE_P23_BOUES_CAPN;public_boues_tms_cap_nord;Production de boues;CAP Nord;23;tMS/an;282;193.31;-88.69;-31.450354609929075;ECART_IMPORTANT

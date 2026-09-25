@@ -1,0 +1,2 @@
+﻿indicator_id;annee;territoire;population;volume_facture_m3;valeur_calculee_l_j_hab;valeur_rapport_l_j_hab;ecart;note
+EP_001_VALIDATION;2022;Martinique;361019;21041846;159.6838;160;-0.3162;Validation uniquement : le volume facturé provient du rapport/RAD-RPQS, la population de l'INSEE.

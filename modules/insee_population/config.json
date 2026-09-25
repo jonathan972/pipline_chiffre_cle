@@ -1,0 +1,13 @@
+{
+  "dataset": "DS_POPULATIONS_REFERENCE",
+  "api_base": "https://api.insee.fr/melodi/data/DS_POPULATIONS_REFERENCE",
+  "measure": "PMUN",
+  "territories": [
+    {"niveau_geo": "DEP", "code_geo": "972", "territoire": "Martinique"},
+    {"niveau_geo": "EPCI", "code_geo": "249720061", "territoire": "CACEM"},
+    {"niveau_geo": "EPCI", "code_geo": "249720053", "territoire": "CAESM"},
+    {"niveau_geo": "EPCI", "code_geo": "200041788", "territoire": "CAP_NORD"}
+  ],
+  "fallback_policy": "latest_official",
+  "expected_epci": ["CACEM", "CAESM", "CAP_NORD"]
+}

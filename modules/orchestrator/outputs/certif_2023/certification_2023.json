@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "year": 2023,
+  "generated_at": "2026-09-25T00:30:59.275323+00:00",
+  "status": "CERTIFIED_WITH_GAPS",
+  "blocking_anomalies_count": 0,
+  "gaps_count": 3,
+  "audit_findings_count": 2,
+  "quality_report_rows": 6,
+  "policy": {
+    "CERTIFIED": "aucune anomalie bloquante et aucune lacune déclarée",
+    "CERTIFIED_WITH_GAPS": "aucune anomalie bloquante, mais source manuelle ou donnée non produite",
+    "NOT_CERTIFIED": "au moins une valeur PRODUCTION incohérente ou invalide non résolue"
+  },
+  "blocking_anomalies": [],
+  "gaps": [
+    {
+      "indicator_id": "RES_007",
+      "territoire": "Martinique",
+      "perimeter_id": "MARTINIQUE",
+      "record_role": "DIAGNOSTIC",
+      "coverage_status": "COMPLETE",
+      "quality_status": "INCOMPLETE_INVENTORY"
+    },
+    {
+      "indicator_id": "RES_008",
+      "territoire": "Martinique",
+      "perimeter_id": "MARTINIQUE",
+      "record_role": "DIAGNOSTIC",
+      "coverage_status": "COMPLETE",
+      "quality_status": "INCOMPLETE_INVENTORY"
+    },
+    {
+      "indicator_id": "RES_009",
+      "territoire": "Martinique",
+      "perimeter_id": "MARTINIQUE",
+      "record_role": "DIAGNOSTIC",
+      "coverage_status": "COMPLETE",
+      "quality_status": "INCOMPLETE_INVENTORY"
+    }
+  ],
+  "audit_findings": [
+    {
+      "indicator_id": "P301.3_PUBLISHED",
+      "territoire": "CAP_NORD",
+      "perimeter_id": "CAP_NORD_EPCI",
+      "record_role": "AUDIT",
+      "coverage_status": "COMPLETE",
+      "quality_status": "SOURCE_CALCULATION_ERROR"
+    },
+    {
+      "indicator_id": "P104.3",
+      "territoire": "CAP_NORD_DSP_2020_2024",
+      "perimeter_id": "CAP_NORD_DSP_2020_2024",
+      "record_role": "AUDIT",
+      "coverage_status": "COMPLETE",
+      "quality_status": "REVISED_LATER"
+    }
+  ]
+}

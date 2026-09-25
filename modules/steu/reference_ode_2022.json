@@ -1,0 +1,21 @@
+{
+  "year": 2022,
+  "source_report": "ODE_RAPPORT_2022_A4_Interactif_VF.pdf",
+  "references": [
+    {"reference_id":"ODE_P4_STEU_PUBLIC_ALL","pipeline_metric":"public_stations_positive_capacity","label":"Nombre de STEU publiques (toutes tailles)","scope":"Martinique","value":103,"unit":"nb","page":"4"},
+    {"reference_id":"ODE_P19_STEU_GT200","pipeline_metric":"public_stations_gt_200","label":"Nombre de STEU publiques de plus de 200 EH","scope":"Martinique","value":68,"unit":"nb","page":"19"},
+    {"reference_id":"ODE_P19_CAP_GT200","pipeline_metric":"public_capacity_gt_200_eh","label":"Capacité cumulée des STEU publiques de plus de 200 EH","scope":"Martinique","value":351866,"unit":"EH","page":"19"},
+    {"reference_id":"ODE_P4_CAP_GT200_ALT","pipeline_metric":"public_capacity_gt_200_eh","label":"Capacité des STEU publiques >200 EH (valeur du résumé)","scope":"Martinique","value":347911,"unit":"EH","page":"4"},
+    {"reference_id":"ODE_P19_CA_ESM_N","pipeline_metric":"public_stations_gt_200_caesm","label":"STEU publiques >200 EH - CAESM","scope":"CAESM","value":28,"unit":"nb","page":"19"},
+    {"reference_id":"ODE_P19_CACEM_N","pipeline_metric":"public_stations_gt_200_cacem","label":"STEU publiques >200 EH - CACEM","scope":"CACEM","value":15,"unit":"nb","page":"19"},
+    {"reference_id":"ODE_P19_CAPN_N","pipeline_metric":"public_stations_gt_200_cap_nord","label":"STEU publiques >200 EH - CAP Nord","scope":"CAP Nord","value":25,"unit":"nb","page":"19"},
+    {"reference_id":"ODE_P21_CONF_MTQ","pipeline_metric":"public_gt200_station_global_reconstructed_pct","label":"Part de stations conformes","scope":"Martinique","value":18,"unit":"%","page":"21"},
+    {"reference_id":"ODE_P21_CONF_CA_ESM","pipeline_metric":"public_gt200_station_global_reconstructed_pct_caesm","label":"Part de stations conformes","scope":"CAESM","value":25,"unit":"%","page":"21"},
+    {"reference_id":"ODE_P21_CONF_CACEM","pipeline_metric":"public_gt200_station_global_reconstructed_pct_cacem","label":"Part de stations conformes","scope":"CACEM","value":19,"unit":"%","page":"21"},
+    {"reference_id":"ODE_P21_CONF_CAPN","pipeline_metric":"public_gt200_station_global_reconstructed_pct_cap_nord","label":"Part de stations conformes","scope":"CAP Nord","value":11,"unit":"%","page":"21"},
+    {"reference_id":"ODE_P23_BOUES_MTQ","pipeline_metric":"public_boues_tms_all","label":"Production de boues","scope":"Martinique","value":1622,"unit":"tMS/an","page":"23"},
+    {"reference_id":"ODE_P23_BOUES_CA_ESM","pipeline_metric":"public_boues_tms_caesm","label":"Production de boues","scope":"CAESM","value":322,"unit":"tMS/an","page":"23"},
+    {"reference_id":"ODE_P23_BOUES_CACEM","pipeline_metric":"public_boues_tms_cacem","label":"Production de boues","scope":"CACEM","value":1017,"unit":"tMS/an","page":"23"},
+    {"reference_id":"ODE_P23_BOUES_CAPN","pipeline_metric":"public_boues_tms_cap_nord","label":"Production de boues","scope":"CAP Nord","value":282,"unit":"tMS/an","page":"23"}
+  ]
+}

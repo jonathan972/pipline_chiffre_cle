@@ -1,0 +1,18 @@
+{
+  "year": 2022,
+  "metrics": [
+    {"id":"RES_015","label":"Volume total prélevé tous usages","unit":"m3/an","report_value":63447442,"page":"12"},
+    {"id":"RES_014","label":"Volume prélevé AEP","unit":"m3/an","report_value":44771108,"page":"8,12"},
+    {"id":"RES_016","label":"Volume prélevé irrigation","unit":"m3/an","report_value":16458155,"page":"12"},
+    {"id":"RES_017","label":"Volume prélevé autres/industrie","unit":"m3/an","report_value":2218179,"page":"12"},
+    {"id":"RES_001","label":"Part AEP dans les prélèvements","unit":"%","report_value":71,"page":"6"},
+    {"id":"RES_002","label":"Part irrigation dans les prélèvements","unit":"%","report_value":26,"page":"6"},
+    {"id":"RES_003","label":"Part industrie/autres dans les prélèvements","unit":"%","report_value":3,"page":"6"},
+    {"id":"RES_004","label":"Part AEP provenant des eaux de surface","unit":"%","report_value":94,"page":"6-7"},
+    {"id":"RES_005","label":"Part AEP provenant des eaux souterraines","unit":"%","report_value":6,"page":"7"},
+    {"id":"RES_006","label":"Part AEP Lézarde + Rivière Blanche","unit":"%","report_value":58,"page":"6"},
+    {"id":"RES_007","label":"Nombre total de captages AEP","unit":"nb","report_value":35,"page":"7"},
+    {"id":"RES_008","label":"Nombre de prises en rivière","unit":"nb","report_value":20,"page":"7"},
+    {"id":"RES_009","label":"Nombre de captages souterrains","unit":"nb","report_value":15,"page":"7"}
+  ]
+}

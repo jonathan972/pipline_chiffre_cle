@@ -1,0 +1,7 @@
+﻿severity;indicator_id;territoire;perimeter_id;coverage_status;quality_status;record_role;message
+WARNING;AC_004;Martinique;;COMPLETE;REVISED_SNAPSHOT;PRODUCTION;Le snapshot courant diffère du rapport 2022 historique.
+WARNING;AC_005;Martinique;;COMPLETE;REVISED_SNAPSHOT;PRODUCTION;Le snapshot courant diffère du rapport 2022 historique.
+WARNING;AC_014;Martinique;;COMPLETE;REVISED_SNAPSHOT;PRODUCTION;"Snapshot SISPEA actuel ; historique susceptible d’avoir été révisé."
+ERROR;RES_007;Martinique;;PARTIAL;INCOMPLETE_INVENTORY;DIAGNOSTIC;Nombre d'ouvrages AEP présents dans BNPE | BNPE non exhaustive pour compter les captages.
+ERROR;RES_008;Martinique;;PARTIAL;INCOMPLETE_INVENTORY;DIAGNOSTIC;Nombre d'ouvrages AEP CONT présents dans BNPE | BNPE non exhaustive pour compter les captages.
+ERROR;RES_009;Martinique;;PARTIAL;INCOMPLETE_INVENTORY;DIAGNOSTIC;Nombre d'ouvrages AEP SOUT présents dans BNPE | BNPE non exhaustive pour compter les captages.

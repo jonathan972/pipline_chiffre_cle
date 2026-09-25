@@ -1,0 +1,2 @@
+﻿year_reference;code_steu;severity;issue_type;field_name;observed_value;message;source_file
+2022;080000997218;WARN;PUBLIC_CAPACITY_MISSING_OR_ZERO;Capacité nominale en EH;0;STEU de nature publique/urbaine sans capacité nominale positive.;export-as-telechargement(2).csv

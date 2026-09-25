@@ -1,0 +1,7 @@
+{
+  "year": 2024,
+  "source": "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis",
+  "raw_rows": 49317,
+  "unique_samples": 945,
+  "facts": 8
+}

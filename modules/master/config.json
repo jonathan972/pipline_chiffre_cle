@@ -1,0 +1,9 @@
+{
+  "report_comparable_ep_services": {
+    "CAESM": "196847",
+    "CACEM": "196862",
+    "CAP_NORD": "299714"
+  },
+  "expected_anc_services": 3,
+  "source_policy_version": "v2"
+}

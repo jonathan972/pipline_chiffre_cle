@@ -1,0 +1,16 @@
+﻿competence;type;severity;message;source_file
+EP;SNAPSHOT;INFO;"Snapshot 2026-09-24T17:33:42.676 ; année de référence 2022";SISPEA_extraction_2022_AEP.ods
+AC;SNAPSHOT;INFO;"Snapshot 2026-09-24T17:34:59 ; année de référence 2022";SISPEA_extraction_2022_AC.xls
+ANC;SNAPSHOT;INFO;"Snapshot 2026-09-24T17:35:15 ; année de référence 2022";SISPEA_extraction_2022_ANC.xls
+ANC;MISSING_SERVICE_VALUE;WARNING;VP.166 non renseigné pour: CACEM;SISPEA_extraction_2022_ANC.xls
+ANC;MISSING_SERVICE_VALUE;WARNING;VP.267 non renseigné pour: CACEM;SISPEA_extraction_2022_ANC.xls
+ANC;MISSING_SERVICE_VALUE;WARNING;VP.334 non renseigné pour: CACEM;SISPEA_extraction_2022_ANC.xls
+EP;REPORT_DIFFERENCE;WARNING;"Volume produit (Martinique): rapport=41539655 ; snapshot=36075228.0";
+EP;REPORT_DIFFERENCE;WARNING;"Volume prélevé AEP (Martinique): rapport=44771108 ; snapshot=37423866.0";
+EP;REPORT_DIFFERENCE;WARNING;"Conformité microbiologique (CACEM): rapport=99.4 ; snapshot=98.2";
+EP;REPORT_DIFFERENCE;WARNING;"Indice linéaire de pertes (CAESM): rapport=6.54 ; snapshot=6.1";
+EP;REPORT_DIFFERENCE;WARNING;"Indice linéaire de pertes (CACEM): rapport=21.0 ; snapshot=31.9";
+AC;REPORT_DIFFERENCE;WARNING;"Volume facturé AC (Martinique): rapport=9940643 ; snapshot=9106700.0";
+ANC;REPORT_DIFFERENCE;WARNING;"Population ANC (Martinique): rapport=205898 ; snapshot=195673.0";
+ANC;REPORT_DIFFERENCE;WARNING;"Dispositifs ANC estimés (Martinique): rapport=73000 ; snapshot=56255.0";
+ANC;REPORT_DIFFERENCE;WARNING;"Contrôles sur l’existant (Martinique): rapport=591 ; snapshot=388.0";

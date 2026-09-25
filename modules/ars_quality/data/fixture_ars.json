@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "code_prelevement": "P1",
+      "code_commune": "97209",
+      "code_reseau": "U1",
+      "conformite_limites_bact_prelevement": "C",
+      "conformite_limites_pc_prelevement": "C"
+    },
+    {
+      "code_prelevement": "P1",
+      "code_commune": "97209",
+      "code_reseau": "U1",
+      "conformite_limites_bact_prelevement": "C",
+      "conformite_limites_pc_prelevement": "C"
+    },
+    {
+      "code_prelevement": "P2",
+      "code_commune": "97209",
+      "code_reseau": "U1",
+      "conformite_limites_bact_prelevement": "N",
+      "conformite_limites_pc_prelevement": "C"
+    },
+    {
+      "code_prelevement": "P3",
+      "code_commune": "97210",
+      "code_reseau": "U2",
+      "conformite_limites_bact_prelevement": "C",
+      "conformite_limites_pc_prelevement": "N"
+    },
+    {
+      "code_prelevement": "P4",
+      "code_commune": "97203",
+      "code_reseau": "U3",
+      "conformite_limites_bact_prelevement": "C",
+      "conformite_limites_pc_prelevement": "C"
+    }
+  ]
+}

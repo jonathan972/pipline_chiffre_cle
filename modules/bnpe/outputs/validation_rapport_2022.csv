@@ -1,0 +1,14 @@
+﻿reference_id;label;page_rapport;unite;valeur_rapport;valeur_pipeline;ecart_absolu;ecart_relatif_pct;statut;politique_source;source_recommandee;commentaire
+RES_015;Volume total prélevé tous usages;12;m3/an;63447442;63317868;-129574.0;-0.20422257527734528;ECART_FAIBLE;BNPE_PRIMARY;BNPE;"Le snapshot BNPE actuel diffère du rapport historique ; conserver les deux versions avec date de snapshot."
+RES_014;Volume prélevé AEP;8,12;m3/an;44771108;44771108;0.0;0.0;OK;BNPE_PRIMARY;BNPE;
+RES_016;Volume prélevé irrigation;12;m3/an;16458155;16332240;-125915.0;-0.765061454336771;ECART_IMPORTANT;BNPE_PRIMARY;BNPE;"Le snapshot BNPE actuel diffère du rapport historique ; conserver les deux versions avec date de snapshot."
+RES_017;Volume prélevé autres/industrie;12;m3/an;2218179;2214520;-3659.0;-0.16495512760692443;ECART_FAIBLE;BNPE_PRIMARY;BNPE;"Le snapshot BNPE actuel diffère du rapport historique ; conserver les deux versions avec date de snapshot."
+RES_001;Part AEP dans les prélèvements;6;%;71;70.70848942671284;-0.29151057328715524;-0.4105782722354299;ECART_FAIBLE;BNPE_PRIMARY;BNPE;
+RES_002;Part irrigation dans les prélèvements;6;%;26;25.794046002938696;-0.2059539970613038;-0.7921307579280915;ECART_FAIBLE;BNPE_PRIMARY;BNPE;
+RES_003;Part industrie/autres dans les prélèvements;6;%;3;3.497464570348452;0.49746457034845193;16.582152344948398;ECART_FAIBLE;BNPE_PRIMARY;BNPE;
+RES_004;Part AEP provenant des eaux de surface;6-7;%;94;94.60748882962646;0.6074888296264618;0.6462647123685763;ECART_FAIBLE;BNPE_PRIMARY;BNPE;Part calculée uniquement sur les prélèvements AEP du détail BNPE, et non sur la synthèse tous usages.
+RES_005;Part AEP provenant des eaux souterraines;7;%;6;5.3925111703735364;-0.6074888296264636;-10.124813827107726;ECART_FAIBLE;BNPE_PRIMARY;BNPE;Part calculée uniquement sur les prélèvements AEP du détail BNPE, et non sur la synthèse tous usages.
+RES_006;Part AEP Lézarde + Rivière Blanche;6;%;58;57.751463287439755;-0.24853671256024512;-0.42851157337973295;ECART_FAIBLE;BNPE_PRIMARY;BNPE;Le système Lézarde + Rivière Blanche est défini par une liste versionnée de codes ouvrages dans config.json.
+RES_007;Nombre total de captages AEP;7;nb;35;29;-6.0;-17.142857142857142;ECART_IMPORTANT;INVENTORY_EXTERNAL_PRIMARY;SISPEA / ODE / ARS;"La BNPE n'est pas un inventaire exhaustif des ouvrages ; utiliser le référentiel patrimonial pour les comptages."
+RES_008;Nombre de prises en rivière;7;nb;20;13;-7.0;-35.0;ECART_IMPORTANT;INVENTORY_EXTERNAL_PRIMARY;SISPEA / ODE / ARS;"La BNPE n'est pas un inventaire exhaustif des ouvrages ; utiliser le référentiel patrimonial pour les comptages."
+RES_009;Nombre de captages souterrains;7;nb;15;16;1.0;6.666666666666667;ECART_IMPORTANT;INVENTORY_EXTERNAL_PRIMARY;SISPEA / ODE / ARS;"La BNPE n'est pas un inventaire exhaustif des ouvrages ; utiliser le référentiel patrimonial pour les comptages."

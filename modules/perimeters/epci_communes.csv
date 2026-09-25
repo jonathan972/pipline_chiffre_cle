@@ -1,0 +1,35 @@
+epci_code;epci_name;commune_insee;commune_name;valid_from;source_url
+CACEM;CA du Centre de la Martinique;97209;Fort-de-France;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720061-ca-du-centre-de-la-martinique
+CACEM;CA du Centre de la Martinique;97213;Le Lamentin;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720061-ca-du-centre-de-la-martinique
+CACEM;CA du Centre de la Martinique;97224;Saint-Joseph;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720061-ca-du-centre-de-la-martinique
+CACEM;CA du Centre de la Martinique;97229;Schœlcher;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720061-ca-du-centre-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97202;Les Anses-d'Arlet;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97206;Le Diamant;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97207;Ducos;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97210;Le François;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97217;Le Marin;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97220;Rivière-Pilote;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97221;Rivière-Salée;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97223;Saint-Esprit;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97226;Sainte-Anne;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97227;Sainte-Luce;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97231;Les Trois-Îlets;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAESM;CA de l'Espace Sud de la Martinique;97232;Le Vauclin;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/249720053-ca-de-l-espace-sud-de-la-martinique
+CAP_NORD;CA du Pays Nord Martinique;97201;L'Ajoupa-Bouillon;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97203;Basse-Pointe;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97234;Bellefontaine;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97205;Case-Pilote;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97208;Fonds-Saint-Denis;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97211;Grand'Rivière;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97212;Gros-Morne;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97230;La Trinité;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97204;Le Carbet;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97214;Le Lorrain;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97216;Le Marigot;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97218;Le Morne-Rouge;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97233;Le Morne-Vert;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97219;Le Prêcheur;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97222;Le Robert;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97215;Macouba;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97225;Saint-Pierre;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique
+CAP_NORD;CA du Pays Nord Martinique;97228;Sainte-Marie;2017-01-01;https://www.banatic.interieur.gouv.fr/intercommunalite/200041788-ca-du-pays-nord-martinique

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "year": 2022,
+  "generated_at": "2026-09-25T00:30:58.958643+00:00",
+  "status": "CERTIFIED_WITH_GAPS",
+  "blocking_anomalies_count": 0,
+  "gaps_count": 3,
+  "audit_findings_count": 0,
+  "quality_report_rows": 6,
+  "policy": {
+    "CERTIFIED": "aucune anomalie bloquante et aucune lacune déclarée",
+    "CERTIFIED_WITH_GAPS": "aucune anomalie bloquante, mais source manuelle ou donnée non produite",
+    "NOT_CERTIFIED": "au moins une valeur PRODUCTION incohérente ou invalide non résolue"
+  },
+  "blocking_anomalies": [],
+  "gaps": [
+    {
+      "indicator_id": "RES_007",
+      "territoire": "Martinique",
+      "perimeter_id": "",
+      "record_role": "DIAGNOSTIC",
+      "coverage_status": "PARTIAL",
+      "quality_status": "INCOMPLETE_INVENTORY"
+    },
+    {
+      "indicator_id": "RES_008",
+      "territoire": "Martinique",
+      "perimeter_id": "",
+      "record_role": "DIAGNOSTIC",
+      "coverage_status": "PARTIAL",
+      "quality_status": "INCOMPLETE_INVENTORY"
+    },
+    {
+      "indicator_id": "RES_009",
+      "territoire": "Martinique",
+      "perimeter_id": "",
+      "record_role": "DIAGNOSTIC",
+      "coverage_status": "PARTIAL",
+      "quality_status": "INCOMPLETE_INVENTORY"
+    }
+  ],
+  "audit_findings": []
+}

@@ -1,0 +1,2 @@
+﻿year_reference;severity;issue_type;message
+2023;INFO;AEP_COORDINATES_APPROXIMATE;Les coordonnées des ouvrages AEP ont une précision 5/6 : elles ne doivent pas être traitées comme localisation exacte.

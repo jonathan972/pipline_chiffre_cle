@@ -1,0 +1,15 @@
+{
+  "public_nature_values": ["Urbain"],
+  "private_nature_values": ["Privé"],
+  "positive_capacity_required_for_public_inventory": true,
+  "large_station_threshold_eh": 200,
+  "epci_rules": [
+    {"contains":"ESPACE SUD","epci":"CAESM"},
+    {"contains":"PAYS NORD","epci":"CAP Nord"},
+    {"contains":"CENTRE DE LA MARTINIQUE","epci":"CACEM"},
+    {"contains":"ODYSSI","epci":"CACEM"}
+  ],
+  "status_yes": ["oui", "yes", "true", "1"],
+  "status_no": ["non", "no", "false", "0"],
+  "missing_tokens": ["", "n/a", "na", "null", "none"]
+}

@@ -1,0 +1,120 @@
+﻿year_reference;code_agglo;nom_agglo;commune_principale;code_insee_commune_principale;etat_agglo;taille_agglo_eh;tranche_obligation;maximum_pollutions_entrantes_eh;somme_capacites_nominales_eh;conformite_equipement_agglo;conformite_performance_agglo;conformite_collecte_temps_sec;conformite_globale_agglo;date_mise_a_jour_agglo;type_reseau_majoritaire;source_file
+2022;080000197202;ANSES-D'ARLET;Les Anses-d'Arlet;97202;En activité;2717.0;"[ 2 000 ; 10 000 [ EH";2717.0;5000.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297202;ANSES-D'ARLET-ANSE-DUFOUR;Les Anses-d'Arlet;97202;En activité;131.0;"] 200 ; 2 000 [ EH";131.0;450.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000197203;BASSE-POINTE;Basse-Pointe;97203;En activité;1675.0;"[ 2 000 ; 10 000 [ EH";1675.0;4000.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000297203;Basse-PointeMADELONNETTE;Basse-Pointe;97203;En activité;147.0;"] 200 ; 2 000 [ EH";147.0;200.0;Oui;Oui;N/A;Oui;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197234;BELLEFONTAINE- MARTINIQUE;Bellefontaine;97234;En activité;3667.0;"[ 2 000 ; 10 000 [ EH";3667.0;1900.0;Non;Oui;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000197204;CARBET-BOURG;Le Carbet;97204;En activité;2354.0;"[ 2 000 ; 10 000 [ EH";2354.0;4000.0;Non;Oui;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297204;CARBET-BOUT-BOIS;Le Carbet;97204;En activité;0.0;Taille ≤ 200 EH;0.0;80.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197205;CASE-PILOTE;Case-Pilote;97205;En activité;7000.0;"[ 2 000 ; 10 000 [ EH";7000.0;7000.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297205;CASE-PILOTE-BATISOLEIL;Case-Pilote;97205;En activité;13.0;Taille ≤ 200 EH;13.0;80.0;Oui;Oui;N/A;Oui;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000497205;CASE-PILOTE-CGOSH;Case-Pilote;97205;En activité;0.0;Taille ≤ 200 EH;0.0;40.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000397205;CASE-PILOTE-VÉTIVER;Case-Pilote;97205;En activité;125.0;"] 200 ; 2 000 [ EH";125.0;400.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197206;DIAMANT;Le Diamant;97206;En activité;6192.0;"[ 2 000 ; 10 000 [ EH";6192.0;8300.0;Non;Oui;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000497206;DIAMANT-O'MULLANE;Le Diamant;97206;En activité;68.0;"] 200 ; 2 000 [ EH";68.0;450.0;Oui;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000397206;DIAMANT-TAUPINIÈRE;Le Diamant;97206;En activité;152.0;"] 200 ; 2 000 [ EH";152.0;800.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000197207;DUCOS;Ducos;97207;En activité;18934.0;"[ 10 000 ; 100 000 [ E";18934.0;0.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000397207;DUCOS-GRANDE-SAVANE;Ducos;97207;En activité;417.0;"] 200 ; 2 000 [ EH";417.0;250.0;Non;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000497207;DUCOS-VALLON DU BAC;Ducos;97207;En activité;0.0;Taille ≤ 200 EH;0.0;150.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197208;FONDS-SAINT-DENIS-LACROIX;Fonds-Saint-Denis;97208;En activité;36.0;Taille ≤ 200 EH;36.0;100.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000497209;Fort-de-France - CHARMILLES;Fort-de-France;97209;En activité;200.0;"] 200 ; 2 000 [ EH";200.0;200.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000297209;Fort-de-France - CHP COLSON;Fort-de-France;97209;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;3000.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197209;Fort-de-France - DILLON 1 ET 2;Fort-de-France;97209;En activité;110772.0;"[ 100 000 ; ... [ EH";110772.0;85000.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000797209;Fort-de-France- LES MEYNARD;Fort-de-France;97209;En activité;0.0;Taille ≤ 200 EH;0.0;30.0;Non;Non;N/A;Non;2024-12-19;Unitaire;export-as-telechargement(2).csv
+2022;080000697209;Fort-de-France TIVOLI LA FONTANE;Fort-de-France;97209;En activité;0.0;Taille ≤ 200 EH;0.0;150.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197210;FRANCOIS;Le François;97210;En activité;4964.0;"[ 10 000 ; 100 000 [ E";4964.0;6666.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080001097210;FRANCOIS-CAP-EST;Le François;97210;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080001197210;FRANCOIS- MANSARDE RANCÉE;Le François;97210;En activité;328.0;"] 200 ; 2 000 [ EH";328.0;1000.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000197211;Grand'Rivière - STADE GRAND RIVIERE;Grand'Rivière;97211;En activité;190.0;"] 200 ; 2 000 [ EH";190.0;25.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197212;GROS-MORNEBOURG;Gros-Morne;97212;En activité;527.0;"] 200 ; 2 000 [ EH";527.0;1500.0;Non;Non;N/A;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000397212;GROS-MORNE-COLLEGE;Gros-Morne;97212;En activité;200.0;"] 200 ; 2 000 [ EH";200.0;260.0;Non;Non;N/A;Non;2024-12-06;Unitaire;export-as-telechargement(2).csv
+2022;080000297201;L'Ajoupa-Bouillon;L'Ajoupa-Bouillon;97201;En activité;2640.0;"[ 2 000 ; 10 000 [ EH";2640.0;850.0;Oui;Oui;Oui;Oui;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000597230;LATRINITE-BELLEVUE;La Trinité;97230;En activité;160.0;"] 200 ; 2 000 [ EH";160.0;700.0;Oui;Oui;N/A;Oui;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000297230;La TrinitéTARTANE;La Trinité;97230;En activité;2699.0;"[ 2 000 ; 10 000 [ EH";2699.0;2100.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297210;Le François - BONNY CHOPOTTE;Le François;97210;En activité;6.0;"] 200 ; 2 000 [ EH";6.0;250.0;Oui;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000397210;Le François- CHOPOTTE;Le François;97210;En activité;150.0;Taille ≤ 200 EH;150.0;150.0;Oui;Non;N/A;Non;2024-12-19;Unitaire;export-as-telechargement(2).csv
+2022;080000997213;Le Lamentin - CLUB NAUTIQUE;Le Lamentin;97213;En activité;0.0;Taille ≤ 200 EH;0.0;120.0;Non;Non;N/A;Non;2024-12-19;Séparatif;export-as-telechargement(2).csv
+2022;080000197213;Le Lamentin - GAIGNERON;Le Lamentin;97213;En activité;30333.0;"[ 10 000 ; 100 000 [ E";30333.0;35000.0;Oui;N/A;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000497213;Le Lamentin - LYCEE CROIX-RIVAIL;Le Lamentin;97213;En activité;200.0;"] 200 ; 2 000 [ EH";200.0;400.0;Non;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000397213;Le Lamentin - PELLETIER DESIRADE;Le Lamentin;97213;En activité;1350.0;"[ 2 000 ; 10 000 [ EH";1350.0;3500.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000697213;Le Lamentin- RESIDENCE SOROCA;Le Lamentin;97213;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;250.0;Non;Non;N/A;Non;2024-12-06;Unitaire;export-as-telechargement(2).csv
+2022;080000597213;Le Lamentin - ROCHES CARREES CACEM;Le Lamentin;97213;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000797213;LELAMENTIN-SARRAULT;Le Lamentin;97213;En activité;6.0;Taille ≤ 200 EH;6.0;150.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000897213;Le Lamentin ZI JAMBETTE;Le Lamentin;97213;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Non;Non;N/A;Non;2024-12-06;Unitaire;export-as-telechargement(2).csv
+2022;080000197216;Le Marigot;Le Marigot;97216;En activité;1899.0;"[ 2 000 ; 10 000 [ EH";1899.0;1800.0;Oui;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000197217;Le Marin - DUPREY;Le Marin;97217;En activité;12045.0;"[ 10 000 ; 100 000 [ E";12045.0;250.0;Oui;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000797218;LEMORNE-ROUGECAT SAVANE PETIT;Le Morne-Rouge;97218;En activité;0.0;Taille ≤ 200 EH;0.0;100.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197218;Le Morne-RougeCHAZEAU;Le Morne-Rouge;97218;En activité;1316.0;"[ 2 000 ; 10 000 [ EH";1316.0;1000.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000897218;Le Morne-Rouge HAUT BOURG;Le Morne-Rouge;97218;En activité;0.0;Taille ≤ 200 EH;0.0;120.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000497218;Le Morne-RougePARNASSE;Le Morne-Rouge;97218;En activité;6.0;"] 200 ; 2 000 [ EH";6.0;100.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197219;Le Prêcheur - ANSE BELLEVILLE;Le Prêcheur;97219;En activité;68.0;"] 200 ; 2 000 [ EH";68.0;150.0;Oui;N/A;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000297219;Le Prêcheur - LA PERLE;Le Prêcheur;97219;En activité;741.0;"] 200 ; 2 000 [ EH";741.0;400.0;Oui;Non;N/A;Non;2024-12-17;Unitaire;export-as-telechargement(2).csv
+2022;080000197222;Le Robert - COURBARIL;Le Robert;97222;En activité;8106.0;"[ 10 000 ; 100 000 [ E";8106.0;2000.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000497222;Le Robert- FOUR A CHAUX;Le Robert;97222;En activité;567.0;"] 200 ; 2 000 [ EH";567.0;2000.0;Non;Oui;N/A;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000697222;Le Robert- MANSARDE CATALOGNE;Le Robert;97222;En activité;400.0;"] 200 ; 2 000 [ EH";400.0;400.0;Oui;Non;N/A;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000597222;Le Robert - RESIDENCE HELIA;Le Robert;97222;En activité;0.0;Taille ≤ 200 EH;0.0;50.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197214;LORRAIN;Le Lorrain;97214;En activité;1500.0;"[ 2 000 ; 10 000 [ EH";1500.0;1800.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000297214;LORRAIN-RÉSIDENCE CANNE À SUCRE;Le Lorrain;97214;En activité;551.0;"] 200 ; 2 000 [ EH";551.0;400.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000397214;LORRAIN-RESIDENCE MACEDOINE;Le Lorrain;97214;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;300.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197215;MACOUBA-CASE-PAUL;Macouba;97215;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Oui;Non;N/A;Non;2024-12-06;Unitaire;export-as-telechargement(2).csv
+2022;080000297215;Macouba - GUERIN;Macouba;97215;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;200.0;Oui;Oui;N/A;Oui;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000597218;MORNE-ROUGE-ADAPEI CHAMPFLORE;Le Morne-Rouge;97218;En activité;7.0;"] 200 ; 2 000 [ EH";7.0;200.0;Oui;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000297218;MORNE-ROUGE-FOND ROSE;Le Morne-Rouge;97218;En activité;171.0;"] 200 ; 2 000 [ EH";171.0;175.0;Oui;Oui;N/A;Oui;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000397218;MORNE-ROUGE-GALETTE;Le Morne-Rouge;97218;En activité;363.0;"] 200 ; 2 000 [ EH";363.0;250.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000697218;MORNE-ROUGE-GRAND CHAZEAU (CAP21);Le Morne-Rouge;97218;En activité;25.0;"] 200 ; 2 000 [ EH";25.0;500.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000197233;MORNE-VERT-LA VIGIE;Le Morne-Vert;97233;En activité;375.0;"] 200 ; 2 000 [ EH";375.0;300.0;Oui;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000497220;RIVIERE-PILOTE-JOSSEAU;Rivière-Pilote;97220;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;225.0;Oui;Non;N/A;Non;2024-12-06;Unitaire;export-as-telechargement(2).csv
+2022;080000197220;RIVIERE-PILOTE-MANIKOU;Rivière-Pilote;97220;En activité;385.0;"] 200 ; 2 000 [ EH";385.0;2250.0;Non;Non;N/A;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000397220;RIVIERE-PILOTE-MANIKOU_1;Rivière-Pilote;97220;En activité;114.0;"] 200 ; 2 000 [ EH";114.0;0.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197221;Rivière-Salée;Rivière-Salée;97221;En activité;14124.0;"[ 10 000 ; 100 000 [ E";14124.0;7000.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000597221;Rivière-Salée - BOIS TI-BAUME;Rivière-Salée;97221;En activité;0.0;Taille ≤ 200 EH;0.0;58.0;Non;Non;N/A;Non;2024-12-19;Unitaire;export-as-telechargement(2).csv
+2022;080000497221;RIVIERE-SALEE-DESMARINIÈRE;Rivière-Salée;97221;En activité;26.0;Taille ≤ 200 EH;26.0;100.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000297221;RIVIERE-SALEE-FOND-MASSON;Rivière-Salée;97221;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;450.0;Oui;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000397221;RIVIERE-SALEE-KANEL;Rivière-Salée;97221;En activité;145.0;"] 200 ; 2 000 [ EH";145.0;200.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000697221;RIVIERE-SALEE-LES-DIGUES;Rivière-Salée;97221;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;320.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000297222;ROBERT-VERT-PRE;Le Robert;97222;En activité;1158.0;"[ 2 000 ; 10 000 [ EH";1158.0;3000.0;Oui;Oui;Oui;Oui;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000197226;Sainte-Anne - BELFOND;Sainte-Anne;97226;En activité;4745.0;"[ 2 000 ; 10 000 [ EH";4745.0;8000.0;Oui;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297226;Sainte-Anne - RESIDENCE SOLEIL LEVANT;Sainte-Anne;97226;En activité;193.0;"] 200 ; 2 000 [ EH";193.0;110.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197227;SAINTE-LUCE;Sainte-Luce;97227;En activité;11340.0;"[ 10 000 ; 100 000 [ E";11340.0;16755.0;Oui;Oui;Oui;Oui;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000497227;SAINTE-LUCE-BELLEVUE-LADOUR;Sainte-Luce;97227;En activité;113.0;"] 200 ; 2 000 [ EH";113.0;450.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000397227;SAINTE-LUCE-LES COTEAUX;Sainte-Luce;97227;En activité;1400.0;"] 200 ; 2 000 [ EH";1400.0;1050.0;Oui;Oui;N/A;Oui;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000597227;SAINTE-LUCE-RAMA;Sainte-Luce;97227;En activité;22.0;"] 200 ; 2 000 [ EH";22.0;350.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197228;SAINTE-MARIE;Sainte-Marie;97228;En activité;1683.0;"[ 2 000 ; 10 000 [ EH";1683.0;9990.0;Oui;Oui;Oui;Oui;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000897228;SAINTE-MARIE-BONAIR;Sainte-Marie;97228;En activité;347.0;"] 200 ; 2 000 [ EH";347.0;240.0;Non;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000697228;SAINTE-MARIE-CUISINE SCOLAIRE;Sainte-Marie;97228;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000497228;SAINTE-MARIE-RECULÉE;Sainte-Marie;97228;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;800.0;Non;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000797228;SAINTE-MARIE-ROSE-DES-VENTS;Sainte-Marie;97228;En activité;53.0;"] 200 ; 2 000 [ EH";53.0;350.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000597228;SAINTE-MARIE-SAINT PAUL;Sainte-Marie;97228;En activité;0.0;Taille ≤ 200 EH;0.0;54.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197223;SAINT-ESPRIT;Saint-Esprit;97223;En activité;3555.0;"[ 2 000 ; 10 000 [ EH";3555.0;0.0;Non;Non;Oui;Non;2024-05-15;Séparatif;export-as-telechargement(2).csv
+2022;080000297223;SAINT-ESPRIT-PETER-MAILLET;Saint-Esprit;97223;En activité;217.0;"] 200 ; 2 000 [ EH";217.0;200.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000397223;Saint-Esprit - REGALE;Saint-Esprit;97223;En activité;162.0;"] 200 ; 2 000 [ EH";162.0;250.0;Oui;Oui;N/A;Oui;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000497223;Saint-Esprit - RESIDENCE LES COULISSES;Saint-Esprit;97223;En activité;128.0;"] 200 ; 2 000 [ EH";128.0;225.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000797224;SAINT-JOSEPH-BAMBOU-DUCHAMP;Saint-Joseph;97224;En activité;4.0;Taille ≤ 200 EH;4.0;100.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000897224;SAINT-JOSEPH-BELLE-ETOILE;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080001197224;SAINT-JOSEPH-CHOCO-CHOISY;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;1060.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000297224;SAINT-JOSEPH-CHOISY;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;200.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080001297224;SAINT-JOSEPHGONDEAU MONTROSE;Saint-Joseph;97224;En activité;150.0;Taille ≤ 200 EH;150.0;150.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080001097224;SAINT-JOSEPH-GONDEAU MONTROSE SILM;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;0.0;Non;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000997224;SAINT-JOSEPH-LA CHAPPELLE;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;900.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000397224;Saint-JosephLES HAMEAUX;Saint-Joseph;97224;En activité;44.0;"] 200 ; 2 000 [ EH";44.0;200.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000197224;SAINT-JOSEPH-MARTINIQUE;Saint-Joseph;97224;En activité;3896.0;"[ 2 000 ; 10 000 [ EH";3896.0;2500.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080001697224;Saint-Joseph MORNE BASSET;Saint-Joseph;97224;En activité;0.0;Taille ≤ 200 EH;0.0;75.0;Non;Non;N/A;Non;2024-12-19;Unitaire;export-as-telechargement(2).csv
+2022;080001797224;Saint-Joseph - MORNE BASSET 2;Saint-Joseph;97224;En activité;0.0;Taille ≤ 200 EH;0.0;75.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080001397224;Saint-Joseph- POW'ROSE - BELLE ETOILE 2;Saint-Joseph;97224;En activité;385.0;"] 200 ; 2 000 [ EH";385.0;340.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000697224;SAINT-JOSEPH-PRESQU'ÎLE;Saint-Joseph;97224;En activité;10.0;Taille ≤ 200 EH;10.0;50.0;Oui;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080001597224;Saint-Joseph-RAMEDACE NORD;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;400.0;Non;Non;N/A;Non;2024-12-06;Unitaire;export-as-telechargement(2).csv
+2022;080000597224;SAINT-JOSEPH-RAVINE BANCHE NORD;Saint-Joseph;97224;En activité;12.0;"] 200 ; 2 000 [ EH";12.0;125.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000497224;SAINT-JOSEPH-RAVINE BLANCHE SUD;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;250.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080001497224;SAINT-JOSEPH-RAVINE-CHARMEUSE;Saint-Joseph;97224;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;470.0;Oui;Oui;N/A;Oui;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000297225;SAINT-PIERRE-CDST;Saint-Pierre;97225;En activité;0.0;Taille ≤ 200 EH;0.0;150.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000497225;SAINT-PIERRE-LEP ST JAMES;Saint-Pierre;97225;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;500.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000397225;SAINT-PIERRE-MANFÉNIL LLS HABITATION BEA;Saint-Pierre;97225;En activité;0.0;"] 200 ; 2 000 [ EH";0.0;650.0;Oui;Non;N/A;Non;2024-12-06;Inconnu;export-as-telechargement(2).csv
+2022;080000197225;SAINT-PIERRE-MARTINIQUE;Saint-Pierre;97225;En activité;3370.0;"[ 2 000 ; 10 000 [ EH";3370.0;4000.0;Non;Oui;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297229;SCHOELCHERFOND LAHAYE;Schœlcher;97229;En activité;2750.0;"[ 2 000 ; 10 000 [ EH";2750.0;4000.0;Non;Non;Oui;Non;2024-12-06;Séparatif;export-as-telechargement(2).csv
+2022;080000197230;TRINITE-DESMARINIERES;La Trinité;97230;En activité;4076.0;"[ 2 000 ; 10 000 [ EH";4076.0;10000.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000497230;TRINITE-LA VALÉRIANNE;La Trinité;97230;En activité;0.0;Taille ≤ 200 EH;0.0;110.0;Non;Non;N/A;Non;2024-12-19;Inconnu;export-as-telechargement(2).csv
+2022;080000397230;TRINITE-QUARTIER BAC;La Trinité;97230;En activité;127.0;"] 200 ; 2 000 [ EH";127.0;1000.0;Non;Oui;N/A;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000197231;TROIS-ILETS;Les Trois-Îlets;97231;En activité;9248.0;"[ 10 000 ; 100 000 [ E";9248.0;12500.0;Non;N/A;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297231;TROIS-ILETS-LA FERME;Les Trois-Îlets;97231;En activité;200.0;"] 200 ; 2 000 [ EH";200.0;200.0;Oui;Non;N/A;Non;2024-12-17;Inconnu;export-as-telechargement(2).csv
+2022;080000197232;VAUCLIN-BOURG;Le Vauclin;97232;En activité;3720.0;"[ 2 000 ; 10 000 [ EH";3720.0;5000.0;Non;Non;Oui;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv
+2022;080000297232;VAUCLIN-GRANDE CASE;Le Vauclin;97232;En activité;173.0;"] 200 ; 2 000 [ EH";173.0;200.0;Non;Non;N/A;Non;2024-12-17;Séparatif;export-as-telechargement(2).csv

@@ -1,0 +1,7 @@
+﻿severity;indicator_id;territoire;perimeter_id;coverage_status;quality_status;record_role;message
+WARNING;P301.3;CAP_NORD;CAP_NORD_EPCI;COMPLETE;REVISED_BY_LATER_SOURCE;PRODUCTION;Valeur recalculée et confirmée par le RPQS 2024.
+ERROR;P301.3_PUBLISHED;CAP_NORD;CAP_NORD_EPCI;COMPLETE;SOURCE_CALCULATION_ERROR;AUDIT;"Valeur publiée 2023 ; 4801/18322 = 26,20 %. Le RPQS 2024 corrige rétrospectivement 2023 à 26,20 %."
+WARNING;P104.3_REVISED;CAP_NORD_DSP_2020_2024;CAP_NORD_DSP_2020_2024;COMPLETE;REVISED_BY_LATER_SOURCE;PRODUCTION;Ne pas écraser la publication initiale.
+ERROR;RES_007;Martinique;MARTINIQUE;COMPLETE;INCOMPLETE_INVENTORY;DIAGNOSTIC;BNPE non exhaustive pour le comptage des captages.
+ERROR;RES_008;Martinique;MARTINIQUE;COMPLETE;INCOMPLETE_INVENTORY;DIAGNOSTIC;BNPE non exhaustive pour le comptage des captages.
+ERROR;RES_009;Martinique;MARTINIQUE;COMPLETE;INCOMPLETE_INVENTORY;DIAGNOSTIC;BNPE non exhaustive pour le comptage des captages.

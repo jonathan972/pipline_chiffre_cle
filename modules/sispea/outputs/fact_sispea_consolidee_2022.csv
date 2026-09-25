@@ -1,0 +1,91 @@
+﻿annee_reference;competence;code;libelle;unite;min;max;valeur_consolidee;nombre_donnees_utilisees;source_file;date_snapshot
+2022;EP;D101.0;Estimation du nombre d'habitants desservis;hab;33788.0;152276.0;365734.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;D102.0;Prix TTC du service au m³ pour 120 m³ au 1er janvier 2023;€/m³;2.75;3.05;2.842;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P101.1;Taux de conformité des prélèvements sur les eaux distribuées réalisés au titre du contrôle sanitaire par rapport aux limites de qualité pour ce qui concerne la microbiologie;%;98.2;100.0;98.647;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P102.1;Taux de conformité des prélèvements sur les eaux distribuées réalisés au titre du contrôle sanitaire par rapport aux limites de qualité pour ce qui concerne les paramètres physico-chimiques;%;99.5;100.0;99.744;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P103.2B;Indice de connaissance et de gestion patrimoniale des réseaux d'eau potable;points;95.0;105.0;101.78;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P104.3;Rendement du réseau de distribution;%;52.4;81.8;70.885;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P105.3;Indice linéaire des volumes non comptés;m³/km/j;6.5;31.9;14.121;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P106.3;Indice linéaire de pertes en réseau;m³/km/j;6.1;31.9;13.801;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P107.2;Taux moyen de renouvellement des réseaux d'eau potable;%;0.06;0.28;0.199;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P108.3;Indice d'avancement de la protection de la ressource en eau;%;40.0;75.8;62.692;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P109.0;Montant des abandons de créance ou des versements à un fonds de solidarité;€/m³;0.0;0.098;0.04;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P151.1;Taux d'occurrence des interruptions de service non programmées;nb/1000ab;4.91;17.16;9.685;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P152.1;Taux de respect du délai maximal d'ouverture des branchements pour les nouveaux abonnés;%;100.0;100.0;100.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P153.2;Durée d'extinction de la dette de la collectivité;an;0.4;9.3;2.527;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P154.0;Taux d'impayés sur les factures d'eau de l'année précédente;%;9.21;14.18;11.294;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;P155.1;Taux de réclamations;nb/1000ab;1.76;33.63;14.648;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.056;Nombre d'abonnés;ab;14158.0;76122.0;190066.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;DC.184;Montant HT des recettes liées à la facturation pour l'année 2022 (hors travaux);€HT;26947826.0;26947826.0;26947826.0;1.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;DC.195;Montant financier des travaux engagés;€HT;0.0;1064628.55;1064628.55;2.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.119;Somme des abandons de créances et versements à un fonds de solidarité (TVA exclue);€HTVA;464.58;980000.0;987346.22;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.185;Montant TTC facturé (hors travaux) au titre de l'année 2021, au 31/12/2022;€TTC;4611811.0;20058302.74;35673597.74;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.020;Nombre d'interruptions de service non programmées;unité;210.8;652.0;1875.8;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.003;Nombre de réclamations écrites reçues par l'opérateur;unité;26.0;124.0;205.0;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.152;Nombre de réclamations écrites reçues par la collectivité;unité;0.0;2560.0;2579.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.059;Volume produit;m³;0.0;15658799.0;36075228.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.063;Volume comptabilisé domestique;m³;1725900.0;9992658.0;24911162.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.201;Volume comptabilisé non domestique;m³;0.0;0.0;0.0;2.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.220;Volume de service du réseau estimé;m³;106478.0;118924.0;344326.0;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.221;Volumes consommés sans comptage;m³;45294.0;120820.0;286934.0;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.077;Linéaire de réseau hors branchements;km;260.0;1657.0;3868.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.140;Linéaire de réseaux renouvelés au cours des cinq dernières années (quel que soit le financeur);km;0.78;14.6;28.64;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.141;Linéaire de réseaux renouvelés au cours de l'année (quel que soit le financeur);km;0.0;2.6;4.45;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.062;Volume prélevé;m³;0.0;16105405.0;37423866.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.126;Nombre de prélèvements réalisés en vue d'analyses microbiologiques;unité;52.0;297.0;819.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.127;Nombre de prélèvements réalisés en vue d'analyses microbiologiques non conformes;unité;0.0;5.0;11.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.128;Nombre de prélèvements réalisés en vue d'analyses physico-chimiques;unité;52.0;297.0;832.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.129;Nombre de prélèvements réalisés en vue d'analyses physico-chimiques non conformes;unité;0.0;1.0;2.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.175;Nombre d'habitants desservis;hab;33788.0;152276.0;365734.0;4.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;EP;VP.268;Montant restant impayés au 31/12/2022 sur les factures émises au titre de l’année 2021;€TTC;424531.0;2044551.0;4028927.72;3.0;SISPEA_extraction_2022_AEP.ods;2026-09-24T17:33:42.676
+2022;AC;D201.0;Estimation du nombre d'habitants desservis par un réseau de collecte des eaux usées, unitaire ou séparatif;hab;16289.0;152276.0;241088.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;D202.0;Nombre d'autorisations de déversement d'effluents d'établissements industriels au réseau de collecte des eaux usées;unité;0.0;2.0;2.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;D203.0;Quantité de boues issues des ouvrages d'épuration;tMS;118.0;1017.4;1620.9;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;D204.0;Prix TTC du service au m³ pour 120 m³ au 1er janvier 2023;€/m³;2.77;3.57;2.981;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P201.1;Taux de desserte par des réseaux de collecte des eaux usées;%;58.84;58.84;58.84;1.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P202.2B;Indice de connaissance et de gestion patrimoniale des réseaux de collecte des eaux usées;points;83.0;95.0;91.992;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P203.3;Conformité de la collecte des effluents aux prescriptions nationales issues de la directive ERU;%;0.0;0.0;0.0;1.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P204.3;Conformité des équipements d'épuration aux prescriptions nationales issues la directive ERU;%;3.0;3.0;3.0;1.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P205.3;Conformité de la performance des ouvrages d'épuration aux prescriptions nationales issues de la directive ERU;%;2.0;2.0;2.0;1.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P206.3;Taux de boues issues des ouvrages d'épuration évacuées selon des filières conformes à la réglementation;%;99.9;100.0;99.99;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P207.0;Montant des abandons de créance ou des versements à un fonds de solidarité;€/m³;0.0;0.001;0.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P251.1;Taux de débordement d'effluents dans les locaux des usagers;nb/1000hab;0.0;0.0;0.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P252.2;Nombre de points du réseau de collecte nécessitant des interventions fréquentes de curage par 100 km de réseau;nb/100km;4.9;9.6;7.102;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P253.2;Taux moyen de renouvellement des réseaux de collecte des eaux usées;%;0.01;0.23;0.104;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P254.3;Conformité des performances des équipements d'épuration au regard des prescriptions de l'acte individuel;%;85.9;96.2;95.249;2.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P255.3;Indice de connaissance des rejets au milieu naturel par les réseaux de collecte des eaux usées;unité;20.0;100.0;60.232;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P256.2;Durée d'extinction de la dette de la collectivité;an;7.0;11.4;8.949;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P257.0;Taux d'impayés sur les factures d'assainissement de l'année précédente;%;11.01;22.69;14.848;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;P258.1;Taux de réclamations;nb/1000ab;1.98;34.0;17.879;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.056;Nombre d'abonnés;ab;6729.0;39492.0;81139.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;DC.184;Montant HT des recettes liées à la facturation pour l'année 2022 (hors travaux);€HT;12626995.0;12626995.0;12626995.0;1.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;DC.195;Montant financier des travaux engagés;€HT;23617.4;56315.0;79932.4;2.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.119;Somme des abandons de créances et versements à un fonds de solidarité (TVA exclue);€HTVA;0.0;1875.6;2331.38;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.185;Montant TTC facturé (hors travaux) au titre de l'année 2021, au 31/12/2022;€TTC;2299473.0;12626995.0;27342494.99;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.003;Nombre de réclamations écrites reçues par l'opérateur;unité;29.0;51.0;80.0;2.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.152;Nombre de réclamations écrites reçues par la collectivité;unité;0.0;22.0;28.0;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.077;Linéaire de réseau hors branchements;km;102.48;345.0;902.04;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.140;Linéaire de réseaux renouvelés au cours des cinq dernières années (quel que soit le financeur);km;0.1;0.44;0.74;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.141;Linéaire de réseaux renouvelés au cours de l'année (quel que soit le financeur);km;0.0;0.85;1.41;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.124;Nombre potentiel d'abonnés de la zone relevant de l'assainissement collectif;ab;0.0;40493.0;40493.0;2.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.068;Volume facturé;m³;713506.0;4617313.0;9106700.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.186;Pollution collectée estimée en DBO5;kg DBO5/j;977.34;5875.9;11683.92;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.176;Charge entrante en DBO5;kg DBO5/j;591.2;5821.3;12225.23;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.209;Quantité de boues admises par une filière conforme;tMS;118.04;118.04;118.04;1.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.023;Nombre d'inondations dans les locaux de l'usager;unité;0.0;0.0;0.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.046;Nombre de points noirs;unité;5.0;33.0;64.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.199;Linéaire de réseaux de collecte unitaires (hors branchements);km;0.0;0.0;0.0;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.200;Linéaire de réseaux de collecte séparatifs (hors branchements);km;102.48;345.0;902.04;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.175;Nombre d'habitants desservis;hab;16289.0;152276.0;241088.0;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.208;Quantité totale de boues évacuées;tMS;118.04;1017.42;1620.96;4.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;AC;VP.268;Montant restant impayés au 31/12/2022 sur les factures émises au titre de l’année 2021;€TTC;322146.39;1095399.91;1939293.65;3.0;SISPEA_extraction_2022_AC.xls;2026-09-24T17:34:59
+2022;ANC;D301.0;Evaluation du nombre d'habitants desservis par le service public d'assainissement non collectif;hab;60501.0;72116.0;195673.0;3.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;D302.0;Indice de mise en oeuvre de l'assainissement non collectif;unité;70.0;110.0;92.166;3.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;P301.3;Taux de conformité des dispositifs d'assainissement non collectif;%;0.7;25.1;11.1;2.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;VP.181;Nombre d'habitants résidant sur le territoire du service;hab;96187.0;152276.0;364563.0;3.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;DC.197;Montant des recettes provenant des contrôles;€;151164.0;164000.0;315164.0;2.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;DC.198;Montant financier des travaux réalisés;€;0.0;0.0;0.0;1.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;VP.167;Nombre total d'installations contrôlées depuis la création du service;unité;17643.0;23925.0;59340.0;3.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;VP.166;Nombre d'installations contrôlées jugées conformes ou ayant fait l'objet d'une mise en conformité;unité;113.0;4312.0;4425.0;2.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;VP.175;Nombre d'habitants desservis;hab;60501.0;72116.0;195673.0;3.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15
+2022;ANC;VP.267;Nombre d'installations jugées non conformes mais ne présentant pas de dangers pour la santé des personnes ou de risques avérés de pollution de l'environnement;unité;47.0;146.0;193.0;2.0;SISPEA_extraction_2022_ANC.xls;2026-09-24T17:35:15

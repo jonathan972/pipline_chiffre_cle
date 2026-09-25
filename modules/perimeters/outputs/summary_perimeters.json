@@ -1,0 +1,24 @@
+{
+  "rows": 117,
+  "anomalies": 5,
+  "checks": [
+    {
+      "year": 2023,
+      "check_id": "CAPNORD_SUBSCRIBER_PARTITION",
+      "lhs": 52638,
+      "rhs": 52638,
+      "difference": 0,
+      "status": "OK",
+      "message": "CAP Nord contract + Robert-Trinité Ex-SICSM = total EPCI."
+    },
+    {
+      "year": 2024,
+      "check_id": "CAPNORD_SUBSCRIBER_PARTITION",
+      "lhs": 51746,
+      "rhs": 51746,
+      "difference": 0,
+      "status": "OK",
+      "message": "CAP Nord contract + Robert-Trinité Ex-SICSM = total EPCI."
+    }
+  ]
+}

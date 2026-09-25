@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {"file":"Bilan ODYSSI 2023.pdf","family":"ODYSSI_BILAN","year":2023,"authority":"CACEM / ODYSSI"},
+    {"file":"RAD_Eau_Potable_Ex-SICSM_2023.pdf","family":"EX_SICSM_EP","year":2023,"authority":"SME / CAESM + Robert-Trinite"},
+    {"file":"RAD_Assainissement_Ex-SICSM_2023.pdf","family":"EX_SICSM_AC","year":2023,"authority":"SME / CAESM + Robert-Trinite"},
+    {"file":"RPQS SPANC 2023.pdf","family":"CAESM_SPANC","year":2023,"authority":"CAESM"},
+    {"file":"RAD_Eau_Potable_Ex-SICSM_2024_V3.pdf","family":"EX_SICSM_EP","year":2024,"authority":"SME / CAESM + Robert-Trinite"},
+    {"file":"RAD_Assainissement_Ex-SICSM_2024_V2.pdf","family":"EX_SICSM_AC","year":2024,"authority":"SME / CAESM + Robert-Trinite"},
+    {"file":"RAD_Eau_potable_CAP_NORD_2023.pdf","family":"CAPNORD_EP_CONTRACT","year":2023,"authority":"SME / CAP Nord"},
+    {"file":"RPQS Assainissement collectif 2023.pdf","family":"CAPNORD_AC_RPQS","year":2023,"authority":"CAP Nord"},
+    {"file":"RPQS SPANC 2023(1).pdf","family":"CAPNORD_SPANC","year":2023,"authority":"CAP Nord"},
+    {"file":"CC-09-2025-235 Approbation RPQS Assainissement collectif 2024.pdf","family":"CAPNORD_AC_RPQS","year":2024,"authority":"CAP Nord"},
+    {"file":"CC-09-2025-236 Approbation RPQS Assainissement non collectif 2024.pdf","family":"CAPNORD_SPANC","year":2024,"authority":"CAP Nord"},
+    {"file":"RAD_Eau_potable_CAP_NORD_2024.pdf","family":"CAPNORD_EP_CONTRACT","year":2024,"authority":"SME / CAP Nord"}
+  ]
+}

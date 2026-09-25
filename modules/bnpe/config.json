@@ -1,0 +1,18 @@
+{
+  "department": "972",
+  "region_name": "Martinique",
+  "aep_usage_code": "AEP",
+  "irrigation_usage_code": "IRR",
+  "industry_usage_code": "IND",
+  "surface_water_code": "CONT",
+  "groundwater_code": "SOUT",
+  "lezarde_system": {
+    "label": "Lézarde + Rivière Blanche",
+    "ouvrage_codes": ["OPR0000276733", "OPR0000276729", "OPR0000276714"],
+    "hydro_entity_codes": ["25121080", "25031480"]
+  },
+  "validation": {
+    "relative_tolerance_pct": 0.5,
+    "published_percentage_tolerance_points": 1.0
+  }
+}

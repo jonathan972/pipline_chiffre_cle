@@ -1,0 +1,37 @@
+﻿ode_id;competence;indicateur;territoire;page_rapport;unite;valeur_rapport;valeur_sispea_snapshot;ecart_absolu;ecart_relatif_pct;statut;code_sispea;politique_source;source_recommandee;commentaire
+EP_005;EP;Nombre d’abonnés AEP;Martinique;11;abonnés;190066;190066.0;0.0;0.0;OK;VP.056;SISPEA_PRIMARY;SISPEA;Correspondance exacte du snapshot actuel.
+EP_006;EP;Volume facturé AEP;Martinique;11;m³/an;21041846;;;;NON_CALCULE;—;EXTERNAL_PRIMARY;RAD/RPQS;Aucun VP.068 dans l’extraction AEP 2022. VP.063 est un volume comptabilisé domestique et n’est pas équivalent.
+EP_007;EP;Volume produit;Martinique;12;m³/an;41539655;36075228.0;-5464427.0;-13.154724082325671;ECART_IMPORTANT;VP.059;SISPEA_DIAGNOSTIC;RAD/RPQS / ODE;La définition SISPEA est disponible mais le snapshot actuel ne reproduit pas le rapport.
+RES_014;EP;Volume prélevé AEP;Martinique;8,12;m³/an;44771108;37423866.0;-7347242.0;-16.41067717153661;ECART_IMPORTANT;VP.062;EXTERNAL_PRIMARY;BNPE;"Le rapport s’appuie sur la synthèse des prélèvements ; BNPE doit rester la source de référence."
+EP_017;EP;Linéaire réseau AEP;Martinique;13;km;3867;3868.0;1.0;0.02585983966899405;ECART_FAIBLE;VP.077;SISPEA_PRIMARY;SISPEA;Écart de 1 km compatible avec une révision/arrondi.
+TAR_001;EP;Prix moyen EP base 120 m³;Martinique;31;€/m³;2.83;2.842;0.01200000000000001;0.42402826855123715;ECART_FAIBLE;D102.0;SISPEA_DIAGNOSTIC;SISPEA tarifs + méthode ODE;La valeur consolidée SISPEA est utile mais la méthode éditoriale du rapport doit être versionnée.
+EP_003;EP;Conformité microbiologique;CAESM;11;%;100.0;99.5;-0.5;-0.5;ECART_FAIBLE;P101.1;EXTERNAL_PRIMARY;ARS Martinique;"Le rapport cite explicitement l’ARS ; SISPEA est un contrôle secondaire."
+EP_003;EP;Conformité microbiologique;CACEM;11;%;99.4;98.2;-1.2000000000000028;-1.2072434607645903;ECART_IMPORTANT;P101.1;EXTERNAL_PRIMARY;ARS Martinique;"Le rapport cite explicitement l’ARS ; SISPEA est un contrôle secondaire."
+EP_003;EP;Conformité microbiologique;CAP_NORD;11;%;98.6;98.6;0.0;0.0;OK;P101.1;EXTERNAL_PRIMARY;ARS Martinique;"Le rapport cite explicitement l’ARS ; SISPEA est un contrôle secondaire."
+EP_004;EP;Conformité physico-chimique;CAESM;11;%;100.0;99.5;-0.5;-0.5;ECART_FAIBLE;P102.1;EXTERNAL_PRIMARY;ARS Martinique;"Le rapport cite explicitement l’ARS ; SISPEA est un contrôle secondaire."
+EP_004;EP;Conformité physico-chimique;CACEM;11;%;99.4;99.6;0.19999999999998863;0.20120724346075317;ECART_FAIBLE;P102.1;EXTERNAL_PRIMARY;ARS Martinique;"Le rapport cite explicitement l’ARS ; SISPEA est un contrôle secondaire."
+EP_004;EP;Conformité physico-chimique;CAP_NORD;11;%;100.0;100.0;0.0;0.0;OK;P102.1;EXTERNAL_PRIMARY;ARS Martinique;"Le rapport cite explicitement l’ARS ; SISPEA est un contrôle secondaire."
+EP_019;EP;Rendement hydraulique;CAESM;14;%;81.8;81.8;0.0;0.0;OK;P104.3;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_019;EP;Rendement hydraulique;CACEM;14;%;64.5;64.5;0.0;0.0;OK;P104.3;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_019;EP;Rendement hydraulique;CAP_NORD;14;%;52.4;52.4;0.0;0.0;OK;P104.3;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_020;EP;Indice linéaire de pertes;CAESM;14;m³/km/j;6.54;6.1;-0.4400000000000004;-6.7278287461773765;ECART_IMPORTANT;P106.3;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_020;EP;Indice linéaire de pertes;CACEM;14;m³/km/j;21.0;31.9;10.899999999999999;51.9047619047619;ECART_IMPORTANT;P106.3;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_020;EP;Indice linéaire de pertes;CAP_NORD;14;m³/km/j;10.2;10.2;0.0;0.0;OK;P106.3;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_021;EP;Taux moyen de renouvellement;CAESM;15;%;0.18;0.18;0.0;0.0;OK;P107.2;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_021;EP;Taux moyen de renouvellement;CACEM;15;%;0.19;0.19;0.0;0.0;OK;P107.2;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+EP_021;EP;Taux moyen de renouvellement;CAP_NORD;15;%;0.28;0.28;0.0;0.0;OK;P107.2;SISPEA_PRIMARY;SISPEA;Pour CAP Nord le rapport utilise le service principal hors Robert/Trinité.
+AC_001;AC;Linéaire réseau AC;Martinique;18;km;901;902.04;1.0399999999999636;0.11542730299666631;ECART_FAIBLE;VP.077;SISPEA_PRIMARY;SISPEA;
+AC_012;AC;Boues évacuées;Martinique;23;tMS/an;1622;1620.96;-1.0399999999999636;-0.06411837237977581;ECART_FAIBLE;VP.208;SISPEA_PRIMARY;SISPEA;"Très faible écart ; conserver la valeur non arrondie."
+AC_014;AC;Nombre d’abonnés AC;Martinique;24;abonnés;80832;81139.0;307.0;0.3798000791765637;ECART_FAIBLE;VP.056;SISPEA_PRIMARY;SISPEA;Le snapshot 2026 contient une légère révision du millésime 2022.
+AC_015;AC;Volume facturé AC;Martinique;24;m³/an;9940643;9106700.0;-833943.0;-8.389225928342865;ECART_IMPORTANT;VP.068;SISPEA_DIAGNOSTIC;RAD/RPQS;Écart significatif avec le snapshot SISPEA actuel.
+AC_001;AC;Linéaire réseau AC;CAESM;18;km;304;304.84;0.839999999999975;0.276315789473676;ECART_FAIBLE;VP.077;SISPEA_PRIMARY;SISPEA;
+AC_001;AC;Linéaire réseau AC;CACEM;18;km;345;345.0;0.0;0.0;OK;VP.077;SISPEA_PRIMARY;SISPEA;
+AC_001;AC;Linéaire réseau AC;CAP_NORD;18;km;252;252.2;0.19999999999998863;0.07936507936507485;ECART_FAIBLE;VP.077;SISPEA_PRIMARY;SISPEA;
+AC_012;AC;Boues évacuées;CAESM;23;tMS/an;322;322.24;0.2400000000000091;0.07453416149068605;ECART_FAIBLE;VP.208;SISPEA_PRIMARY;SISPEA;
+AC_012;AC;Boues évacuées;CACEM;23;tMS/an;1017;1017.42;0.4199999999999591;0.04129793510324081;ECART_FAIBLE;VP.208;SISPEA_PRIMARY;SISPEA;
+AC_012;AC;Boues évacuées;CAP_NORD;23;tMS/an;282;281.3;-0.6999999999999886;-0.2482269503546059;ECART_FAIBLE;VP.208;SISPEA_PRIMARY;SISPEA;
+ANC_002;ANC;Population ANC;Martinique;26;habitants;205898;195673.0;-10225.0;-4.966051151541055;ECART_IMPORTANT;D301.0;SISPEA_DIAGNOSTIC;SISPEA + contrôle ODE/SPANC;Le snapshot courant est inférieur au rapport 2022.
+ANC_003;ANC;Dispositifs ANC estimés;Martinique;26,28;installations;73000;56255.0;-16745.0;-22.93835616438356;ECART_IMPORTANT;DC.306;SISPEA_INCOMPLETE;ODE/SPANC;Le champ est renseigné dans 3 services mais CACEM vaut seulement 601 : contrôle local indispensable.
+ANC_010;ANC;Contrôles sur le neuf;Martinique;29;contrôles;1007;1009.0;2.0;0.19860973187686196;ECART_FAIBLE;DC.332 + DC.333;SISPEA_PRIMARY;SISPEA;Somme conception + vérification d’exécution : à confirmer comme convention éditoriale, mais le résultat est très proche du rapport.
+ANC_011;ANC;Contrôles sur l’existant;Martinique;29;contrôles;591;388.0;-203.0;-34.34856175972927;ECART_IMPORTANT;VP.334;SISPEA_INCOMPLETE;SPANC / SISPEA après complétude;CACEM est non renseignée dans le snapshot actuel, d’où une sous-estimation.
+ANC_013;ANC;Taux de conformité ANC;Martinique;—;%;;11.1;;;COUVERTURE_PARTIELLE;P301.3;SISPEA_WITH_COMPLETENESS;SISPEA + contrôle SPANC;"Valeur consolidée calculée sur 2.0 service(s) sur 3 ; ne pas présenter comme taux Martinique complet sans signalement."

@@ -1,0 +1,38 @@
+{
+  "run_id": "749c8198-bff7-4cea-8b42-425b6bddca1a",
+  "year": 2022,
+  "started_at": "2026-09-24T23:57:04.565317+00:00",
+  "finished_at": "2026-09-24T23:58:35.055543+00:00",
+  "status": "OK",
+  "events": [
+    {
+      "module": "master_base",
+      "status": "OK",
+      "file": "C:\\ODE\\ode_referentiel_eau_v7\\modules\\master\\outputs\\fact_indicateur_master_2022.csv",
+      "rows": 42
+    },
+    {
+      "module": "ars_quality",
+      "status": "OK",
+      "file": "C:\\ODE\\ode_referentiel_eau_v7\\modules\\ars_quality\\outputs\\2022\\fact_ars_quality_2022.csv",
+      "rows": 8
+    }
+  ],
+  "sources": [
+    {
+      "module": "master_base",
+      "path": "C:\\ODE\\ode_referentiel_eau_v7\\modules\\master\\outputs\\fact_indicateur_master_2022.csv",
+      "sha256": "d87f736d4a831ba543b4d0b5c2d583afd6a4dc1422ac34b04ae4835688d726cc"
+    },
+    {
+      "module": "ars_quality",
+      "path": "C:\\ODE\\ode_referentiel_eau_v7\\modules\\ars_quality\\outputs\\2022\\fact_ars_quality_2022.csv",
+      "sha256": "3a7f35b4fb677d12b31f2eb59fe514e313bcbdf7731fd4d1a8b4c9af06534a66"
+    }
+  ],
+  "rows_final": 50,
+  "production_rows": 32,
+  "diagnostic_rows": 17,
+  "audit_rows": 0,
+  "quality_alerts": 6
+}

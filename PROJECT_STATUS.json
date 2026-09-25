@@ -1,0 +1,24 @@
+{
+  "project": "Référentiel Eau & Assainissement — ODE Martinique",
+  "release": "V1/v8",
+  "snapshot_date": "2026-09-24",
+  "indicators_total": 80,
+  "automation_classes": {
+    "A_automatic_validated": 21,
+    "B_automatic_with_control": 32,
+    "C_semi_automatic_local_source": 24,
+    "D_manual_reference": 3
+  },
+  "technically_automatable": {
+    "count": 53,
+    "percent": 66.2
+  },
+  "certifications": {
+    "2022": {"status": "CERTIFIED_WITH_GAPS", "gaps": 3, "blocking": 0},
+    "2023": {"status": "CERTIFIED_WITH_GAPS", "gaps": 3, "blocking": 0},
+    "2024": {"status": "CERTIFIED_WITH_GAPS", "gaps": 4, "blocking": 0}
+  },
+  "next_priority": "Référentiel patrimonial captages/PPC ODE–ARS",
+  "entrypoint": "python update_observatoire.py --year YYYY",
+  "handoff": "docs/REPRISE_IA.md"
+}

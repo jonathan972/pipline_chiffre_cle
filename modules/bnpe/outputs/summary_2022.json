@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-09-24T18:15:52.470619+00:00",
+  "year_reference": 2022,
+  "source_files": {
+    "prelevements": {
+      "file": "prelevements.csv",
+      "sha256": "d1f6dabd5c1863518dc950c88cf58b7029597470fd821fcdc2d94e70f0e23310"
+    },
+    "usage": {
+      "file": "synthese_usage.csv",
+      "sha256": "d47f535645b4b539a7fbfcdd6f5c9552cc634a850684c19ba5b1661fdbc5d21d"
+    },
+    "type_eau": {
+      "file": "synthese_type_eau.csv",
+      "sha256": "a98b12602c3b8dbd5caf70b96fe8aec73986ab7591feb07186265db72ccf206e"
+    },
+    "evolution": {
+      "file": "synthese_evolution_temporelle.csv",
+      "sha256": "f8de668d33e85df0baad27944a709eb33ac32995005f3307cabd80355adfaba9"
+    },
+    "geo": {
+      "file": "synthese_geographique.csv",
+      "sha256": "e56cc175afe864791f1c0d45aba4d14f2ee98d430da1cbb29fc4a5b3ca302f2c"
+    }
+  },
+  "availability": {
+    "volume_m3": 63317868.0,
+    "comment": ""
+  },
+  "metrics": {
+    "RES_015": 63317868,
+    "RES_014": 44771108,
+    "RES_016": 16332240,
+    "RES_017": 2214520,
+    "RES_001": 70.70848942671284,
+    "RES_002": 25.794046002938696,
+    "RES_003": 3.497464570348452,
+    "RES_004": 94.60748882962646,
+    "RES_005": 5.3925111703735364,
+    "RES_006": 57.751463287439755,
+    "RES_007": 29,
+    "RES_008": 13,
+    "RES_009": 16
+  },
+  "counts": {
+    "rows_prelevements": 127,
+    "unique_ouvrages": 126,
+    "aep_rows": 29,
+    "aep_unique_ouvrages": 29,
+    "aep_surface_ouvrages": 13,
+    "aep_groundwater_ouvrages": 16,
+    "zero_volume_rows": 31
+  },
+  "quality_issue_count": 2
+}

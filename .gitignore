@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.idea/
+.vscode/
+
+# Snapshots Hub'Eau bruts volumineux : régénérables avec --refresh-ars.
+# Leurs empreintes historiques sont conservées dans docs/INVENTAIRE_DONNEES.md.
+modules/ars_quality/outputs/**/raw_hubeau_ars_*.json
+
+# Sorties temporaires locales ; les sorties de référence déjà suivies restent versionnées.
+modules/orchestrator/outputs/annual_*/

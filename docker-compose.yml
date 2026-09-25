@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: ode
+      POSTGRES_USER: ode
+      POSTGRES_PASSWORD: change_me
+    ports: ["5432:5432"]
+    volumes: [ode_pgdata:/var/lib/postgresql/data]
+volumes: {ode_pgdata: {}}

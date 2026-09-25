@@ -1,0 +1,13 @@
+﻿annee_reference;indicator_id;territoire;severity;coverage_status;quality_status;message
+2022;ANC_001;Martinique;INFO;COMPLETE;REVISED_SNAPSHOT;Part de population relevant de l’ANC d’après le snapshot SISPEA courant.
+2022;ANC_002;Martinique;INFO;COMPLETE;REVISED_SNAPSHOT;"Population ANC du snapshot courant ; à confronter aux SPANC/ODE."
+2022;ANC_003;Martinique;INFO;PARTIAL;REVISED_SNAPSHOT;"Somme des services renseignés ; contrôle SPANC requis."
+2022;ANC_011;Martinique;WARNING;PARTIAL;COVERAGE_PARTIAL;2/3 services renseignés.
+2022;ANC_013;Martinique;WARNING;PARTIAL;COVERAGE_PARTIAL;2/3 services utilisés.
+2022;AC_004;Martinique;INFO;COMPLETE;REVISED_SNAPSHOT;Le snapshot courant diffère du rapport 2022 historique.
+2022;AC_005;Martinique;INFO;COMPLETE;REVISED_SNAPSHOT;Le snapshot courant diffère du rapport 2022 historique.
+2022;AC_014;Martinique;INFO;COMPLETE;REVISED_SNAPSHOT;"Snapshot SISPEA actuel ; historique susceptible d’avoir été révisé."
+2022;AC_016;Martinique;INFO;COMPLETE;REVISED_SNAPSHOT;"Part d'abonnés AC parmi les abonnés AEP ; ne pas l'intituler part de population raccordée."
+2022;RES_007;Martinique;WARNING;PARTIAL;INCOMPLETE_INVENTORY;Nombre d'ouvrages AEP présents dans BNPE | BNPE non exhaustive pour compter les captages.
+2022;RES_008;Martinique;WARNING;PARTIAL;INCOMPLETE_INVENTORY;Nombre d'ouvrages AEP CONT présents dans BNPE | BNPE non exhaustive pour compter les captages.
+2022;RES_009;Martinique;WARNING;PARTIAL;INCOMPLETE_INVENTORY;Nombre d'ouvrages AEP SOUT présents dans BNPE | BNPE non exhaustive pour compter les captages.

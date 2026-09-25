@@ -1,0 +1,2 @@
+# Le prototype ETL fonctionne uniquement avec la bibliothèque standard Python 3.10+.
+# Aucun paquet externe n'est requis pour produire les CSV/JSON.

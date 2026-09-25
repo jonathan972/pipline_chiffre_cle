@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-09-24T17:47:30.316201+00:00",
+  "year_reference": 2022,
+  "sources": {
+    "EP": {
+      "source_file": "SISPEA_extraction_2022_AEP.ods",
+      "source_sha256": "72a6e788f80d32005166774f47bc2803783b655b294efda3f9b565512a6f0101",
+      "Producteur du jeu de données": "Office Français de la Biodiversité",
+      "Co-producteur du jeu de données": "Communes, EPCI, Directions Départementales des Territoires",
+      "Description du jeu de données": "Les données de synthèse du Système d'Information sur les Services Publics d'Eau et d'Assainissement (SISPEA) présentent, service par service et ouvrage par ouvrage, l’intégralité des données accessibles au grand public sur l’Observatoire des services d’eau et d’assainissement (http://www.services.eaufrance.fr), et pertinents pour chaque compétence (eau potable, assainissement collectif, assainissement non collectif). \nChaque fichier correspond aux données d’une année et d’une compétence et comporte deux séries de données : \n- Tableaux de séries de données, par service public : description, indicateurs, variables, avis de vérification des services de l'Etat\n- Tableaux de séries de données, par ouvrage : description, indicateurs, variables",
+      "Langue du jeu de données": "Français",
+      "Fréquence de mise à jour": "Manuelle",
+      "Commentaire": "La description des services et des ouvrages provient des DDT et représente un recensement complet des services existants. Les données annuelles (indicateurs et variables) sont fournies par les collectivités et vérifiées par les DDT.",
+      "Domaine(s) du jeu de données": "Services publics d'eau potable",
+      "Thème(s)": "Rapport sur le prix et la qualité du service - Indicateurs de performance",
+      "Année de l'exercice": "2022",
+      "Compétence": "eau potable",
+      "Emprise spatiale du jeu de données": "Agence Martinique",
+      "Nom complet du jeu de données": "Données annuelles sur le prix et la performance des services publics d'eau potable, Martinique, pour l'année 2022. Données concernées : base complète",
+      "Date du jeu de données": "2026-09-24T17:33:42.676",
+      "Nombre de collectivités concernées par l'extraction": 3.0,
+      "Nombre de collectivités de type EPCI": 3.0,
+      "Nombre d’entités de gestion": 4.0,
+      "Nombre d’entités de gestion en gestion directe": 1.0,
+      "Nombre d’entités de gestion en gestion indirecte": 3.0,
+      "Nombre de communes sur l’ensemble de la zone": 34.0,
+      "Nombre de communes adhérentes directes": 35.0,
+      "Nombre de communes adhérentes via": 0.0,
+      "Nombre de communes desservies seulement": 2.0,
+      "Nombre d’ouvrages": 35.0
+    },
+    "AC": {
+      "source_file": "SISPEA_extraction_2022_AC.xls",
+      "source_sha256": "212a317cdb6ddcdc06a500daf35f2b887f9d8f71a28cc759a7586355acf44019",
+      "Producteur du jeu de données": "Office Français de la Biodiversité",
+      "Co-producteur du jeu de données": "Communes, EPCI, Directions Départementales des Territoires",
+      "Description du jeu de données": "Les données de synthèse du Système d'Information sur les Services Publics d'Eau et d'Assainissement (SISPEA) présentent, service par service et ouvrage par ouvrage, l’intégralité des données accessibles au grand public sur l’Observatoire des services d’eau et d’assainissement (http://www.services.eaufrance.fr), et pertinents pour chaque compétence (eau potable, assainissement collectif, assainissement non collectif). \nChaque fichier correspond aux données d’une année et d’une compétence et comporte deux séries de données : \n- Tableaux de séries de données, par service public : description, indicateurs, variables, avis de vérification des services de l'Etat\n- Tableaux de séries de données, par ouvrage : description, indicateurs, variables",
+      "Langue du jeu de données": "Français",
+      "Fréquence de mise à jour": "Manuelle",
+      "Commentaire": "La description des services et des ouvrages provient des DDT et représente un recensement complet des services existants. Les données annuelles (indicateurs et variables) sont fournies par les collectivités et vérifiées par les DDT.",
+      "Domaine(s) du jeu de données": "Services publics d'assainissement collectif",
+      "Thème(s)": "Rapport sur le prix et la qualité du service - Indicateurs de performance",
+      "Année de l'exercice": "2022",
+      "Compétence": "assainissement collectif",
+      "Emprise spatiale du jeu de données": "Agence Martinique",
+      "Nom complet du jeu de données": "Données annuelles sur le prix et la performance des services publics d'assainissement collectif, Martinique, pour l'année 2022. Données concernées : base complète",
+      "Date du jeu de données": "2026-09-24T17:34:59",
+      "Nombre de collectivités concernées par l'extraction": 3.0,
+      "Nombre de collectivités de type EPCI": 3.0,
+      "Nombre d’entités de gestion": 4.0,
+      "Nombre d’entités de gestion en gestion directe": 2.0,
+      "Nombre d’entités de gestion en gestion indirecte": 2.0,
+      "Nombre de communes sur l’ensemble de la zone": 33.0,
+      "Nombre de communes adhérentes directes": 34.0,
+      "Nombre de communes adhérentes via": 0.0,
+      "Nombre de communes desservies seulement": 0.0,
+      "Nombre d’ouvrages": 105.0
+    },
+    "ANC": {
+      "source_file": "SISPEA_extraction_2022_ANC.xls",
+      "source_sha256": "9d64058217285fe8e5d58632fc97a6705e8b9fc450bec8a0a33fa861bbaa67bd",
+      "Producteur du jeu de données": "Office Français de la Biodiversité",
+      "Co-producteur du jeu de données": "Communes, EPCI, Directions Départementales des Territoires",
+      "Description du jeu de données": "Les données de synthèse du Système d'Information sur les Services Publics d'Eau et d'Assainissement (SISPEA) présentent, service par service et ouvrage par ouvrage, l’intégralité des données accessibles au grand public sur l’Observatoire des services d’eau et d’assainissement (http://www.services.eaufrance.fr), et pertinents pour chaque compétence (eau potable, assainissement collectif, assainissement non collectif). \nChaque fichier correspond aux données d’une année et d’une compétence et comporte deux séries de données : \n- Tableaux de séries de données, par service public : description, indicateurs, variables, avis de vérification des services de l'Etat\n- Tableaux de séries de données, par ouvrage : description, indicateurs, variables",
+      "Langue du jeu de données": "Français",
+      "Fréquence de mise à jour": "Manuelle",
+      "Commentaire": "La description des services et des ouvrages provient des DDT et représente un recensement complet des services existants. Les données annuelles (indicateurs et variables) sont fournies par les collectivités et vérifiées par les DDT.",
+      "Domaine(s) du jeu de données": "Services publics d'assainissement non collectif",
+      "Thème(s)": "Rapport sur le prix et la qualité du service - Indicateurs de performance",
+      "Année de l'exercice": "2022",
+      "Compétence": "assainissement non collectif",
+      "Emprise spatiale du jeu de données": "Agence Martinique",
+      "Nom complet du jeu de données": "Données annuelles sur le prix et la performance des services publics d'assainissement non collectif, Martinique, pour l'année 2022. Données concernées : base complète",
+      "Date du jeu de données": "2026-09-24T17:35:15",
+      "Nombre de collectivités concernées par l'extraction": 3.0,
+      "Nombre de collectivités de type EPCI": 3.0,
+      "Nombre d’entités de gestion": 3.0,
+      "Nombre d’entités de gestion en gestion directe": 3.0,
+      "Nombre d’entités de gestion en gestion indirecte": 0.0,
+      "Nombre de communes sur l’ensemble de la zone": 34.0,
+      "Nombre de communes adhérentes directes": 34.0,
+      "Nombre de communes adhérentes via": 0.0,
+      "Nombre de communes desservies seulement": 0.0,
+      "Nombre d’ouvrages": 0.0
+    }
+  },
+  "counts": {
+    "EP": {
+      "entities": 4,
+      "collectivities": 3,
+      "consolidated_rows": 39
+    },
+    "AC": {
+      "entities": 4,
+      "collectivities": 3,
+      "consolidated_rows": 41
+    },
+    "ANC": {
+      "entities": 3,
+      "collectivities": 3,
+      "consolidated_rows": 10
+    }
+  },
+  "validation_status_counts": {
+    "COUVERTURE_PARTIELLE": 1,
+    "ECART_FAIBLE": 14,
+    "ECART_IMPORTANT": 9,
+    "NON_CALCULE": 1,
+    "OK": 11
+  }
+}

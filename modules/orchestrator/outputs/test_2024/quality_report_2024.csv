@@ -1,0 +1,2 @@
+﻿severity;indicator_id;territoire;perimeter_id;coverage_status;quality_status;record_role;message
+ERROR;P104.3_REPORTED_RT;ROBERT_TRINITE;ROBERT_TRINITE_EXSICSM;COMPLETE;SOURCE_ERROR_SUSPECTED;AUDIT;Incompatible avec le RAD et une correction CAP Nord ultérieure à 81 %.

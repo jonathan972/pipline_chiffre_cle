@@ -1,0 +1,14 @@
+﻿annee_reference;indicator_id;label;value;unit;source;calculation
+2022;RES_015;Volume total prélevé tous usages;63317868;m3/an;BNPE;Somme détail prelevements.csv
+2022;RES_014;Volume prélevé AEP;44771108;m3/an;BNPE;Somme Code usage BNPE=AEP
+2022;RES_016;Volume prélevé irrigation;16332240;m3/an;BNPE;Somme Code usage BNPE=IRR
+2022;RES_017;Volume prélevé autres/industrie;2214520;m3/an;BNPE;Somme Code usage BNPE=IND
+2022;RES_001;Part AEP dans les prélèvements;70.70848942671284;%;BNPE;AEP / total ×100
+2022;RES_002;Part irrigation dans les prélèvements;25.794046002938696;%;BNPE;IRR / total ×100
+2022;RES_003;Part industrie/autres dans les prélèvements;3.497464570348452;%;BNPE;IND / total ×100
+2022;RES_004;Part AEP provenant des eaux de surface;94.60748882962646;%;BNPE;AEP CONT / AEP ×100
+2022;RES_005;Part AEP provenant des eaux souterraines;5.3925111703735364;%;BNPE;AEP SOUT / AEP ×100
+2022;RES_006;Part AEP Lézarde + Rivière Blanche;57.751463287439755;%;BNPE;AEP ouvrages Lézarde + Blanche / AEP ×100
+2022;RES_007;Nombre total de captages AEP;29;nb;BNPE;Nombre d'ouvrages AEP présents dans BNPE
+2022;RES_008;Nombre de prises en rivière;13;nb;BNPE;Nombre d'ouvrages AEP CONT présents dans BNPE
+2022;RES_009;Nombre de captages souterrains;16;nb;BNPE;Nombre d'ouvrages AEP SOUT présents dans BNPE

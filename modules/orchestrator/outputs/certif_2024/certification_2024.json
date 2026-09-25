@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "year": 2024,
+  "generated_at": "2026-09-25T00:30:59.650643+00:00",
+  "status": "CERTIFIED_WITH_GAPS",
+  "blocking_anomalies_count": 0,
+  "gaps_count": 4,
+  "audit_findings_count": 3,
+  "quality_report_rows": 1,
+  "policy": {
+    "CERTIFIED": "aucune anomalie bloquante et aucune lacune déclarée",
+    "CERTIFIED_WITH_GAPS": "aucune anomalie bloquante, mais source manuelle ou donnée non produite",
+    "NOT_CERTIFIED": "au moins une valeur PRODUCTION incohérente ou invalide non résolue"
+  },
+  "blocking_anomalies": [],
+  "gaps": [
+    {
+      "indicator_id": "SOURCE_COVERAGE",
+      "territoire": "CACEM",
+      "domain": "EAU_POTABLE",
+      "coverage_status": "NON_PRODUIT_DECLARE",
+      "quality_status": "SOURCE_NOT_PRODUCED",
+      "note": "Aucun bilan/RAD 2024 produit selon information ODE fournie le 24/09/2026."
+    },
+    {
+      "indicator_id": "SOURCE_COVERAGE",
+      "territoire": "CACEM",
+      "domain": "ASSAINISSEMENT_COLLECTIF",
+      "coverage_status": "NON_PRODUIT_DECLARE",
+      "quality_status": "SOURCE_NOT_PRODUCED",
+      "note": "Aucun bilan/RAD 2024 produit selon information ODE fournie le 24/09/2026."
+    },
+    {
+      "indicator_id": "SOURCE_COVERAGE",
+      "territoire": "CACEM",
+      "domain": "ANC",
+      "coverage_status": "NON_PRODUIT_DECLARE",
+      "quality_status": "SOURCE_NOT_PRODUCED",
+      "note": "Aucun bilan/RAD 2024 produit selon information ODE fournie le 24/09/2026."
+    },
+    {
+      "indicator_id": "SOURCE_COVERAGE",
+      "territoire": "CAESM",
+      "domain": "ANC",
+      "coverage_status": "NON_PRODUIT_DECLARE",
+      "quality_status": "SOURCE_NOT_PRODUCED",
+      "note": "Aucun RPQS ANC 2024 produit selon information ODE fournie le 24/09/2026."
+    }
+  ],
+  "audit_findings": [
+    {
+      "indicator_id": "SOURCE_COVERAGE",
+      "territoire": "CAESM",
+      "perimeter_id": "CAESM",
+      "record_role": "AUDIT",
+      "coverage_status": "NON_PRODUIT_DECLARE",
+      "quality_status": "SOURCE_NOT_PRODUCED"
+    },
+    {
+      "indicator_id": "P104.3_REPORTED_RT",
+      "territoire": "ROBERT_TRINITE",
+      "perimeter_id": "ROBERT_TRINITE_EXSICSM",
+      "record_role": "AUDIT",
+      "coverage_status": "COMPLETE",
+      "quality_status": "SOURCE_ERROR_SUSPECTED"
+    },
+    {
+      "indicator_id": "SOURCE_COVERAGE",
+      "territoire": "CACEM",
+      "perimeter_id": "CACEM",
+      "record_role": "AUDIT",
+      "coverage_status": "NON_PRODUIT_DECLARE",
+      "quality_status": "SOURCE_NOT_PRODUCED"
+    }
+  ]
+}

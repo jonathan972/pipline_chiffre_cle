@@ -1,0 +1,3 @@
+﻿annee_reference;domain;indicator_id;territoire;value;unit;source_family;authority;source_file;source_page;source_value_label;record_role;quality_status;coverage_status;note;numerator;denominator
+2023;ANC;P301.3_PUBLISHED;CAP_NORD;28.0;%;CAPNORD_SPANC;CAP Nord;RPQS SPANC 2023(1).pdf;9;;AUDIT;SOURCE_CALCULATION_ERROR;COMPLETE;"Valeur publiée 2023 ; 4801/18322 = 26,20 %. Le RPQS 2024 corrige rétrospectivement 2023 à 26,20 %.";4801;18322
+2023;ANC;P301.3;CAP_NORD;26.203471236764546;%;CAPNORD_SPANC;CAP Nord;RPQS SPANC 2023(1).pdf;9;;PRODUCTION;REVISED_BY_LATER_SOURCE;COMPLETE;Valeur recalculée et confirmée par le RPQS 2024.;4801;18322

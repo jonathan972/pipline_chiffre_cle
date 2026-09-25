@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-09-24T19:14:11.613304+00:00",
+  "dataset": "DS_POPULATIONS_REFERENCE",
+  "api_base": "https://api.insee.fr/melodi/data/DS_POPULATIONS_REFERENCE",
+  "official_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "latest_official_year": 2023,
+  "target_years": [
+    2019,
+    2024
+  ],
+  "fallback_policy": "latest_official",
+  "quality_issue_count": 4,
+  "refresh_errors": [],
+  "validation_2022_l_j_hab": 159.683820382542,
+  "seed_sha256": "77431a1d0e4f6dfda5c3ea36f76bd706282ad9a7cb03fd1e5a6f7e6db942c462"
+}

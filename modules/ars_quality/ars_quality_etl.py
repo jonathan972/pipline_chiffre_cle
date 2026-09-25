@@ -6,23 +6,33 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 BASE = "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable"
-EPCI_BY_COMMUNE = {
-"97209":"CACEM","97213":"CACEM","97214":"CACEM","97222":"CACEM",
-"97201":"CAESM","97202":"CAESM","97206":"CAESM","97208":"CAESM","97210":"CAESM","97211":"CAESM",
-"97217":"CAESM","97220":"CAESM","97225":"CAESM","97227":"CAESM","97228":"CAESM","97232":"CAESM",
-"97203":"CAP_NORD","97204":"CAP_NORD","97205":"CAP_NORD","97207":"CAP_NORD","97212":"CAP_NORD",
-"97215":"CAP_NORD","97216":"CAP_NORD","97218":"CAP_NORD","97219":"CAP_NORD","97221":"CAP_NORD",
-"97223":"CAP_NORD","97224":"CAP_NORD","97226":"CAP_NORD","97229":"CAP_NORD","97230":"CAP_NORD",
-"97231":"CAP_NORD","97233":"CAP_NORD","97234":"CAP_NORD",
-}
 
-def http_json(endpoint, params, timeout=60):
+def load_epci_map():
+    """Load the authoritative commune -> EPCI bridge maintained by the perimeter module."""
+    p=Path(__file__).resolve().parents[1]/"perimeters"/"epci_communes.csv"
+    out={}
+    with p.open("r",encoding="utf-8-sig",newline="") as f:
+        for r in csv.DictReader(f,delimiter=";"):
+            out[str(r.get("commune_insee") or "").strip()]=str(r.get("epci_code") or "").strip()
+    return out
+
+EPCI_BY_COMMUNE = load_epci_map()
+
+def http_json(endpoint, params, timeout=180, retries=3):
     url=f"{BASE}/{endpoint}?{urlencode(params,doseq=True)}"
     req=Request(url,headers={"User-Agent":"ODE-Martinique-Referentiel/1.0"})
-    with urlopen(req,timeout=timeout) as r:
-        return json.loads(r.read().decode("utf-8"))
+    last_error=None
+    for attempt in range(1,retries+1):
+        try:
+            with urlopen(req,timeout=timeout) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except Exception as exc:
+            last_error=exc
+            if attempt>=retries: raise
+            time.sleep(min(30,2**attempt))
+    raise last_error
 
-def fetch_all(endpoint, params, size=5000):
+def fetch_all(endpoint, params, size=1000):
     page=1; rows=[]
     while True:
         p=dict(params); p.update({"page":page,"size":size})

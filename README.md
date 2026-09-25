@@ -21,8 +21,11 @@ Le **rapport 2022 est le jeu étalon** : la première validation du moteur de pu
 
 Le chantier SIG est temporairement différé. Les cartes historiques ont été réalisées dans des projets **ArcMap MXD** dont les chemins de couches peuvent être cassés ou dispersés. Ils seront audités une fois ouverts dans ArcGIS : couches, sources, jointures, symbologie, étiquettes, mises en page et provenance métier. Après cet audit, la cible d'automatisation sera choisie entre ArcGIS Pro/`arcpy.mp` et QGIS/PyQGIS. Les MXD servent de référence, pas de cible technique pérenne.
 
+**État courant / décision de travail :** tant que l'audit des MXD n'a pas été réalisé, la priorité est le moteur de publication Word : mapping des 80 indicateurs, reproduction du rapport 2022, graphiques automatiques, textes dynamiques et gestion des absences. Le SIG reprendra ensuite sur une base normalisée. Voir [État du projet — 24 septembre 2026](docs/ETAT_PROJET_2026-09-24.md).
+
 Voir :
 
+- [État du projet — 24 septembre 2026](docs/ETAT_PROJET_2026-09-24.md)
 - [Vision de publication automatisée](docs/PUBLICATION_AUTOMATISEE.md)
 - [Feuille de route rapports 2023–2024](docs/ROADMAP_RAPPORTS_2023_2024.md)
 - [Contrat du template Word](docs/TEMPLATE_WORD.md)

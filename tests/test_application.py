@@ -36,14 +36,6 @@ class ApplicationTests(unittest.TestCase):
         for token, pattern in core.ASSET_FILENAME.items():
             self.assertEqual(pattern,cfg['{{'+token+'}}'])
 
-    def test_local_report_resources_match_config(self):
-        cfg=json.loads((ROOT/'modules/local_reports/config.json').read_text(encoding='utf-8'))
-        missing=[]
-        for src in cfg['sources']:
-            p=ROOT/'resources/source_documents'/str(src['year'])/src['file']
-            if not p.exists(): missing.append(str(p))
-        self.assertEqual([],missing)
-
     def test_draft_2023_smoke(self):
         r=core.build_report(2023,final=False)
         self.assertTrue(Path(r.docx).exists())

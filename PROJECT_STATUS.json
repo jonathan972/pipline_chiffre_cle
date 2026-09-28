@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "date": "2026-09-25",
+  "date": "2026-09-28",
   "objective": "Produire avec l'application les rapports Chiffres clés 2023 et 2024, puis automatiser les cartes après audit des MXD.",
   "application": {
     "status": "V1_1_REPORTING_READY",
@@ -10,7 +10,7 @@
     "sig": "cartes manuelles, automatisation différée"
   },
   "tests": {
-    "local": "40/40 tests passés le 2026-09-25",
+    "local": "42/42 tests passés le 2026-09-28",
     "years": [
       2023,
       2024
@@ -28,5 +28,5 @@
     "source": "Hub'Eau / SISE-Eaux / ARS",
     "warning": "les anciens agrégats EPCI générés avant la correction du mapping commune→EPCI sont obsolètes ; réagréger depuis fact_ars_samples_YYYY.csv avec le script courant"
   },
-  "resources": "Les données des 12 PDF RAD/RPQS sont extraites et versionnées dans modules/local_reports/outputs/ ; source_manifest.csv garde l'empreinte SHA-256 de chaque PDF. Les PDF ne sont nécessaires que pour réextraire."
+  "resources": "Les données des 12 PDF RAD/RPQS sont extraites et versionnées dans modules/local_reports/outputs/ ; source_manifest.csv garde l'empreinte SHA-256 de chaque PDF. Trois documents transmis et les exports bruts du portail assainissement 2023-2024 sont aussi versionnés dans resources/ avec un manifeste SHA-256. Les autres PDF ne sont nécessaires que pour réextraire."
 }

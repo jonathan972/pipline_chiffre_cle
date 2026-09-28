@@ -1,4 +1,6 @@
 from __future__ import annotations
+import csv
+import hashlib
 import json
 import shutil
 import tempfile
@@ -7,6 +9,7 @@ from unittest import mock
 from pathlib import Path
 
 from application import core
+from modules.assainissement_portal import assainissement_portal_etl as portal
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -30,6 +33,25 @@ class ApplicationTests(unittest.TestCase):
         for y in (2023,2024):
             p=ROOT/'modules/assainissement_portal/outputs'/str(y)/f'fact_assainissement_portal_{y}.csv'
             self.assertTrue(p.exists() and p.stat().st_size>100)
+
+    def test_portal_outputs_sont_reproductibles_depuis_les_sources_versionnees(self):
+        for year in (2023, 2024):
+            source=ROOT/'resources'/'source_csv'/str(year)/f'export-portail_assainissement_{year}.csv'
+            expected=core.read_scsv(ROOT/'modules'/'assainissement_portal'/'outputs'/str(year)/f'fact_assainissement_portal_{year}.csv')
+            facts, _, _=portal.aggregate(portal.read_portal(source),year,ROOT,source.name)
+            normalized=[{key:str(value) for key,value in row.items()} for row in facts]
+            self.assertEqual(expected,normalized)
+
+    def test_manifest_ressources(self):
+        manifest=ROOT/'resources'/'MANIFEST.csv'
+        with manifest.open(encoding='utf-8-sig',newline='') as stream:
+            rows=list(csv.DictReader(stream,delimiter=';'))
+        self.assertGreaterEqual(len(rows),5)
+        for row in rows:
+            path=ROOT/row['path']
+            self.assertTrue(path.is_file(),row['path'])
+            self.assertEqual(int(row['bytes']),path.stat().st_size,row['path'])
+            self.assertEqual(row['sha256'],hashlib.sha256(path.read_bytes()).hexdigest().upper(),row['path'])
 
     def test_map_names_match_reporting_config(self):
         cfg=json.loads((ROOT/'modules/reporting/reporting_config.json').read_text(encoding='utf-8'))['asset_filename_by_token']

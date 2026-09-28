@@ -1,0 +1,38 @@
+{
+  "Martinique": {
+    "private_count": 76,
+    "private_capacity_eh": 23070.0,
+    "private_lt500_count": 64,
+    "private_lt500_pct": 84.21052631578948,
+    "urban_count": 124,
+    "urban_gt200_count": 81,
+    "urban_gt200_capacity_eh": 367316.0
+  },
+  "CACEM": {
+    "private_count": 33,
+    "private_capacity_eh": 9888.0,
+    "private_lt500_count": 28,
+    "private_lt500_pct": 84.84848484848484,
+    "urban_count": 40,
+    "urban_gt200_count": 22,
+    "urban_gt200_capacity_eh": 179000.0
+  },
+  "CAESM": {
+    "private_count": 20,
+    "private_capacity_eh": 6943.0,
+    "private_lt500_count": 16,
+    "private_lt500_pct": 80.0,
+    "urban_count": 31,
+    "urban_gt200_count": 27,
+    "urban_gt200_capacity_eh": 104501.0
+  },
+  "CAP_NORD": {
+    "private_count": 23,
+    "private_capacity_eh": 6239.0,
+    "private_lt500_count": 20,
+    "private_lt500_pct": 86.95652173913044,
+    "urban_count": 53,
+    "urban_gt200_count": 32,
+    "urban_gt200_capacity_eh": 83815.0
+  }
+}

@@ -11,6 +11,8 @@
 - `.gitignore` : `outputs/` ne masque plus les sorties des modules (`modules/*/outputs/`) ; `publication/` ignoré ;
 - tests `tests/test_reporting.py` et import des valeurs complémentaires ;
 - les tests n'exigent plus les PDF RAD/RPQS : ils vérifient que chaque source est extraite et tracée par son SHA-256.
+- ajout des exports bruts du portail assainissement 2023–2024 et de leur manifeste SHA-256 ;
+- ajout des trois PDF transmis : rapport étalon 2022, RAD AEP CAP Nord 2024 et RPQS ANC CAP Nord 2024.
 
 ## Socle de données — 2026-09-25 (branche refonte-socle-donnees)
 

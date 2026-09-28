@@ -1,0 +1,6 @@
+# Les empreintes SHA-256 du manifeste portent sur les octets sources avec LF.
+# Imposer LF rend leur verification identique sous Windows, macOS et Linux.
+resources/source_csv/**/*.csv text eol=lf
+
+# Les documents sources ne doivent subir aucune conversion Git.
+resources/source_documents/**/*.pdf binary

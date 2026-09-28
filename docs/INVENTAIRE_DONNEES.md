@@ -4,6 +4,11 @@
 
 Le dépôt conserve les exports SISPEA 2022, les exports BNPE utilisés, les jeux d'essai ARS, les matrices et classeurs de validation, les fichiers de périmètres, les sorties normalisées et les résultats certifiés 2022–2024.
 
+Les exports bruts du portail assainissement 2023 et 2024, le rapport étalon
+2022 et les deux documents CAP Nord 2024 transmis sont conservés dans
+`resources/`. Leurs tailles et empreintes SHA-256 figurent dans
+`resources/MANIFEST.csv`.
+
 Les rapports RAD/RPQS complets utilisés lors de l'analyse initiale ne sont pas tous présents dans le miroir local. Leurs extractions structurées, la matrice de couverture et les faits vérifiés sont conservés dans `modules/local_reports/`, `modules/perimeters/` et `docs/Validation_RAD_RPQS_2023_2024.xlsx`. Pour une nouvelle vérification page à page, il faudra remettre les PDF originaux à disposition.
 
 ## Snapshots Hub'Eau non versionnés

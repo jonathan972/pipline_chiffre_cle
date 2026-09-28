@@ -1,0 +1,7 @@
+﻿competence;departement;collectivite_id;collectivite;service_id;service;mode_gestion;population_service;statut;population_desservie;prix_ttc_120m3;VP.179;VP.191;VP.177;VP.178;VP.190;VP.213;VP.214;VP.215;VP.216;VP.217;VP.218;VP.219;VP.345;VP.346
+AEP;972;CollectivityId=236434;Communauté d'Agglomération du Pays Nord Martinique (  CAP NORD MARTINIQUE);ServiceId=251994;eau potable : Robert et Trinité;Délégation;27392;Publié non vérifié;33376;2.94;49.86;28;262;40.75;54.06;2.1;;0.055;;;;0.0401;0.26;0
+AEP;972;CollectivityId=221654;Collectivité Territoriale de Martinique;ServiceId=210203;eau potable : Captage et production de Vivé;Régie;;En attente de saisie;;;;;;;;;;;;;;;;
+AEP;972;CollectivityId=196844;Communauté d’Agglomération du Centre de la Martinique;ServiceId=196862;eau potable : Régie Odyssi;Régie;123365;Publié non vérifié;151772;2.75;57.06;68.6;;272.4;;2.1;0;0.12;;;;0.039;0.26;
+AEP;972;CollectivityId=239374;Communauté d'Agglomération de l'ESPACE SUD MARTINIQUE;ServiceId=196847;eau potable;Délégation;144743;Publié non vérifié;116446;2.9;50.01;0;248.79;49.64;54.06;2.1;;0.315;;;;0.042;0;0
+AEP;972;CollectivityId=221654;Collectivité Territoriale de Martinique;ServiceId=210202;eau potable : Captage de la Lézarde;;;En attente de saisie;;;;;;;;;;;;;;;;
+AEP;972;CollectivityId=236434;Communauté d'Agglomération du Pays Nord Martinique (  CAP NORD MARTINIQUE);ServiceId=299714;eau potable : EAU POTABLE CAP NORD;Délégation;69414;Publié non vérifié;63982;3.51;70.59;28;296.27;54.8;58;2.1;;0.05;;;;0.046;0.26;0.16

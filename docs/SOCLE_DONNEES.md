@@ -51,7 +51,7 @@ Le code d'origine reste dans la colonne `code_source` pour la traçabilité.
 
 ## Règles du master (`pipeline/master.py`)
 
-1. Chaque module est lu par un adaptateur (`pipeline/sources.py`) : INSEE, BNPE, SISPEA, ERU/STEU, portail assainissement, RAD/RPQS réconciliés, ARS, entrées manuelles historiques, saisie contrôlée `saisie/saisie_locale_YYYY.csv`.
+1. Chaque module est lu par un adaptateur (`pipeline/sources.py`) : INSEE, BNPE, SISPEA, tarifs SISPEA, ERU/STEU, portail assainissement, RAD/RPQS réconciliés, ARS, entrées manuelles historiques, saisie contrôlée `saisie/saisie_locale_YYYY.csv`.
 2. Toutes les lignes sont conservées. Il ne peut exister qu'**une** valeur PRODUCTION par indicateur × périmètre ; sinon `CONFLIT_PRODUCTION` (bloquant).
 3. Calculs dérivés déclarés dans `RATIOS` et `SOMMES` : le résultat n'est PRODUCTION que si toutes ses entrées le sont.
 4. Le total Martinique d'un indicateur additif est calculé si les trois EPCI sont présents. S'il existe déjà, la somme sert de contrôle (`INCOHERENCE_SOMME_EPCI`).
@@ -68,16 +68,16 @@ Le moteur de publication doit utiliser `pipeline.publication`, qui filtre strict
 les lignes `PRODUCTION` et refuse plusieurs valeurs publiables pour une même cellule.
 Les rôles `VALIDATION`, `DIAGNOSTIC` et `AUDIT` ne constituent jamais un repli.
 
-## Résultat au 25 septembre 2026
+## Résultat au 28 septembre 2026
 
 | Millésime | Statut | Cellules PRODUCTION | Lacunes déclarées | À valider | Manquantes |
 |---:|---|---:|---:|---:|---:|
 | 2022 | NOT_CERTIFIED | 33 / 125 | 3 | 16 | 73 |
-| 2023 | NOT_CERTIFIED | 44 / 125 | 3 | 8 | 70 |
-| 2024 | NOT_CERTIFIED | 17 / 125 | 33 | 4 | 71 |
+| 2023 | NOT_CERTIFIED | 65 / 125 | 3 | 19 | 38 |
+| 2024 | NOT_CERTIFIED | 32 / 125 | 43 | 19 | 31 |
 | année vide | NOT_CERTIFIED | 0 / 125 | 0 | 0 | 125 |
 
-Ces chiffres ne traduisent pas une régression : l'ancienne certification ne regardait que les lignes présentes. Les manques principaux viennent de sources non encore traitées pour ces millésimes (SISPEA et ERU seulement en 2022, BNPE jusqu'en 2023, tarifs, portail assainissement, inventaires patrimoniaux) et d'indicateurs jamais collectés (EP_011 à EP_016, EP_018, AC_017, ANC_004…).
+Ces chiffres ne traduisent pas une régression : l'ancienne certification ne regardait que les lignes présentes. Les manques principaux viennent de sources encore partielles ou non traitées pour ces millésimes et d'indicateurs jamais collectés (EP_011 à EP_016, EP_018, AC_017, ANC_004…). Les tarifs 2023 ajoutent six cellules PRODUCTION ; les huit valeurs 2024 restent visibles mais à valider, donc exclues du reporting.
 
 ## Écarts révélés par la régénération 2022
 
@@ -101,7 +101,8 @@ Le total Martinique ne change pas. Les effectifs par EPCI changent fortement (ex
 
 ## Ce qui n'est pas encore fait
 
-- exécution de SISPEA, ERU et BNPE pour 2023–2024 ;
+- certification des décompositions tarifaires ODE/ODM et confirmation SISPEA des tarifs 2024 ;
+- exécution complète de SISPEA, ERU et BNPE pour les sources encore absentes en 2023–2024 ;
 - template Word historique : le moteur `modules/reporting/` fonctionne avec ou sans template,
   mais le template de mise en page ODE reste à déposer dans `resources/templates/` ;
 - orchestration des collecteurs : le point d'entrée consolide leurs sorties existantes ;

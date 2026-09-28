@@ -1,0 +1,7 @@
+﻿annee_reference;indicator_id;territoire;value;unit;record_role;quality_status;coverage_status;source_file;source_detail;definition;note
+2023;TAR_001;Martinique;2.936283;€/m³;PRODUCTION;OK;COMPLETE;tarifs_AEP_Martinique_2023.csv;D102.0 pondere par D101.0;Moyenne ponderee par la population desservie (D101.0/D201.0).;"4 services; statuts source: Confirmé / publié."
+2023;TAR_002;Martinique;352.353931;€/an;PRODUCTION;OK;COMPLETE;tarifs_AEP_Martinique_2023.csv;TAR_001 x 120;Facture type annuelle de 120 m3.;
+2023;TAR_005;Martinique;6.006055;€/m³;PRODUCTION;OK;COMPLETE;tarifs_AEP_Martinique_2023.csv + tarifs_AC_Martinique_2023.csv;D102.0 + D204.0;Moyenne ponderee par la population desservie (D101.0/D201.0).;
+2023;TAR_006;Martinique;720.726609;€/an;PRODUCTION;OK;COMPLETE;tarifs_AEP_Martinique_2023.csv + tarifs_AC_Martinique_2023.csv;TAR_005 x 120;Facture type annuelle EP + AC de 120 m3.;
+2023;TAR_004;Martinique;19.37156;%;VALIDATION;COMPONENT_MAPPING_REVIEW;COMPLETE;tarifs_AEP_Martinique_2023.csv;Part abonnement = (VP.191 + VP.190) / facture TTC;Part abonnement de la facture EP.;Ne pas publier avant validation des composantes ODE/ODM.
+2023;TAR_008;Martinique;41.482838;%;VALIDATION;COMPONENT_MAPPING_REVIEW;COMPLETE;tarifs_AEP_Martinique_2023.csv + tarifs_AC_Martinique_2023.csv;Part EP HT = (VP.178 + VP.177) EP / facture TTC EP+AC;Part eau potable de la facture combinee.;Ne pas publier avant validation des composantes ODE/ODM.

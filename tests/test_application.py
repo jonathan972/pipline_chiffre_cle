@@ -16,7 +16,13 @@ ROOT=Path(__file__).resolve().parents[1]
 class ApplicationTests(unittest.TestCase):
     def test_status_has_core_sources(self):
         keys={s.key for s in core.source_status(2023)}
-        self.assertTrue({'master','ars','portal','local_reports','population','bnpe','maps'} <= keys)
+        self.assertTrue({'master','ars','portal','local_reports','population','bnpe','sispea_tariffs','maps'} <= keys)
+
+    def test_tarifs_affichent_la_frontiere_de_publication(self):
+        status_2023 = next(s for s in core.source_status(2023) if s.key == 'sispea_tariffs')
+        status_2024 = next(s for s in core.source_status(2024) if s.key == 'sispea_tariffs')
+        self.assertEqual('OK', status_2023.status)
+        self.assertEqual('À VALIDER', status_2024.status)
 
     def test_master_status_ne_retombe_pas_sur_les_anciens_masters(self):
         status=next(s for s in core.source_status(2023) if s.key=='master')

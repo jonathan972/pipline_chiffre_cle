@@ -1,0 +1,19 @@
+section;prefix;direction;poste;role
+fonctionnement;60;debit;Achats et fournitures;depense
+fonctionnement;61;debit;Services extérieurs;depense
+fonctionnement;62;debit;Autres services extérieurs;depense
+fonctionnement;63;debit;Impôts et taxes;depense
+fonctionnement;64;debit;Personnel et charges sociales;depense
+fonctionnement;65;debit;Autres charges de gestion;depense
+fonctionnement;66;debit;Charges financières;depense
+fonctionnement;67;debit;Charges exceptionnelles;depense
+fonctionnement;68;debit;Dotations aux amortissements / provisions;depense
+investissement;20;debit;Immobilisations incorporelles;depense
+investissement;21;debit;Immobilisations corporelles;depense
+investissement;23;debit;Immobilisations en cours / avances;depense
+ressources;70;credit;Produits du service;recette_service
+ressources;75;credit;Autres produits de gestion;autre_recette
+ressources;77;credit;Produits exceptionnels;exceptionnel
+ressources;13;credit;Subventions d'investissement;financement_investissement
+ressources;16;credit;Emprunts nouveaux;emprunt
+indicateurs;16;debit;Remboursement du capital des emprunts;remboursement_capital

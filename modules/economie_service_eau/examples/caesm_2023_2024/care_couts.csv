@@ -1,0 +1,20 @@
+service;poste;montant_eur;source_note
+Eau;Personnel;5112910;CARE Eau 2023
+Eau;Achats d'eau;2539064;CARE Eau 2023
+Eau;Autres dépenses;2845540;CARE Eau 2023
+Eau;Sous-traitance / travaux;1914321;CARE Eau 2023
+Eau;Renouvellement;1617534;CARE Eau 2023
+Eau;Énergie;1415295;CARE Eau 2023
+Eau;Traitement, matières, analyses;1265788;CARE Eau 2023
+Eau;Créances / contentieux;808421;CARE Eau 2023
+Eau;Services centraux / recherche;536272;CARE Eau 2023
+Eau;Impôts locaux + charges d'investissement;415597;CARE Eau 2023
+Assainissement;Personnel;2776462;CARE Assainissement 2023
+Assainissement;Sous-traitance / travaux;1507215;CARE Assainissement 2023
+Assainissement;Autres dépenses;1341226;CARE Assainissement 2023
+Assainissement;Énergie;862371;CARE Assainissement 2023
+Assainissement;Renouvellement;631695;CARE Assainissement 2023
+Assainissement;Traitement, matières, analyses, achats d'eau;511075;CARE Assainissement 2023
+Assainissement;Services centraux / recherche;185667;CARE Assainissement 2023
+Assainissement;Créances / contentieux;182381;CARE Assainissement 2023
+Assainissement;Impôts locaux + charges d'investissement;162500;CARE Assainissement 2023

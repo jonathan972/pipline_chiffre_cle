@@ -1,0 +1,11 @@
+service;categorie;sous_categorie;nature;montant_eur;source_note
+Eau;SME - délégataire;Part délégataire hors TVA;delegataire;264.49;Facture type Eau 120 m3
+Eau;CAESM - collectivité;Part collectivité hors TVA;collectivite;51.27;Facture type Eau 120 m3
+Eau;Organismes publics;Redevance pollution;redevance;31.20;Facture type Eau 120 m3
+Eau;Organismes publics;Redevance préservation de la ressource en eau;redevance;6.60;Facture type Eau 120 m3
+Eau;Fiscalité;Octroi de mer régional;taxe;5.30;Facture type Eau 120 m3
+Eau;Fiscalité;TVA;tva;7.42;Facture type Eau 120 m3
+Assainissement;SME - délégataire;Part délégataire hors TVA;delegataire;339.24;Facture type Assainissement 120 m3
+Assainissement;CAESM - collectivité;Part collectivité hors TVA;collectivite;109.40;Facture type Assainissement 120 m3
+Assainissement;Organismes publics;Redevance modernisation des réseaux;redevance;18.00;Facture type Assainissement 120 m3
+Assainissement;Fiscalité;TVA;tva;9.80;Facture type Assainissement 120 m3

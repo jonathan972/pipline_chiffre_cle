@@ -1,0 +1,14 @@
+{
+  "territoire": "Nom du territoire",
+  "collectivite": "COLLECTIVITE",
+  "delegataire": "DELEGATAIRE",
+  "annee_facture": 2024,
+  "annee_comptable": 2024,
+  "volume_reference_m3": 120,
+  "budget_eau": "EAU-COLLECTIVITE",
+  "budget_assainissement": "ASST-COLLECTIVITE",
+  "source_facture": "Factures types 120 m3",
+  "source_care": "CARE Eau et Assainissement",
+  "source_m49": "Balance M49",
+  "titre": "Comprendre le prix de l'eau : de la facture au coût réel du service"
+}

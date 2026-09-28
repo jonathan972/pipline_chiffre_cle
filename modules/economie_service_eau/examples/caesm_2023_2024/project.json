@@ -1,0 +1,14 @@
+{
+  "territoire": "CAESM - Espace Sud Martinique",
+  "collectivite": "CAESM",
+  "delegataire": "SME",
+  "annee_facture": 2024,
+  "annee_comptable": 2023,
+  "volume_reference_m3": 120,
+  "budget_eau": "EAU-CAESM",
+  "budget_assainissement": "ASST-CAESM",
+  "source_facture": "Factures types Eau et Assainissement CAESM - 120 m3",
+  "source_care": "CARE 2023 CAESM Eau et Assainissement",
+  "source_m49": "Balance comptable M49 CAESM",
+  "titre": "Comprendre le prix de l'eau : de la facture au coût réel du service"
+}

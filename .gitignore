@@ -16,3 +16,6 @@ modules/orchestrator/outputs/annual_*/
 # Sorties finales du pipeline à la racine (régénérables). Les sorties de
 # modules constituent des snapshots sources et peuvent être versionnées.
 /outputs/
+
+# Rapports de travail générés localement
+/publication/

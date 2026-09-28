@@ -14,6 +14,8 @@
 - validation au chargement du référentiel (attentes, identifiants, périmètres, doublons et périodes).
 - ajout des exports bruts du portail assainissement 2023–2024, de leurs sorties normalisées et de leur manifeste SHA-256 ;
 - ajout des trois PDF transmis encore disponibles : rapport étalon 2022, RAD AEP CAP Nord 2024 et RPQS ANC CAP Nord 2024.
+- ajout d'un moteur DOCX de contrôle canonique et d'un préflight exhaustif, strictement `PRODUCTION`-only ;
+- registre `resources/MISSING_SOURCES.csv` pour les dix PDF attendus mais non transmis.
 
 ## 1.0.0 — 2026-09-25
 

@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "report_kind": "controle_canonique",
+  "asset_filename_by_token": {
+    "{{MAP_CAPTAGES_AEP}}": "map_captages_aep_{year}.png",
+    "{{MAP_STEU_PUBLIQUES}}": "map_steu_publiques_{year}.png",
+    "{{MAP_OU_CHART_AC_COMMUNE}}": "map_part_ac_communes_{year}.png",
+    "{{MAP_AC_ANC_COMMUNES}}": "map_ac_anc_communes_{year}.png"
+  }
+}

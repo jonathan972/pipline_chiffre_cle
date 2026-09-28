@@ -57,20 +57,29 @@ class ApplicationTests(unittest.TestCase):
 
     def test_local_report_resources_match_config(self):
         cfg=json.loads((ROOT/'modules/local_reports/config.json').read_text(encoding='utf-8'))
-        missing=[]
+        missing=set()
         for src in cfg['sources']:
             p=ROOT/'resources/source_documents'/str(src['year'])/src['file']
-            if not p.exists(): missing.append(str(p))
-        self.assertEqual([],missing)
+            if not p.exists(): missing.add((str(src['year']),src['file']))
+        declared={(r['year'],r['file']) for r in core.read_scsv(ROOT/'resources'/'MISSING_SOURCES.csv')}
+        self.assertEqual(declared,missing)
 
     def test_draft_2023_smoke(self):
         r=core.build_report(2023,final=False)
         self.assertTrue(Path(r.docx).exists())
         self.assertTrue(Path(r.preflight).exists())
+        ready=sum(x.get('status')=='READY' for x in core.read_scsv(Path(r.preflight)))
+        self.assertEqual(ready,r.summary['production_count'])
 
     def test_draft_2024_smoke(self):
         r=core.build_report(2024,final=False)
         self.assertTrue(Path(r.docx).exists())
         self.assertTrue(Path(r.preflight).exists())
+        ready=sum(x.get('status')=='READY' for x in core.read_scsv(Path(r.preflight)))
+        self.assertEqual(ready,r.summary['production_count'])
+
+    def test_final_reste_bloque_si_le_millesime_n_est_pas_certifie(self):
+        with self.assertRaisesRegex(RuntimeError,'Rapport final bloqué'):
+            core.build_report(2024,final=True)
 
 if __name__=='__main__': unittest.main()

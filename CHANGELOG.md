@@ -12,6 +12,8 @@
 - frontière de publication `pipeline/publication.py` : seules les lignes `PRODUCTION` sont exposées au reporting ;
 - application desktop alignée sur le chemin du master canonique, sans repli sur v1/v2/v3 ;
 - validation au chargement du référentiel (attentes, identifiants, périmètres, doublons et périodes).
+- ajout des exports bruts du portail assainissement 2023–2024, de leurs sorties normalisées et de leur manifeste SHA-256 ;
+- ajout des trois PDF transmis encore disponibles : rapport étalon 2022, RAD AEP CAP Nord 2024 et RPQS ANC CAP Nord 2024.
 
 ## 1.0.0 — 2026-09-25
 

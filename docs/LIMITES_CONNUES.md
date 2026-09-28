@@ -6,7 +6,12 @@
 
 ## Priorité 2 — Tarifs
 
-Les huit indicateurs tarifaires sont automatisables mais restent en classe B tant que le module complet, les composantes de facture et les changements de périmètre n'ont pas été certifiés.
+Le module `modules/sispea_tariffs/` importe les exports tarifaires officiels,
+filtre les lignes de Martinique et pondère `D102.0`/`D204.0` par
+`D101.0`/`D201.0`. Les prix et montants 2023 confirmés sont en PRODUCTION.
+Les données 2024 restent en VALIDATION car SISPEA les marque « Publié non
+vérifié ». Les décompositions `TAR_004` et `TAR_008` restent également en
+VALIDATION jusqu'à certification du mapping des redevances ODE et de l'ODM.
 
 ## Priorité 3 — Patrimoine local
 

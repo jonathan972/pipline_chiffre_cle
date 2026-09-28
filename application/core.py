@@ -148,6 +148,20 @@ def source_status(year: int) -> list[SourceCheck]:
     checks.append(SourceCheck("bnpe", "Prélèvements BNPE", "OK" if bnpe.exists() else "À FOURNIR/ACTUALISER",
                               str(bnpe) if bnpe.exists() else "Export BNPE du millésime requis.", required=False))
 
+    tariffs = ROOT / "modules/sispea_tariffs/outputs" / f"fact_tarifs_sispea_{year}.csv"
+    tariff_rows = read_scsv(tariffs)
+    tariff_roles = {row.get("record_role", "") for row in tariff_rows}
+    if "PRODUCTION" in tariff_roles:
+        tariff_status = "OK"
+        tariff_detail = f"{sum(row.get('record_role') == 'PRODUCTION' for row in tariff_rows)} valeur(s) publiable(s) ; {tariffs}"
+    elif tariff_rows:
+        tariff_status = "À VALIDER"
+        tariff_detail = f"Export présent mais statut SISPEA non confirmé ; {tariffs}"
+    else:
+        tariff_status = "MANQUANT"
+        tariff_detail = "Extraire les fichiers tarifaires officiels SISPEA du millésime."
+    checks.append(SourceCheck("sispea_tariffs", "Tarifs SISPEA", tariff_status, tariff_detail))
+
     maps_dir = year_out(year) / "assets_manual"
     present = sum((maps_dir / fn.format(year=year)).exists() for fn in ASSET_FILENAME.values())
     checks.append(SourceCheck("maps", "Cartes SIG", "OK" if present == len(ASSET_FILENAME) else "EN ATTENTE SIG",

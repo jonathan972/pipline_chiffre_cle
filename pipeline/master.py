@@ -192,7 +192,7 @@ class Master:
     @staticmethod
     def _role(parts: list[dict]) -> str:
         worst = min(RANG_ROLE.get(p["record_role"], 0) for p in parts)
-        return "PRODUCTION" if worst == 3 else "DIAGNOSTIC"
+        return {3: "PRODUCTION", 2: "VALIDATION", 1: "DIAGNOSTIC", 0: "AUDIT"}[worst]
 
     def check(self):
         groups: dict[tuple[str, str], list[dict]] = {}

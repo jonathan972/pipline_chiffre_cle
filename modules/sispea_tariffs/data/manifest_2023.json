@@ -1,0 +1,22 @@
+{
+  "year": 2023,
+  "department": "972",
+  "sources": [
+    {
+      "competence": "AEP",
+      "national_file": "tarifs_AEP_2023.xls",
+      "url": "https://services.eaufrance.fr/documents/tarifsDescriptions/tarifs_AEP_2023.xls",
+      "sha256": "296dfa38971f9aed3ee57503957031969d277cb909f1e8a0b94403ed90041f5f",
+      "snapshot": "tarifs_AEP_Martinique_2023.csv",
+      "rows_972": 6
+    },
+    {
+      "competence": "AC",
+      "national_file": "tarifs_AC_2023.xls",
+      "url": "https://services.eaufrance.fr/documents/tarifsDescriptions/tarifs_AC_2023.xls",
+      "sha256": "9fc986fd5763a874c0c675b46f1fc17348b841b099fad9fd72f805c3b7926abc",
+      "snapshot": "tarifs_AC_Martinique_2023.csv",
+      "rows_972": 4
+    }
+  ]
+}

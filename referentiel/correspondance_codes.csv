@@ -1,4 +1,10 @@
 source;code_source;indicator_id;record_role_force;quality_status_force;note
+TARIFS_SISPEA;TAR_001;TAR_001;;;D102.0 pondere par D101.0 selon la regle officielle SISPEA.
+TARIFS_SISPEA;TAR_002;TAR_002;;;Facture type eau potable 120 m3.
+TARIFS_SISPEA;TAR_004;TAR_004;;;Composante abonnement maintenue en VALIDATION.
+TARIFS_SISPEA;TAR_005;TAR_005;;;Somme des prix ponderes D102.0 et D204.0.
+TARIFS_SISPEA;TAR_006;TAR_006;;;Facture type eau potable et assainissement 120 m3.
+TARIFS_SISPEA;TAR_008;TAR_008;;;Composante eau potable maintenue en VALIDATION.
 LOCAL;EP_ABONNES;EP_005;;;RAD/RPQS : nombre d'abonnés eau potable.
 LOCAL;EP_VOLUME_FACTURE;EP_006;;;RAD/RPQS : volume facturé.
 LOCAL;EP_VOLUME_PRODUIT;EP_007;;;RAD/RPQS : volume produit.

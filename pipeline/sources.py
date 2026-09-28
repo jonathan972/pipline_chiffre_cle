@@ -124,6 +124,28 @@ def sispea(ref: Referentiel, year: int, used: list[Path]) -> list[Fact]:
     return out
 
 
+# ---------------------------------------------------------------- Tarifs SISPEA
+def tarifs_sispea(ref: Referentiel, year: int, used: list[Path]) -> list[Fact]:
+    p = ref.root / f"modules/sispea_tariffs/outputs/fact_tarifs_sispea_{year}.csv"
+    if not p.exists():
+        return []
+    used.append(p)
+    rows = read_csv(p)
+    for name in dict.fromkeys(r["source_file"] for r in rows):
+        for part in name.split(" + "):
+            raw = ref.root / "modules/sispea_tariffs/data" / part
+            if raw.exists() and raw not in used:
+                used.append(raw)
+    manifest = ref.root / f"modules/sispea_tariffs/data/manifest_{year}.json"
+    if manifest.exists():
+        used.append(manifest)
+    return [_fact("TARIFS_SISPEA", r["indicator_id"], r["value"], territoire_raw=r["territoire"],
+                  unit=r["unit"], record_role=r["record_role"], quality_status=r["quality_status"],
+                  coverage_status=r["coverage_status"], source_file=r["source_file"],
+                  source_detail=r["source_detail"], definition=r["definition"], note=r["note"])
+            for r in rows]
+
+
 # ---------------------------------------------------------------- ERU / STEU
 def steu(ref: Referentiel, year: int, used: list[Path]) -> list[Fact]:
     p = ref.root / f"modules/steu/outputs/summary_{year}.json"
@@ -216,6 +238,7 @@ def saisie(ref: Referentiel, year: int, used: list[Path]) -> list[Fact]:
 
 
 ADAPTATEURS: list[tuple[str, Callable[[Referentiel, int, list[Path]], list[Fact]]]] = [
-    ("insee", insee), ("bnpe", bnpe), ("sispea", sispea), ("steu", steu), ("portail", portail),
+    ("insee", insee), ("bnpe", bnpe), ("sispea", sispea), ("tarifs_sispea", tarifs_sispea),
+    ("steu", steu), ("portail", portail),
     ("local", local), ("ars", ars), ("manuel", manuel), ("saisie", saisie),
 ]

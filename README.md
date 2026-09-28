@@ -42,6 +42,7 @@ Le mode **final** est bloqué tant qu'un placeholder obligatoire est réellement
 - RAD/RPQS : données locales de service et SPANC ;
 - périmètres CAP Nord / Robert-Trinité / Ex-SICSM : référentiel contractuel distinct des EPCI ;
 - SISPEA : contrôle/complément lorsque définition et périmètre sont validés ;
+- tarifs SISPEA : exports nationaux filtrés sur la Martinique, prix pondérés par la population desservie ;
 - valeurs complémentaires : CSV importé dans `saisie/saisie_locale_YYYY.csv` ; seules les lignes `validated=oui` sont publiées, et un désaccord avec une autre source est bloquant.
 
 Absences connues 2024 : aucun bilan/RAD CACEM ; aucun RPQS ANC CAESM. Elles restent explicitement manquantes.
@@ -65,7 +66,7 @@ Le mode `final` applique les mêmes contrôles que l'interface.
 py -m unittest discover -s tests -v
 ```
 
-Ils contrôlent notamment la présence des sources normalisées, l'alignement des noms de cartes avec le template, la complétude du corpus RAD/RPQS et la génération des brouillons 2023/2024.
+Ils contrôlent notamment la présence des sources normalisées, la pondération et la frontière de publication des tarifs, l'alignement des noms de cartes avec le template, la complétude du corpus RAD/RPQS et la génération des brouillons 2023/2024.
 
 ## Exécutable Windows
 

@@ -100,6 +100,21 @@ class TestCertification(unittest.TestCase):
         self.assertEqual("LACUNE_DECLAREE", by[("EP_006", "CACEM_EPCI")])
         self.assertEqual("LACUNE_DECLAREE", by[("EP_006", "MARTINIQUE")])
 
+    def test_indisponibilite_bnpe_2024_est_documentee_sans_masquer_les_autres_sources(self):
+        m = _build(2024)
+        _, cells, _ = certify(REF, 2024, m.facts, m.anomalies)
+        by = {(c["indicator_id"], c["perimeter_id"]): c for c in cells}
+        bnpe_indisponibles = {
+            "RES_001", "RES_002", "RES_003", "RES_004", "RES_005", "RES_006",
+            "RES_014", "RES_015", "RES_016", "RES_017", "RES_018", "RES_019",
+        }
+        for indicator_id in bnpe_indisponibles:
+            cell = by[(indicator_id, "MARTINIQUE")]
+            self.assertEqual("LACUNE_DECLAREE", cell["statut_couverture"])
+            self.assertIn("indisponible", cell["explication"].lower())
+        for indicator_id in {"RES_007", "RES_008", "RES_009", "RES_010", "RES_011", "RES_012", "RES_013"}:
+            self.assertEqual("MANQUANT", by[(indicator_id, "MARTINIQUE")]["statut_couverture"])
+
     def test_diagnostic_jamais_compte_comme_production(self):
         m = _build(2023)
         _, cells, _ = certify(REF, 2023, m.facts, m.anomalies)

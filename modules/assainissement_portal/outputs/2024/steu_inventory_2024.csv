@@ -1,0 +1,201 @@
+﻿Code du STEU;Nom du STEU;Nature du STEU;Etat du STEU en 2024;Commune implantation;Code INSEE commune implantation;Capacité nominale en EH;Conformité globale STEU réglementaire performances;Conformité globale agglo réglementaire;Existence manuel autosurveillance STEU;Validation manuel autosurveillance STEU;Prod boues sans réactif (tMS/an);EPCI
+080000297202;LES ANSES-D'ARLET - ANSE DUFOUR;Urbain;En service;Les Anses-d'Arlet;97202;450;Non;Non;Non;Non valide;0;CAESM
+080000197203;BASSE-POINTE - HACKAERT;Urbain;En service;Basse-Pointe;97203;4000;Non;Non;Non;Non valide;11.19;CAP_NORD
+080000397203;BASSE-POINTE - HOTEL LEYRITZ;Urbain;En service;Basse-Pointe;97203;400;Inc;Non;Non;Non valide;0;CAP_NORD
+080000297203;BASSE-POINTE - MADELONNETTE;Urbain;En service;Basse-Pointe;97203;200;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000197234;BELLEFONTAINE - FOND LAILLET/CHEVAL BLANC/BOURG;Urbain;En service;Bellefontaine;97234;1900;Non;Non;Non;Non valide;0;CAP_NORD
+080000297204;LE CARBET - BOUT BOIS;Urbain;En service;Le Carbet;97204;80;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000197205;CASE-PILOTE - MANIBA;Urbain;En service;Case-Pilote;97205;7000;Non;Non;Non;Non valide;29.42;CAP_NORD
+080000297205;CASE-PILOTE - BATISOLEIL;Urbain;En service;Case-Pilote;97205;80;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000497206;LE DIAMANT - O'MULLANE;Urbain;En service;Le Diamant;97206;450;Non;Non;Non;Non valide;0;CAESM
+080000797206;LE DIAMANT - TAUPINIERE;Urbain;En service;Le Diamant;97206;800;Non;Non;Non;Non valide;0;CAESM
+080000397207;DUCOS - CANAL COCOTE;Urbain;En service;Ducos;97207;300;Non;Non;Non;Non valide;0;CAESM
+080000297207;DUCOS - GRANDE SAVANE;Urbain;En service;Ducos;97207;250;Non;Non;Non;Non valide;0;CAESM
+080000197207;DUCOS - PAYS NOYE;Urbain;En service;Ducos;97207;11000;Non;Non;Non;Non valide;41.96;CAESM
+080000197208;FONDS-SAINT-DENIS - LACROIX;Urbain;En service;Fonds-Saint-Denis;97208;100;Oui;Oui;Non;Non valide;0;CAP_NORD
+080005997209;FORT-DE-FRANCE - CHARMEUSE;Urbain;En service;Fort-de-France;97209;300;Inc;Non;Non;Non valide;0;CACEM
+080003297209;FORT-DE-FRANCE - CHARMILLES;Urbain;En service;Fort-de-France;97209;200;Inc;Non;Non;Non valide;0;CACEM
+080000197209;FORT-DE-FRANCE - DILLON 1;Urbain;En service;Fort-de-France;97209;25000;Non;Non;Non;Non valide;306.42;CACEM
+080000297209;FORT-DE-FRANCE - DILLON 2;Urbain;En service;Fort-de-France;97209;60000;Oui;Non;Non;Non valide;125.02;CACEM
+080000497209;FORT-DE-FRANCE - GODISSARD;Urbain;En service;Fort-de-France;97209;13000;Non;Non;Non;Non valide;28.5;CACEM
+080006397209;FORT-DE-FRANCE - LA MADELEINE;Urbain;En service;Fort-de-France;97209;250;Non;Non;Non;Non valide;0;CACEM
+080001997209;FORT-DE-FRANCE - LES HAMMEAUX DE LA VALLEE;Urbain;En service;Fort-de-France;97209;150;Oui;Oui;Non;Non valide;0;CACEM
+080000897209;FORT-DE-FRANCE - LES MEYNARD;Urbain;En service;Fort-de-France;97209;30;Oui;Non;Non;Non valide;0;CACEM
+080006197209;FORT-DE-FRANCE - LES TERRASSES DE BALATA;Urbain;En service;Fort-de-France;97209;300;Non;Non;Non;Non valide;0;CACEM
+080000497213;FORT-DE-FRANCE - LONG PRE;Urbain;En service;Le Lamentin;97213;1200;Non;Non;Oui;Valide;0;CACEM
+080008397209;FORT-DE-FRANCE - LOTISSEMENT MODESTE;Urbain;En service;Fort-de-France;97209;150;Oui;Oui;Non;Non valide;0;CACEM
+080000597209;FORT-DE-FRANCE - LUNETTE BOUILLEE;Urbain;En service;Fort-de-France;97209;500;Non;Non;Non;Non valide;0;CACEM
+080000197229;FORT-DE-FRANCE - POINTE DES NEGRES;Urbain;En service;Schœlcher;97229;30000;Non;Non;Non;Non valide;312.05;CACEM
+080002297209;FORT-DE-FRANCE - RAVENALA;Urbain;En service;Fort-de-France;97209;72;Oui;Non;Non;Non valide;0;CACEM
+080000697209;FORT-DE-FRANCE - TIVOLI LA FONTANE;Urbain;En service;Fort-de-France;97209;150;Oui;Non;Non;Non valide;0;CACEM
+080003097213;FORT-DE-FRANCE - ZI ACAJOU CALIFORNIE;Urbain;En service;Fort-de-France;97209;150;Oui;Oui;Non;Non valide;0;CACEM
+080000697210;LE FRANCOIS - MANSARDE RANCÉE;Urbain;En service;Le François;97210;1000;Non;Non;Non;Non valide;0;CAESM
+080000197211;GRAND'RIVIERE - SAINTE CATHERINE;Urbain;En service;Grand'Rivière;97211;190;Oui;Oui;Oui;Valide;0;CAP_NORD
+080000297211;GRAND'RIVIERE - STADE GRAND RIVIÈRE;Urbain;En service;Grand'Rivière;97211;25;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000497212;GROS-MORNE - DENEL;Urbain;En service;Gros-Morne;97212;1500;Non;Non;Non;Non valide;10.79;CAP_NORD
+080000597212;GROS-MORNE - LOTISSEMENT SAINT MICHEL;Urbain;En service;Gros-Morne;97212;385;Non;Non;Non;Non valide;0;CAP_NORD
+080000397212;GROS-MORNE - SALLE POLYVALENTE;Urbain;En service;Gros-Morne;97212;80;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000297201;AJOUPA-BOUILLON - DESCHAMPS CITÉ GRENADE;Urbain;En service;L'Ajoupa-Bouillon;97201;850;Inc;Non;Non;Non valide;7.36;CAP_NORD
+080000497230;TRINITE - BELLEVUE;Urbain;En service;La Trinité;97230;700;Non;Non;Non;Non valide;3.05;CAP_NORD
+080000197230;TRINITE - DESMARINIERES;Urbain;En service;La Trinité;97230;10000;Non;Non;Non;Non valide;54.38;CAP_NORD
+080000297230;TRINITE - TARTANE;Urbain;En service;La Trinité;97230;2100;Non;Non;Non;Non valide;19.74;CAP_NORD
+080000197204;LE CARBET - BOURG;Urbain;En service;Le Carbet;97204;4000;Non;Non;Non;Non valide;15.61;CAP_NORD
+080000297206;LE DIAMANT - DIZAC;Urbain;En service;Le Diamant;97206;8300;Non;Non;Non;Non valide;29.88;CAESM
+080000197210;LE FRANCOIS - POINTE COURCHET;Urbain;En service;Le François;97210;6666;Non;Non;Non;Non valide;3.21;CAESM
+080000297210;LE FRANCOIS - BONNY CHOPOTTE;Urbain;En service;Le François;97210;250;Non;Non;Non;Non valide;0;CAESM
+080000697213;LE LAMENTIN - CLUB NAUTIQUE;Urbain;En service;Le Lamentin;97213;120;Oui;Non;Non;Non valide;0;CACEM
+080000197213;LE LAMENTIN - GAIGNERON;Urbain;En service;Le Lamentin;97213;35000;Oui;Oui;Non;Non valide;191.63;CACEM
+080000897213;LE LAMENTIN - LA FAVORITE;Urbain;En service;Le Lamentin;97213;250;Inc;Non;Non;Non valide;0;CACEM
+080000397213;LE LAMENTIN - PELLETIER DESIRADE;Urbain;En service;Le Lamentin;97213;3500;Non;Non;Non;Non valide;19.1;CACEM
+080002197213;LE LAMENTIN - RESIDENCE CHAMBORD;Urbain;En service;Le Lamentin;97213;300;Non;Non;Non;Non valide;0;CACEM
+080000797213;LE LAMENTIN - ROCHES CARREES;Urbain;En service;Le Lamentin;97213;500;Non;Non;Non;Non valide;0;CACEM
+080000597213;LE LAMENTIN - SARRAULT;Urbain;En service;Le Lamentin;97213;150;Oui;Oui;Non;Non valide;0;CACEM
+080002797213;LE LAMENTIN - ZI JAMBETTE;Urbain;En service;Le Lamentin;97213;500;Non;Non;Non;Non valide;0;CACEM
+080000197214;LE LORRAIN - SOUS-BOIS (BOURG);Urbain;En service;Le Lorrain;97214;2200;Non;Non;Non;Non valide;18.58;CAP_NORD
+080000297214;LE LORRAIN - VIVE;Urbain;En service;Le Lorrain;97214;90;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000197216;MARIGOT - BOURG DU MARIGOT;Urbain;En service;Le Marigot;97216;1800;Non;Non;Non;Non valide;18.67;CAP_NORD
+080000297217;LE MARIN - DUPREY;Urbain;En service;Le Marin;97217;250;Non;Non;Non;Non valide;0;CAESM
+080000397217;LE MARIN - SAINTE-ANNE - QUATRE CHEMINS;Urbain;En service;Le Marin;97217;12500;Non;Non;Non;Non valide;17.71;CAESM
+080000997218;LE MORNE-ROUGE - CAT PETITE SAVANE;Urbain;En service;Le Morne-Rouge;97218;100;Oui;Non;Non;Non valide;0;CAP_NORD
+080000197218;LE MORNE-ROUGE - CHAZEAU-O-MULLANE;Urbain;En service;Le Morne-Rouge;97218;1000;Non;Non;Non;Non valide;0;CAP_NORD
+080001697218;LE MORNE-ROUGE - CLAUDE BOYER;Urbain;En service;Le Morne-Rouge;97218;200;Oui;Oui;Non;Non valide;0;CAP_NORD
+080001097218;LE MORNE-ROUGE - HAUT BOURG;Urbain;En service;Le Morne-Rouge;97218;120;Inc;Non;Non;Non valide;0;CAP_NORD
+080000497218;LE MORNE-ROUGE - PARNASSE;Urbain;En service;Le Morne-Rouge;97218;100;Inc;Non;Non;Non valide;0;CAP_NORD
+080001497218;LE MORNE-ROUGE - VOLCANO;Urbain;En service;Le Morne-Rouge;97218;20;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000997219;PRECHEUR - ANSE BELLEVILLE;Urbain;En service;Le Prêcheur;97219;150;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000697219;PRECHEUR - CITÉ COQUETTE;Urbain;En service;Le Prêcheur;97219;200;Inc;Non;Non;Non valide;0;CAP_NORD
+080000397219;PRECHEUR - CITE LENNY SOLIDARITE;Urbain;En service;Le Prêcheur;97219;100;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000597219;PRECHEUR - LA PERLE;Urbain;En service;Le Prêcheur;97219;400;Non;Non;Non;Non valide;0;CAP_NORD
+080000897219;PRECHEUR - L'ECOLE;Urbain;En service;Le Prêcheur;97219;80;Oui;Oui;Non;Non valide;0;CAP_NORD
+080001197219;PRECHEUR - MORNE FOLIE;Urbain;En service;Le Prêcheur;97219;600;Non;Non;Non;Non valide;0;CAP_NORD
+080000197222;LE ROBERT - COURBARIL;Urbain;En service;Le Robert;97222;2000;Inc;Non;Non;Non valide;4.34;CAP_NORD
+080000297222;LE ROBERT - FOUR A CHAUX;Urbain;En service;Le Robert;97222;2000;Non;Non;Non;Non valide;3.47;CAP_NORD
+080001597222;LE ROBERT - LES HAUTS DE MANSARDE;Urbain;En service;Le Robert;97222;400;Inc;Non;Non;Non valide;0;CAP_NORD
+080000397222;LE ROBERT - MOULIN A VENT;Urbain;En service;Le Robert;97222;3000;Oui;Non;Non;Non valide;0;CAP_NORD
+080000597222;LE ROBERT - POINTE LYNCH;Urbain;En service;Le Robert;97222;1000;Non;Non;Non;Non valide;0;CAP_NORD
+080000697222;LE ROBERT - PONTALERY;Urbain;En service;Le Robert;97222;16000;Non;Non;Non;Non valide;240;CAP_NORD
+080000497222;LE ROBERT - VERT PRE;Urbain;En service;Le Robert;97222;3000;Non;Non;Non;Non valide;0.53;CAP_NORD
+080000197202;LES ANSES-D'ARLET - BOURG;Urbain;En service;Les Anses-d'Arlet;97202;5000;Non;Non;Non;Non valide;0;CAESM
+080000197231;LES TROIS-ILETS - ANSE MARETTE;Urbain;En service;Les Trois-Îlets;97231;12500;Non;Non;Non;Non valide;66.3;CAESM
+080000197232;LE VAUCLIN - BOURG;Urbain;En service;Le Vauclin;97232;5000;Non;Non;Non;Non valide;12;CAESM
+080000297215;MACOUBA - CASE PAUL;Urbain;En service;Macouba;97215;500;Non;Non;Non;Non valide;7.84;CAP_NORD
+080000197215;MACOUBA - GUERIN;Urbain;En service;Macouba;97215;200;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000597218;LE MORNE-ROUGE - ADAPEI CHAMPFLORE;Urbain;En service;Le Morne-Rouge;97218;200;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000297218;LE MORNE-ROUGE - FOND ROSE;Urbain;En service;Le Morne-Rouge;97218;175;Inc;Non;Non;Non valide;0;CAP_NORD
+080000397218;LE MORNE-ROUGE - GALETTE;Urbain;En service;Le Morne-Rouge;97218;250;Non;Non;Non;Non valide;0;CAP_NORD
+080001197218;LE MORNE-ROUGE - CAMP CHAZEAU (CAP21);Urbain;En service;Le Morne-Rouge;97218;500;Non;Non;Non;Non valide;0;CAP_NORD
+080000197233;LE MORNE-VERT - LA VIGIE;Urbain;En service;Le Morne-Vert;97233;300;Non;Non;Non;Non valide;0;CAP_NORD
+080000197220;RIVIERE-PILOTE - MANIKOU;Urbain;En service;Rivière-Pilote;97220;650;Non;Non;Non;Non valide;0;CAESM
+080000197221;RIVIERE-SALEE - BOURG GRAND CASE;Urbain;En service;Rivière-Salée;97221;7000;Non;Non;Non;Non valide;3.76;CAESM
+080000297221;RIVIERE-SALEE - FOND MASSON;Urbain;En service;Rivière-Salée;97221;450;Non;Non;Non;Non valide;0;CAESM
+080000397221;RIVIERE-SALEE - KANEL;Urbain;En service;Rivière-Salée;97221;200;Inc;Non;Non;Non valide;0;CAESM
+080000697221;RIVIERE-SALEE - LOTISSEMENT LA SAGESSE;Urbain;En service;Rivière-Salée;97221;380;Inc;Non;Non;Non valide;0;CAESM
+080000597221;RIVIERE-SALEE - MAUPEOU;Urbain;En service;Rivière-Salée;97221;400;Non;Non;Non;Non valide;0;CAESM
+080000197226;SAINTE-ANNE - BELFOND;Urbain;En service;Sainte-Anne;97226;8000;Non;Non;Non;Non valide;15.4;CAESM
+080000197227;SAINTE-LUCE - GROS RAISIN;Urbain;En service;Sainte-Luce;97227;16755;Non;Non;Oui;Valide;49.16;CAESM
+080000597227;SAINTE-LUCE - BELLEVUE LADOUR;Urbain;En service;Sainte-Luce;97227;450;Non;Non;Non;Non valide;0;CAESM
+080000397227;SAINTE-LUCE - LES COTEAUX;Urbain;En service;Sainte-Luce;97227;1050;Non;Non;Non;Non valide;0;CAESM
+080001497228;SAINTE-MARIE - BON AIR;Urbain;En service;Sainte-Marie;97228;240;Non;Non;Non;Non valide;1.3;CAP_NORD
+080000497228;SAINTE-MARIE - PEROU;Urbain;En service;Sainte-Marie;97228;40;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000297228;SAINTE-MARIE - POINTE BENIE;Urbain;En service;Sainte-Marie;97228;9990;Non;Non;Non;Non valide;28.44;CAP_NORD
+080000397228;SAINTE-MARIE - RECULEE;Urbain;En service;Sainte-Marie;97228;800;Non;Non;Non;Non valide;9.04;CAP_NORD
+080000597223;SAINT-ESPRIT - LOTISSEMENT MORNE LAVALEUR;Urbain;En service;Saint-Esprit;97223;400;Inc;Non;Non;Non valide;0;CAESM
+080000297223;SAINT-ESPRIT - PETER MAILLET;Urbain;En service;Saint-Esprit;97223;200;Oui;Oui;Non;Non valide;0;CAESM
+080000197223;SAINT-ESPRIT - PETIT FOND;Urbain;En service;Saint-Esprit;97223;4000;Non;Non;Non;Non valide;0;CAESM
+080000397223;SAINT-ESPRIT - REGALE;Urbain;En service;Saint-Esprit;97223;250;Non;Non;Non;Non valide;0;CAESM
+080000797224;SAINT-JOSEPH - BAMBOU-DUCHAMP;Urbain;En service;Saint-Joseph;97224;100;Oui;Oui;Non;Non valide;0;CACEM
+080000897224;SAINT-JOSEPH - BELLE ETOILE;Urbain;En service;Saint-Joseph;97224;500;Non;Non;Non;Non valide;0;CACEM
+080000697205;CASE-PILOTE - CGOSH;Privé;En service;Case-Pilote;97205;40;Oui;Non;Non;Non valide;0;CAP_NORD
+080000397205;CASE-PILOTE - VETIVER;Privé;En service;Case-Pilote;97205;400;Non;Non;Non;Non valide;0;CAP_NORD
+080002097207;DUCOS - VALLON DU BAC;Privé;En service;Ducos;97207;150;Oui;Non;Non;Non valide;0;CAESM
+080001097209;FORT-DE-FRANCE - AMEP;Privé;En service;Fort-de-France;97209;250;Non;Non;Non;Non valide;0;CACEM
+080000797209;FORT-DE-FRANCE - CHP COLSON;Privé;En service;Fort-de-France;97209;300;Non;Non;Non;Non valide;0;CACEM
+080007897209;FORT-DE-FRANCE - CROSSMA;Privé;En service;Fort-de-France;97209;50;Oui;Oui;Non;Non valide;0;CACEM
+080002897209;FORT-DE-FRANCE - LOTISSEMENT LES EVERGLADES;Privé;En service;Fort-de-France;97209;500;Non;Non;Non;Non valide;0;CACEM
+080001397209;FORT-DE-FRANCE - ORMOSIA;Privé;En service;Fort-de-France;97209;210;Non;Non;Non;Non valide;0;CACEM
+080003597209;FORT-DE-FRANCE - PLATEAU TIBERGE;Privé;En service;Fort-de-France;97209;400;Non;Non;Non;Non valide;0;CACEM
+080004097209;FORT-DE-FRANCE - RESIDENCE DES ILES;Privé;En service;Fort-de-France;97209;500;Non;Non;Non;Non valide;0;CACEM
+080006597209;FORT-DE-FRANCE - RESIDENCE DU PARC DE REDOUTE;Privé;En service;Fort-de-France;97209;200;Inc;Non;Non;Non valide;0;CACEM
+080004297209;FORT-DE-FRANCE - RESIDENCE LAETITIA;Privé;En service;Fort-de-France;97209;50;Oui;Oui;Non;Non valide;0;CACEM
+080003997209;FORT-DE-FRANCE - RESIDENCE LES CYCLADES;Privé;En service;Fort-de-France;97209;204;Non;Non;Non;Non valide;0;CACEM
+080004397209;FORT-DE-FRANCE - RESIDENCE LES GOYAVES;Privé;En service;Fort-de-France;97209;80;Oui;Oui;Non;Non valide;0;CACEM
+080008597209;FORT-DE-FRANCE - RESIDENCE MIMOSA;Privé;En service;Fort-de-France;97209;120;Inc;Non;Non;Non valide;0;CACEM
+080001297209;FORT-DE-FRANCE - RESIDENCE MOUTTE;Privé;En service;Fort-de-France;97209;289;Inc;Non;Non;Non valide;0;CACEM
+080005597209;FORT-DE-FRANCE - RESIDENCE ZAMANA;Privé;En service;Fort-de-France;97209;100;Oui;Oui;Non;Non valide;0;CACEM
+080001797209;FORT-DE-FRANCE - TANDEM;Privé;En service;Fort-de-France;97209;118;Inc;Non;Non;Non valide;0;CACEM
+080000497210;LE FRANCOIS - CAP-EST;Privé;En service;Le François;97210;500;Non;Non;Non;Non valide;0;CAESM
+080000297212;GROS-MORNE - COLLEGE LA FRAICHEUR;Privé;En service;Gros-Morne;97212;260;Non;Non;Non;Non valide;0;CAP_NORD
+080000697212;GROS-MORNE;Privé;En service;Gros-Morne;97212;0;Oui;Oui;Non;Non valide;0;CAP_NORD
+080000397201;AJOUPA-BOUILLON - RESIDENCE MAXIME;Privé;En service;L'Ajoupa-Bouillon;97201;165;Oui;Non;Non;Non valide;0;CAP_NORD
+080000397210;LE FRANCOIS - CHOPOTTE;Privé;En service;Le François;97210;150;Inc;Oui;Non;Non valide;0;CAESM
+080000797210;LE FRANCOIS - HOTEL FREGATE BLEU;Privé;En service;Le François;97210;30;Oui;Oui;Non;Non valide;0;CAESM
+080000597210;LE FRANCOIS - LOTISSEMENT POINTE JACQUES;Privé;En service;Le François;97210;225;Non;Non;Non;Non valide;0;CAESM
+080001597213;LE LAMENTIN - BLANDIN ;Privé;En service;Le Lamentin;97213;350;Non;Non;Non;Non valide;0;CACEM
+080001797213;LE LAMENTIN - CONNEXION ZI LES MANGLES;Privé;En service;Le Lamentin;97213;150;Oui;Oui;Non;Non valide;0;CACEM
+080002897213;LE LAMENTIN - IMMOBILIER SOUDON;Privé;En service;Le Lamentin;97213;225;Inc;Non;Non;Non valide;0;CACEM
+080003397213;LE LAMENTIN - LA MAUGEE 1 RESIDENCE HELICONIA;Privé;En service;Le Lamentin;97213;400;Non;Non;Non;Non valide;0;CACEM
+080003497213;LE LAMENTIN - LA MAUGEE 2 ALAMANDAS SOLEIL;Privé;En service;Le Lamentin;97213;340;Inc;Non;Non;Non valide;0;CACEM
+080001297213;LE LAMENTIN - LYCEE CROIX RIVAIL;Privé;En service;Le Lamentin;97213;400;Non;Non;Non;Non valide;0;CACEM
+080001997213;LE LAMENTIN - MULTIGROS;Privé;En service;Le Lamentin;97213;150;Oui;Oui;Non;Non valide;0;CACEM
+080001697213;LE LAMENTIN - RESIDENCE DESHABAYS;Privé;En service;Le Lamentin;97213;198;Oui;Oui;Non;Non valide;0;CACEM
+080003797213;LE LAMENTIN - RESIDENCE LA COMMANDERIE;Privé;En service;Le Lamentin;97213;350;Inc;Non;Non;Non valide;0;CACEM
+080002297213;LE LAMENTIN - RESIDENCE SOROCA;Privé;En service;Le Lamentin;97213;250;Non;Non;Non;Non valide;0;CACEM
+080002397213;LE LAMENTIN - RESIDENCE THALIA;Privé;En service;Le Lamentin;97213;200;Inc;Non;Non;Non valide;0;CACEM
+080000597214;LE LORRAIN - BEAUCHAMP;Privé;En service;Le Lorrain;97214;225;Non;Non;Non;Non valide;0;CAP_NORD
+080000797214;LE LORRAIN - BON REPOS VIVE NORD;Privé;En service;Le Lorrain;97214;280;Non;Non;Non;Non valide;0;CAP_NORD
+080000897214;LE LORRAIN - LOTISSEMENT SEGUINEAU;Privé;En service;Le Lorrain;97214;420;Non;Non;Non;Non valide;0;CAP_NORD
+080001597218;LE MORNE-ROUGE - RESIDENCE CHADEC;Privé;En service;Le Morne-Rouge;97218;105;Oui;Oui;Non;Non valide;0;CAP_NORD
+080001397222;LE ROBERT - SARL CATALOGNE;Privé;En service;Le Robert;97222;400;Non;Non;Non;Non valide;0;CAP_NORD
+080001297222;LE ROBERT - RESIDENCE HELIA;Privé;En service;Le Robert;97222;50;Oui;Non;Non;Non valide;0;CAP_NORD
+080000597231;LES TROIS-ILETS - LES HAMEAUX DE LA PAGERIE;Privé;En service;Les Trois-Îlets;97231;250;Non;Non;Non;Non valide;0;CAESM
+080000697214;LE LORRAIN - RESIDENCE CANNE A SUCRE;Privé;En service;Le Lorrain;97214;400;Non;Non;Non;Non valide;0;CAP_NORD
+080000497214;LE LORRAIN - RESIDENCE MACEDOINE;Privé;En service;Le Lorrain;97214;300;Non;Non;Non;Non valide;0;CAP_NORD
+080000897220;RIVIERE-PILOTE - RESIDENCE MALVINA ET LUMINA;Privé;En service;Rivière-Pilote;97220;225;Non;Non;Non;Non valide;0;CAESM
+080000397220;RIVIERE-PILOTE - MANIKOU 1;Privé;En service;Rivière-Pilote;97220;800;Non;Non;Non;Non valide;0;CAESM
+080000497220;RIVIERE-PILOTE - MANIKOU 2;Privé;En service;Rivière-Pilote;97220;800;Non;Non;Non;Non valide;0;CAESM
+080000697220;RIVIERE-PILOTE - RESIDENCE PREFONTAINE;Privé;En service;Rivière-Pilote;97220;200;Inc;Non;Non;Non valide;0;CAESM
+080001697221;RIVIERE-SALEE - BOIS TI-BAUME;Privé;En service;Rivière-Salée;97221;58;Oui;Non;Non;Non valide;0;CAESM
+080000497221;RIVIERE-SALEE - RESIDENCE DESMARINIERES;Privé;En service;Rivière-Salée;97221;100;Oui;Oui;Non;Non valide;0;CAESM
+080001597221;RIVIERE-SALEE - RESIDENCE LES DIGUES;Privé;En service;Rivière-Salée;97221;320;Non;Non;Non;Non valide;0;CAESM
+080001497221;RIVIERE-SALEE - MANIOC;Privé;En service;Rivière-Salée;97221;50;Oui;Oui;Non;Non valide;0;CAESM
+080000397226;SAINTE ANNE - MAHOGANY;Privé;En service;Sainte-Anne;97226;250;Oui;Oui;Non;Non valide;0;CAESM
+080000697226;SAINTE-ANNE - RESIDENCE SOLEIL LEVANT;Privé;En service;Sainte-Anne;97226;110;Oui;Oui;Non;Non valide;0;CAESM
+080000697227;SAINTE-LUCE - COLLEGE RAMA;Privé;En service;Sainte-Luce;97227;350;Non;Non;Non;Non valide;0;CAESM
+080000597228;SAINTE-MARIE - CITE SCOLAIRE LAGROSSILLIERE;Privé;En service;Sainte-Marie;97228;400;Inc;Non;Non;Non valide;0;CAP_NORD
+080000797228;SAINTE-MARIE - CUISINE SCOLAIRE;Privé;En service;Sainte-Marie;97228;500;Non;Non;Non;Non valide;0;CAP_NORD
+080000997228;SAINTE-MARIE - FLUTE DES MORNES CANARI;Privé;En service;Sainte-Marie;97228;210;Non;Non;Non;Non valide;0;CAP_NORD
+080000897228;SAINTE-MARIE - ROSE DES VENTS;Privé;En service;Sainte-Marie;97228;350;Non;Non;Non;Non valide;0;CAP_NORD
+080001097228;SAINTE-MARIE - SAINT PAUL;Privé;En service;Sainte-Marie;97228;54;Oui;Non;Non;Non valide;0;CAP_NORD
+080000897223;SAINT-ESPRIT - RESIDENCE LES COULISSES;Privé;En service;Saint-Esprit;97223;225;Non;Non;Non;Non valide;0;CAESM
+080000497223;SAINT-ESPRIT - ZAC AVENIR;Privé;En service;Saint-Esprit;97223;1800;Non;Non;Non;Non valide;0;CAESM
+080001197223;SAINT-ESPRIT - ZAC AVENIR LES FEUILLAGES;Privé;En service;Saint-Esprit;97223;350;Non;Non;Non;Non valide;1.51;CAESM
+080002497224;SAINT-JOSEPH - CHOCO CHOISY;Urbain;En service;Saint-Joseph;97224;500;Non;Non;Non;Non valide;0;CACEM
+080000297224;SAINT-JOSEPH - CHOISY;Urbain;En service;Saint-Joseph;97224;200;Oui;Oui;Non;Non valide;0;CACEM
+080001397224;SAINT-JOSEPH - GONDEAU MONTROSE;Urbain;En service;Saint-Joseph;97224;150;Inc;Non;Non;Non valide;0;CACEM
+080000397224;SAINT-JOSEPH - LES HAMEAUX;Urbain;En service;Saint-Joseph;97224;200;Inc;Non;Non;Non valide;0;CACEM
+080000197224;SAINT-JOSEPH - ROSIERES;Urbain;En service;Saint-Joseph;97224;2500;Oui;Non;Non;Non valide;4.91;CACEM
+080001597224;SAINT-JOSEPH - MORNE BASSET;Urbain;En service;Saint-Joseph;97224;75;Inc;Non;Non;Non valide;0;CACEM
+080002797224;SAINT-JOSEPH - MORNE BASSET 2;Urbain;En service;Saint-Joseph;97224;75;Oui;Non;Non;Non valide;0;CACEM
+080002597224;SAINT-JOSEPH - PIPIRI;Urbain;En service;Saint-Joseph;97224;250;Inc;Non;Non;Non valide;0;CACEM
+080000697224;SAINT-JOSEPH - PRESQU'ILE;Urbain;En service;Saint-Joseph;97224;50;Oui;Oui;Non;Non valide;0;CACEM
+080002297224;SAINT-JOSPEH - RAMEDACE NORD;Urbain;En service;Saint-Joseph;97224;400;Non;Non;Non;Non valide;0;CACEM
+080002397224;SAINT-JOSEPH - RAMEDACE SUD;Urbain;En service;Saint-Joseph;97224;150;Inc;Non;Non;Non valide;0;CACEM
+080000597224;SAINT-JOSEPH - RAVINE BLANCHE NORD;Urbain;En service;Saint-Joseph;97224;125;Inc;Non;Non;Non valide;0;CACEM
+080000497224;SAINT-JOSEPH - RAVINE BLANCHE SUD;Urbain;En service;Saint-Joseph;97224;250;Non;Non;Non;Non valide;0;CACEM
+080000197225;SAINT-PIERRE - FOND CORRE;Urbain;En service;Saint-Pierre;97225;4000;Non;Non;Non;Non valide;21.55;CAP_NORD
+080000297229;SCHOELCHER - FOND LAHAYE;Urbain;En service;Schœlcher;97229;4000;Non;Non;Non;Non valide;0.4;CACEM
+080000397230;TRINITE - QUARTIER BAC;Urbain;En service;La Trinité;97230;1000;Non;Non;Non;Non valide;0;CAP_NORD
+080000297231;LES TROIS-ILETS - LA FERME;Urbain;En service;Les Trois-Îlets;97231;200;Oui;Oui;Non;Non valide;0;CAESM
+080000297232;LE VAUCLIN - GRAND CASE;Urbain;En service;Le Vauclin;97232;200;Oui;Oui;Non;Non valide;0;CAESM
+080001297224;SAINT-JOSEPH - GONDEAU DOMINANTE;Privé;En service;Saint-Joseph;97224;300;Non;Non;Non;Non valide;0;CACEM
+080002197224;SAINT-JOSEPH - DOMINANTE OUEST;Privé;En service;Saint-Joseph;97224;700;Non;Non;Non;Non valide;0;CACEM
+080001197224;SAINT-JOSEPH - LA CHAPELLE;Privé;En service;Saint-Joseph;97224;900;Non;Non;Non;Non valide;0;CACEM
+080001097224;SAINT-JOSEPH - LES BORDS DE L'ETANG;Privé;En service;Saint-Joseph;97224;544;Non;Non;Non;Non valide;0;CACEM
+080001497224;SAINT-JOSEPH - MONA LISA CHAPELLE 2;Privé;En service;Saint-Joseph;97224;250;Non;Non;Non;Non valide;0;CACEM
+080002097224;SAINT-JOSEPH - POM WOZ;Privé;En service;Saint-Joseph;97224;340;Non;Non;Non;Non valide;0;CACEM
+080003097224;SAINT-JOSEPH - RAVINE CHARMEUSE;Privé;En service;Saint-Joseph;97224;470;Non;Non;Oui;Valide;0;CACEM
+080000397225;SAINT-PIERRE - CDST;Privé;En service;Saint-Pierre;97225;150;Oui;Non;Non;Non valide;0;CAP_NORD
+080000297225;SAINT-PIERRE - LEP SAINT-JAMES;Privé;En service;Saint-Pierre;97225;500;Non;Non;Non;Non valide;0;CAP_NORD
+080000797225;SAINT-PIERRE - MANSFENIL;Privé;En service;Saint-Pierre;97225;650;Non;Non;Non;Non valide;0;CAP_NORD
+080000697225;SAINT-PIERRE - RESIDENCE LA CALDEIRA SAINT JAMES;Privé;En service;Saint-Pierre;97225;270;Non;Non;Non;Non valide;0;CAP_NORD
+080001097230;TRINITE - VALERIANNE;Privé;En service;La Trinité;97230;110;Oui;Non;Non;Non valide;0;CAP_NORD

@@ -9,6 +9,8 @@ Ce dossier rassemble les ressources utiles reçues ou produites pendant la const
 - `templates/` : template Word et mapping de placeholders ;
 - `examples/` : exemples de rapports générés ;
 - `MANIFEST.csv/json` : inventaire, taille et SHA-256 de chaque ressource.
+- `MISSING_SOURCES.csv` : documents attendus mais non transmis, afin qu'une
+  absence connue ne soit jamais confondue avec un fichier oublié.
 
 Les PDF source sont utilisés par `application.core.rebuild_local_reports()`. Le nom de fichier doit correspondre à `modules/local_reports/config.json`.
 

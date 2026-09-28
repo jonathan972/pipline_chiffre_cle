@@ -14,6 +14,29 @@ from .core import (
 )
 
 
+STATUS_LABELS = {
+    "OK": "valeurs publiées", "KNOWN_ABSENCE": "absences déclarées", "NOT_APPLICABLE": "sans objet",
+    "MISSING_VALUE": "valeurs requises manquantes", "NOT_PUBLISHABLE": "valeurs à valider",
+    "OPTIONAL_MISSING": "éléments facultatifs absents", "MAP_MISSING": "cartes manquantes",
+    "BLOCKING_ANOMALY": "anomalies bloquantes", "UNKNOWN_TOKEN": "tokens inconnus du template",
+    "REFERENCE": "références externes", "NOT_CERTIFIED": "certification refusée",
+}
+
+
+def format_summary(summary: dict) -> str:
+    lines=[f"Millésime {summary.get('year')} — mode {summary.get('mode')}",
+           f"Certification : {summary.get('certification')} ({summary.get('taux_production_pct')} % de valeurs publiables)",
+           f"Mise en page : {'template Word' if summary.get('template_used') else 'document généré (aucun template fourni)'}",
+           f"Graphiques produits : {summary.get('charts', 0)}", ""]
+    for status,n in sorted(summary.get("status_counts",{}).items(),key=lambda x:-x[1]):
+        lines.append(f"  {n:>4}  {STATUS_LABELS.get(status,status)}")
+    blocking=summary.get("blocking_count",0)
+    lines += ["", f"Éléments bloquant la version finale : {blocking}"]
+    lines += [f"  - {x}" for x in summary.get("blocking_examples",[])]
+    if blocking: lines.append("Détail complet : bouton « Ouvrir le préflight ».")
+    return "\n".join(lines)
+
+
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -106,7 +129,7 @@ class App(tk.Tk):
     def import_overrides(self):
         p=filedialog.askopenfilename(title="Valeurs complémentaires validées",filetypes=[("CSV","*.csv"),("Tous les fichiers","*.*")])
         if not p:return
-        try: import_manual_overrides(self.year.get(),Path(p),log=self.write_log); self.refresh_status(); messagebox.showinfo("Valeurs complémentaires","Fichier importé. Les lignes validated=oui auront priorité dans le rapport.")
+        try: import_manual_overrides(self.year.get(),Path(p),log=self.write_log); self.refresh_status(); messagebox.showinfo("Valeurs complémentaires","Fichier importé dans saisie/. Seules les lignes validated=oui sont publiées ; les autres restent « à valider ». Régénère le brouillon pour les voir.")
         except Exception as e: messagebox.showerror("Import impossible",str(e))
     def export_missing(self):
         try: p=export_missing_values_template(self.year.get()); self.write_log(f"Gabarit créé : {p}"); open_path(p)
@@ -118,9 +141,9 @@ class App(tk.Tk):
     def do_build(self,final):
         y=self.year.get()
         def go():
-            r=build_report(y,final=final,log=self.write_log); self.q.put(("log",f"DOCX : {r.docx}"));
+            r=build_report(y,final=final,log=self.write_log); self.q.put(("log",f"DOCX : {r.docx}"))
             if r.pdf:self.q.put(("log",f"PDF : {r.pdf}"))
-            self.q.put(("log",f"Préflight : {r.preflight}")); self.q.put(("build_summary",str(r.summary)))
+            self.q.put(("log",f"Préflight : {r.preflight}")); self.q.put(("build_summary",format_summary(r.summary)))
         self.task(go)
     def open_output(self): p=year_out(self.year.get()); p.mkdir(parents=True,exist_ok=True); open_path(p)
     def open_preflight(self):
